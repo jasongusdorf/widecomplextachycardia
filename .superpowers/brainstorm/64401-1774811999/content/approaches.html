@@ -1,0 +1,45 @@
+<h2>Three Approaches for the EKG Drill</h2>
+<p class="subtitle">Same core idea, different UX philosophies. Click to select.</p>
+
+<div class="options">
+  <div class="option" data-choice="a" onclick="toggleSelect(this)">
+    <div class="letter">A</div>
+    <div class="content">
+      <h3>Flashcard Flip</h3>
+      <p>Full-screen EKG strip with a two-button choice: <strong>MMVT</strong> or <strong>PMVT</strong>. Tap to answer, card flips to reveal the diagnosis with 3-4 bullet points explaining the key features. Swipe/click for next card.</p>
+      <p style="margin-top:8px;opacity:0.7;">Think: Anki meets ECG. Minimal UI. Fast reps. Spaced repetition runs silently underneath.</p>
+      <div class="pros-cons">
+        <div class="pros"><h4>Pros</h4><ul><li>Fastest drill cycle</li><li>Zero cognitive overhead</li><li>Mobile-friendly</li></ul></div>
+        <div class="cons"><h4>Cons</h4><ul><li>Binary choice could feel too easy</li><li>No room for nuance until the reveal</li></ul></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="option" data-choice="b" onclick="toggleSelect(this)">
+    <div class="letter">B</div>
+    <div class="content">
+      <h3>Feature Spotter</h3>
+      <p>EKG strip shown with clickable annotation zones. User identifies key features first (e.g., "QRS morphology varies beat-to-beat," "regular R-R intervals"), <em>then</em> makes the MMVT/PMVT call. Feedback highlights which features they caught and which they missed.</p>
+      <p style="margin-top:8px;opacity:0.7;">Think: active reading exercise. Forces you to look before you label.</p>
+      <div class="pros-cons">
+        <div class="pros"><h4>Pros</h4><ul><li>Teaches the "why," not just the "what"</li><li>Builds systematic reading habits</li><li>More engaging per card</li></ul></div>
+        <div class="cons"><h4>Cons</h4><ul><li>Slower per rep</li><li>More complex to build</li><li>Annotation zones need careful mapping per image</li></ul></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="option" data-choice="c" onclick="toggleSelect(this)">
+    <div class="letter">C</div>
+    <div class="content">
+      <h3>Progressive Reveal</h3>
+      <p>Strip shown. User picks MMVT or PMVT. Then a follow-up: <strong>"What's the single most important feature that told you?"</strong> with 3-4 choices (e.g., "changing QRS axis," "uniform QRS morphology," "sinusoidal amplitude variation"). Two-step answer, richer feedback.</p>
+      <p style="margin-top:8px;opacity:0.7;">Think: halfway between A and B. Fast but forces articulation.</p>
+      <div class="pros-cons">
+        <div class="pros"><h4>Pros</h4><ul><li>Quick but deeper than pure binary</li><li>Tests reasoning, not just pattern matching</li><li>Simple to build (no image annotations)</li></ul></div>
+        <div class="cons"><h4>Cons</h4><ul><li>Second question could feel tedious after many reps</li><li>Feature choices need to be well-curated per strip</li></ul></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<p class="subtitle" style="margin-top:24px;">My recommendation: <strong>C (Progressive Reveal)</strong>. It hits the sweet spot: fast enough for spaced repetition volume, but the "why" question separates real understanding from lucky guessing. And it's straightforward to build with static images.</p>

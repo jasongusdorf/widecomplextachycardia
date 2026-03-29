@@ -241,64 +241,160 @@
     // ========== Card Data ==========
 
     const CARDS = [
+      // ===== MMVT (Monomorphic VT) =====
       {
         id: 'mmvt-001',
-        image: 'images/mmvt-001.svg',
+        image: 'images/mmvt-001.png',
         answer: 'mmvt',
         explanationBullets: [
-          'Uniform QRS morphology: every complex is identical',
-          'Regular R-R intervals throughout the strip',
-          'Wide QRS complexes (>120ms) with consistent shape'
+          '12-lead ECG with uniform wide QRS complexes across all leads',
+          'Every QRS complex shares the same morphology and axis',
+          'Regular R-R intervals throughout the tracing',
+          'Positive concordance visible in precordial leads (all QRS deflections in the same direction)'
         ]
       },
       {
         id: 'mmvt-002',
-        image: 'images/mmvt-002.svg',
+        image: 'images/mmvt-002.jpg',
         answer: 'mmvt',
         explanationBullets: [
-          'Monomorphic pattern: QRS complexes do not change beat-to-beat',
-          'Consistent axis throughout the tracing',
-          'Regular rate with no variation in amplitude'
+          'Wide complex tachycardia with fusion beats visible (narrower complexes mixed in)',
+          'Fusion beats occur when a sinus impulse partially captures the ventricle during VT',
+          'The predominant QRS morphology is uniform: identical shape beat to beat',
+          'Fusion and capture beats confirm ventricular origin (not SVT with aberrancy)'
         ]
       },
       {
         id: 'mmvt-003',
-        image: 'images/mmvt-003.svg',
+        image: 'images/mmvt-003.jpg',
         answer: 'mmvt',
         explanationBullets: [
-          'All QRS complexes share the same morphology',
-          'No beat-to-beat variation in axis or amplitude',
-          'AV dissociation may be present but QRS shape is uniform'
+          'Precordial leads (V1 through V6) showing monomorphic VT',
+          'Each lead shows a consistent, repeating QRS morphology',
+          'Wide QRS complexes with no beat-to-beat variation in shape or axis',
+          'AV dissociation may be present but QRS shape remains uniform'
         ]
       },
       {
+        id: 'mmvt-005',
+        image: 'images/mmvt-005.jpg',
+        answer: 'mmvt',
+        explanationBullets: [
+          'Lead II rhythm strip showing monomorphic VT at a rate of 192 bpm',
+          'Uniform QRS morphology: every complex is identical',
+          'Regular R-R intervals with no variation in amplitude',
+          'Wide QRS complexes with a single consistent waveform pattern'
+        ]
+      },
+      {
+        id: 'mmvt-006',
+        image: 'images/mmvt-006.png',
+        answer: 'mmvt',
+        explanationBullets: [
+          '12-lead ECG showing monomorphic VT during hemodynamic compromise',
+          'All QRS complexes share the same morphology across every lead',
+          'Regular rate with uniform, wide QRS complexes',
+          'Consistent axis and amplitude throughout the tracing'
+        ]
+      },
+      {
+        id: 'mmvt-009',
+        image: 'images/mmvt-009.png',
+        answer: 'mmvt',
+        explanationBullets: [
+          'Lead II showing wide complex tachycardia with uniform QRS morphology',
+          'Each beat has the same shape: tall upright deflection with consistent width',
+          'Regular R-R intervals throughout',
+          'No variation in QRS axis or amplitude from beat to beat'
+        ]
+      },
+      // ===== PMVT (Polymorphic VT) =====
+      {
         id: 'pmvt-001',
-        image: 'images/pmvt-001.svg',
+        image: 'images/pmvt-001.png',
         answer: 'pmvt',
         explanationBullets: [
-          'QRS morphology varies from beat to beat',
-          'Amplitude changes progressively across the strip',
-          'Irregular R-R intervals with no repeating pattern'
+          'Shows the classic "short-long-short" initiating sequence for Torsades de Pointes',
+          'After initiation, QRS morphology varies continuously from beat to beat',
+          'Progressively changing QRS axis and amplitude as the arrhythmia develops',
+          'No two consecutive complexes share the same morphology'
         ]
       },
       {
         id: 'pmvt-002',
-        image: 'images/pmvt-002.svg',
+        image: 'images/pmvt-002.png',
         answer: 'pmvt',
         explanationBullets: [
-          'Changing QRS axis: complexes shift direction',
-          'No two consecutive beats share the same morphology',
-          'Chaotic-appearing rhythm without a consistent bundle branch pattern'
+          'Torsades de Pointes with prolonged QT interval visible before onset',
+          'QRS complexes continuously change in morphology, axis, and amplitude',
+          'Classic "twisting of the points" pattern around the isoelectric line',
+          'Wide, chaotic complexes with no consistent bundle branch block pattern'
         ]
       },
       {
         id: 'pmvt-003',
-        image: 'images/pmvt-003.svg',
+        image: 'images/pmvt-003.jpg',
         answer: 'pmvt',
         explanationBullets: [
-          'Classic Torsades de Pointes: sinusoidal amplitude variation',
-          'QRS complexes appear to twist around the baseline',
-          'Amplitude waxes and wanes over a run of beats'
+          'Lead II strip showing polymorphic VT with beat-to-beat QRS variation',
+          'QRS axis and morphology change continuously across the tracing',
+          'Irregular R-R intervals with no repeating pattern',
+          'Complexes vary in both direction and amplitude, unlike monomorphic VT'
+        ]
+      },
+      {
+        id: 'pmvt-004',
+        image: 'images/pmvt-004.jpg',
+        answer: 'pmvt',
+        explanationBullets: [
+          'Torsades de Pointes recorded by an implantable defibrillator (AICD)',
+          'Sinusoidal variation in QRS amplitude: waxing and waning pattern',
+          'QRS morphology changes continuously, no two beats are identical',
+          'Straight line near the end represents the device shock converting the rhythm'
+        ]
+      },
+      {
+        id: 'pmvt-005',
+        image: 'images/pmvt-005.jpg',
+        answer: 'pmvt',
+        explanationBullets: [
+          '12-lead ECG showing Torsades de Pointes with onset from sinus rhythm',
+          'Precordial leads show continuously varying QRS morphology and axis',
+          'Sinusoidal amplitude modulation visible across multiple leads',
+          'Rhythm strip at bottom confirms the polymorphic, twisting pattern'
+        ]
+      },
+      {
+        id: 'pmvt-006',
+        image: 'images/pmvt-006.png',
+        answer: 'pmvt',
+        explanationBullets: [
+          'Classic Torsades de Pointes with sinusoidal waxing and waning of QRS amplitude',
+          'QRS complexes appear to rotate around the baseline',
+          'Amplitude increases then decreases in a smooth envelope pattern',
+          'No consistent QRS morphology from beat to beat'
+        ]
+      },
+      {
+        id: 'pmvt-007',
+        image: 'images/pmvt-007.jpg',
+        answer: 'pmvt',
+        explanationBullets: [
+          'Torsades de Pointes with dramatic variation in QRS amplitude and axis',
+          'QRS complexes twist above and below the baseline in a spinning pattern',
+          'Amplitude modulation creates the characteristic spindle-shaped envelope',
+          'Completely irregular rhythm with no repeating QRS morphology'
+        ]
+      },
+      {
+        id: 'pmvt-008',
+        image: 'images/pmvt-008.png',
+        answer: 'pmvt',
+        explanationBullets: [
+          'Polymorphic VT with continuously varying QRS morphology',
+          'Each complex differs from its neighbors in shape, width, and amplitude',
+          'No consistent axis: complexes shift between upright and inverted',
+          'Labeled "polymorphic ventricular tachycardia" by ECGpedia'
         ]
       }
     ];
