@@ -197,6 +197,7 @@
       </div>
     </div>
     <button class="btn btn-primary" id="btn-start">Start</button>
+    <button class="btn btn-next" id="btn-reset" style="margin-top: 12px; font-size: 0.85rem;">Reset Progress</button>
   </div>
 
   <!-- Card Front -->
@@ -515,6 +516,15 @@
       showScreen('home');
     }
 
+    function handleReset() {
+      if (confirm('Reset all progress? This cannot be undone.')) {
+        srState = {};
+        saveState();
+        app.streak = 0;
+        renderHome();
+      }
+    }
+
     // ========== Init ==========
 
     function init() {
@@ -525,6 +535,7 @@
       document.getElementById('btn-pmvt').addEventListener('click', function() { handleAnswer('pmvt'); });
       document.getElementById('btn-next').addEventListener('click', handleNext);
       document.getElementById('btn-done').addEventListener('click', handleDone);
+      document.getElementById('btn-reset').addEventListener('click', handleReset);
 
       document.addEventListener('keydown', function(e) {
         if (app.screen === 'front') {
