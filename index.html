@@ -237,7 +237,160 @@
   </div>
 
   <script>
-    // JS will go here in subsequent tasks
+    // ========== Card Data ==========
+
+    const CARDS = [
+      {
+        id: 'mmvt-001',
+        image: 'images/mmvt-001.svg',
+        answer: 'mmvt',
+        explanationBullets: [
+          'Uniform QRS morphology: every complex is identical',
+          'Regular R-R intervals throughout the strip',
+          'Wide QRS complexes (>120ms) with consistent shape'
+        ]
+      },
+      {
+        id: 'mmvt-002',
+        image: 'images/mmvt-002.svg',
+        answer: 'mmvt',
+        explanationBullets: [
+          'Monomorphic pattern: QRS complexes do not change beat-to-beat',
+          'Consistent axis throughout the tracing',
+          'Regular rate with no variation in amplitude'
+        ]
+      },
+      {
+        id: 'mmvt-003',
+        image: 'images/mmvt-003.svg',
+        answer: 'mmvt',
+        explanationBullets: [
+          'All QRS complexes share the same morphology',
+          'No beat-to-beat variation in axis or amplitude',
+          'AV dissociation may be present but QRS shape is uniform'
+        ]
+      },
+      {
+        id: 'pmvt-001',
+        image: 'images/pmvt-001.svg',
+        answer: 'pmvt',
+        explanationBullets: [
+          'QRS morphology varies from beat to beat',
+          'Amplitude changes progressively across the strip',
+          'Irregular R-R intervals with no repeating pattern'
+        ]
+      },
+      {
+        id: 'pmvt-002',
+        image: 'images/pmvt-002.svg',
+        answer: 'pmvt',
+        explanationBullets: [
+          'Changing QRS axis: complexes shift direction',
+          'No two consecutive beats share the same morphology',
+          'Chaotic-appearing rhythm without a consistent bundle branch pattern'
+        ]
+      },
+      {
+        id: 'pmvt-003',
+        image: 'images/pmvt-003.svg',
+        answer: 'pmvt',
+        explanationBullets: [
+          'Classic Torsades de Pointes: sinusoidal amplitude variation',
+          'QRS complexes appear to twist around the baseline',
+          'Amplitude waxes and wanes over a run of beats'
+        ]
+      }
+    ];
+
+    // ========== SM-2 Spaced Repetition Engine ==========
+
+    const STORAGE_KEY = 'ekg-drill-sr-state';
+
+    let srState = {}; // { cardId: { easeFactor, interval, nextReview, repetitions } }
+
+    function todayStr() {
+      return new Date().toISOString().slice(0, 10);
+    }
+
+    function addDays(dateStr, days) {
+      const d = new Date(dateStr + 'T00:00:00');
+      d.setDate(d.getDate() + days);
+      return d.toISOString().slice(0, 10);
+    }
+
+    function getCardState(cardId) {
+      if (!srState[cardId]) {
+        srState[cardId] = {
+          easeFactor: 2.5,
+          interval: 0,
+          nextReview: null,
+          repetitions: 0
+        };
+      }
+      return srState[cardId];
+    }
+
+    function gradeCard(cardId, correct) {
+      const s = getCardState(cardId);
+      if (correct) {
+        s.repetitions++;
+        if (s.repetitions === 1) {
+          s.interval = 1;
+        } else if (s.repetitions === 2) {
+          s.interval = 6;
+        } else {
+          s.interval = Math.round(s.interval * s.easeFactor);
+        }
+        s.easeFactor = Math.min(3.0, s.easeFactor + 0.1);
+      } else {
+        s.repetitions = 0;
+        s.interval = 1;
+        s.easeFactor = Math.max(1.3, s.easeFactor - 0.2);
+      }
+      s.nextReview = addDays(todayStr(), s.interval);
+      saveState();
+    }
+
+    function isDue(cardId) {
+      const s = srState[cardId];
+      if (!s || s.nextReview === null) return false;
+      return s.nextReview <= todayStr();
+    }
+
+    function isNew(cardId) {
+      return !srState[cardId] || srState[cardId].nextReview === null;
+    }
+
+    function isMastered(cardId) {
+      const s = srState[cardId];
+      return s && s.interval >= 21;
+    }
+
+    function getSessionQueue(cards) {
+      const due = cards.filter(c => isDue(c.id));
+      const unseen = cards.filter(c => isNew(c.id));
+      return [...due, ...unseen];
+    }
+
+    function getStats(cards) {
+      const due = cards.filter(c => isDue(c.id)).length;
+      const mastered = cards.filter(c => isMastered(c.id)).length;
+      const unseen = cards.filter(c => isNew(c.id)).length;
+      return { due, mastered, unseen, total: cards.length, dueAndNew: due + unseen };
+    }
+
+    // ========== Persistence ==========
+
+    function saveState() {
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(srState));
+    }
+
+    function loadState() {
+      const raw = localStorage.getItem(STORAGE_KEY);
+      if (raw) {
+        try { srState = JSON.parse(raw); } catch (e) { srState = {}; }
+      }
+    }
   </script>
 </body>
 </html>
