@@ -391,6 +391,159 @@
         try { srState = JSON.parse(raw); } catch (e) { srState = {}; }
       }
     }
+
+    // ========== App State ==========
+
+    let app = {
+      screen: 'home',
+      sessionQueue: [],
+      currentIndex: 0,
+      sessionCorrect: 0,
+      sessionTotal: 0,
+      streak: 0
+    };
+
+    // ========== Screen Routing ==========
+
+    function showScreen(name) {
+      app.screen = name;
+      document.querySelectorAll('.screen').forEach(function(s) {
+        s.classList.remove('active');
+      });
+      document.getElementById('screen-' + name).classList.add('active');
+    }
+
+    // ========== Home Screen ==========
+
+    function renderHome() {
+      loadState();
+      var stats = getStats(CARDS);
+      document.getElementById('stat-due').textContent = stats.dueAndNew;
+      document.getElementById('stat-mastered').textContent = stats.mastered;
+      document.getElementById('stat-streak').textContent = app.streak;
+
+      var startBtn = document.getElementById('btn-start');
+      startBtn.disabled = stats.dueAndNew === 0;
+      startBtn.textContent = stats.dueAndNew === 0 ? 'All caught up!' : 'Start';
+      if (stats.dueAndNew === 0) {
+        startBtn.style.opacity = '0.5';
+        startBtn.style.cursor = 'default';
+      } else {
+        startBtn.style.opacity = '1';
+        startBtn.style.cursor = 'pointer';
+      }
+    }
+
+    // ========== Card Screens ==========
+
+    function showCardFront() {
+      var card = app.sessionQueue[app.currentIndex];
+      document.getElementById('card-progress').textContent =
+        'Card ' + (app.currentIndex + 1) + ' of ' + app.sessionQueue.length;
+      document.getElementById('ekg-front').src = card.image;
+      showScreen('front');
+    }
+
+    function showCardBack(card, correct) {
+      var banner = document.getElementById('result-banner');
+      banner.textContent = correct ? 'Correct' : 'Incorrect';
+      banner.className = 'banner ' + (correct ? 'banner-correct' : 'banner-incorrect');
+
+      document.getElementById('ekg-back').src = card.image;
+      document.getElementById('correct-answer').textContent =
+        'Answer: ' + card.answer.toUpperCase();
+
+      var list = document.getElementById('explanation-list');
+      while (list.firstChild) {
+        list.removeChild(list.firstChild);
+      }
+      card.explanationBullets.forEach(function(bullet) {
+        var li = document.createElement('li');
+        li.textContent = bullet;
+        list.appendChild(li);
+      });
+
+      showScreen('back');
+    }
+
+    function showComplete() {
+      var pct = app.sessionTotal > 0
+        ? Math.round((app.sessionCorrect / app.sessionTotal) * 100)
+        : 0;
+      document.getElementById('stat-reviewed').textContent = app.sessionTotal;
+      document.getElementById('stat-accuracy').textContent = pct + '%';
+      showScreen('complete');
+    }
+
+    // ========== Event Handlers ==========
+
+    function handleStart() {
+      var queue = getSessionQueue(CARDS);
+      if (queue.length === 0) return;
+      app.sessionQueue = queue;
+      app.currentIndex = 0;
+      app.sessionCorrect = 0;
+      app.sessionTotal = 0;
+      showCardFront();
+    }
+
+    function handleAnswer(answer) {
+      var card = app.sessionQueue[app.currentIndex];
+      var correct = answer === card.answer;
+      gradeCard(card.id, correct);
+      app.sessionTotal++;
+      if (correct) {
+        app.sessionCorrect++;
+        app.streak++;
+      } else {
+        app.streak = 0;
+      }
+      showCardBack(card, correct);
+    }
+
+    function handleNext() {
+      app.currentIndex++;
+      if (app.currentIndex >= app.sessionQueue.length) {
+        showComplete();
+      } else {
+        showCardFront();
+      }
+    }
+
+    function handleDone() {
+      renderHome();
+      showScreen('home');
+    }
+
+    // ========== Init ==========
+
+    function init() {
+      loadState();
+
+      document.getElementById('btn-start').addEventListener('click', handleStart);
+      document.getElementById('btn-mmvt').addEventListener('click', function() { handleAnswer('mmvt'); });
+      document.getElementById('btn-pmvt').addEventListener('click', function() { handleAnswer('pmvt'); });
+      document.getElementById('btn-next').addEventListener('click', handleNext);
+      document.getElementById('btn-done').addEventListener('click', handleDone);
+
+      document.addEventListener('keydown', function(e) {
+        if (app.screen === 'front') {
+          if (e.key === '1' || e.key === 'm') handleAnswer('mmvt');
+          if (e.key === '2' || e.key === 'p') handleAnswer('pmvt');
+        } else if (app.screen === 'back') {
+          if (e.key === ' ' || e.key === 'Enter') handleNext();
+        } else if (app.screen === 'home') {
+          if (e.key === ' ' || e.key === 'Enter') handleStart();
+        } else if (app.screen === 'complete') {
+          if (e.key === ' ' || e.key === 'Enter') handleDone();
+        }
+      });
+
+      renderHome();
+      showScreen('home');
+    }
+
+    document.addEventListener('DOMContentLoaded', init);
   </script>
 </body>
 </html>
