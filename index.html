@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EKG Drill: MMVT vs PMVT</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: #0d1117;
+      color: #e6edf3;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .screen { display: none; width: 100%; max-width: 720px; padding: 24px; }
+    .screen.active { display: flex; flex-direction: column; align-items: center; }
+
+    h1 { font-size: 1.8rem; font-weight: 600; margin-bottom: 8px; text-align: center; }
+    h2 { font-size: 1.3rem; font-weight: 500; margin-bottom: 16px; text-align: center; }
+
+    .stats {
+      display: flex;
+      gap: 24px;
+      margin: 24px 0;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .stat {
+      text-align: center;
+      background: #161b22;
+      border: 1px solid #21262d;
+      border-radius: 12px;
+      padding: 16px 24px;
+      min-width: 120px;
+    }
+
+    .stat-value {
+      font-size: 2rem;
+      font-weight: 700;
+      display: block;
+    }
+
+    .stat-label {
+      font-size: 0.8rem;
+      color: #8b949e;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-top: 4px;
+    }
+
+    .btn {
+      padding: 14px 32px;
+      border: none;
+      border-radius: 8px;
+      font-size: 1.1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: opacity 0.15s;
+    }
+
+    .btn:hover { opacity: 0.85; }
+
+    .btn-primary {
+      background: #238636;
+      color: #fff;
+    }
+
+    .btn-mmvt {
+      background: #1f6feb;
+      color: #fff;
+      flex: 1;
+    }
+
+    .btn-pmvt {
+      background: #8957e5;
+      color: #fff;
+      flex: 1;
+    }
+
+    .btn-next {
+      background: #30363d;
+      color: #e6edf3;
+      border: 1px solid #484f58;
+    }
+
+    .answer-buttons {
+      display: flex;
+      gap: 16px;
+      width: 100%;
+      margin-top: 20px;
+    }
+
+    .ekg-image {
+      width: 100%;
+      max-height: 400px;
+      object-fit: contain;
+      border: 1px solid #21262d;
+      border-radius: 8px;
+      background: #fff;
+    }
+
+    .ekg-image-small {
+      width: 100%;
+      max-height: 240px;
+      object-fit: contain;
+      border: 1px solid #21262d;
+      border-radius: 8px;
+      background: #fff;
+      margin-bottom: 16px;
+    }
+
+    .progress {
+      font-size: 0.85rem;
+      color: #8b949e;
+      margin-bottom: 16px;
+    }
+
+    .banner {
+      width: 100%;
+      padding: 12px;
+      border-radius: 8px;
+      text-align: center;
+      font-weight: 600;
+      font-size: 1.1rem;
+      margin-bottom: 16px;
+    }
+
+    .banner-correct { background: rgba(63, 185, 80, 0.15); color: #3fb950; border: 1px solid #238636; }
+    .banner-incorrect { background: rgba(248, 81, 73, 0.15); color: #f85149; border: 1px solid #da3633; }
+
+    .answer-label {
+      font-size: 1rem;
+      font-weight: 600;
+      margin-bottom: 12px;
+      text-align: center;
+    }
+
+    .explanation {
+      width: 100%;
+      background: #161b22;
+      border: 1px solid #21262d;
+      border-radius: 8px;
+      padding: 16px;
+      margin-bottom: 20px;
+    }
+
+    .explanation ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .explanation li {
+      padding: 6px 0;
+      padding-left: 20px;
+      position: relative;
+      font-size: 0.95rem;
+      line-height: 1.5;
+    }
+
+    .explanation li::before {
+      content: "•";
+      position: absolute;
+      left: 4px;
+      color: #8b949e;
+    }
+
+    @media (max-width: 480px) {
+      .answer-buttons { flex-direction: column; }
+      .stats { flex-direction: column; align-items: center; }
+      .stat { width: 100%; }
+    }
+  </style>
+</head>
+<body>
+  <!-- Home Screen -->
+  <div id="screen-home" class="screen active">
+    <h1>EKG Drill</h1>
+    <h2>MMVT vs PMVT</h2>
+    <div class="stats">
+      <div class="stat">
+        <span class="stat-value" id="stat-due">0</span>
+        <span class="stat-label">Due Today</span>
+      </div>
+      <div class="stat">
+        <span class="stat-value" id="stat-mastered">0</span>
+        <span class="stat-label">Mastered</span>
+      </div>
+      <div class="stat">
+        <span class="stat-value" id="stat-streak">0</span>
+        <span class="stat-label">Streak</span>
+      </div>
+    </div>
+    <button class="btn btn-primary" id="btn-start">Start</button>
+  </div>
+
+  <!-- Card Front -->
+  <div id="screen-front" class="screen">
+    <p class="progress" id="card-progress">Card 1 of 10</p>
+    <img class="ekg-image" id="ekg-front" src="" alt="EKG Strip">
+    <div class="answer-buttons">
+      <button class="btn btn-mmvt" id="btn-mmvt">MMVT</button>
+      <button class="btn btn-pmvt" id="btn-pmvt">PMVT</button>
+    </div>
+  </div>
+
+  <!-- Card Back -->
+  <div id="screen-back" class="screen">
+    <div class="banner" id="result-banner"></div>
+    <img class="ekg-image-small" id="ekg-back" src="" alt="EKG Strip">
+    <p class="answer-label" id="correct-answer"></p>
+    <div class="explanation">
+      <ul id="explanation-list"></ul>
+    </div>
+    <button class="btn btn-next" id="btn-next">Next</button>
+  </div>
+
+  <!-- Session Complete -->
+  <div id="screen-complete" class="screen">
+    <h1>Session Complete</h1>
+    <div class="stats">
+      <div class="stat">
+        <span class="stat-value" id="stat-reviewed">0</span>
+        <span class="stat-label">Reviewed</span>
+      </div>
+      <div class="stat">
+        <span class="stat-value" id="stat-accuracy">0%</span>
+        <span class="stat-label">Accuracy</span>
+      </div>
+    </div>
+    <button class="btn btn-primary" id="btn-done">Done</button>
+  </div>
+
+  <script>
+    // JS will go here in subsequent tasks
+  </script>
+</body>
+</html>
