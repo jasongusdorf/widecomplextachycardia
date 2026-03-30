@@ -324,10 +324,35 @@
       color: #4a4234;
     }
 
+    .nav-links {
+      display: flex;
+      gap: 12px;
+      margin-top: 24px;
+      width: 100%;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .nav-links a {
+      color: #1f6feb;
+      text-decoration: none;
+      font-size: 1.05rem;
+      padding: 10px 20px;
+      border: 1px solid #e0d5b8;
+      border-radius: 8px;
+      background: #fff8e8;
+      transition: background 0.15s;
+    }
+
+    .nav-links a:hover {
+      background: #f5edda;
+    }
+
     @media (max-width: 480px) {
       .answer-buttons { flex-direction: column; }
       .stats { flex-direction: column; align-items: center; }
       .stat { width: 100%; }
+      .nav-links { flex-direction: column; }
     }
   </style>
 </head>
@@ -341,6 +366,12 @@
       <button class="btn btn-pmvt" id="btn-start-all">Shuffle All</button>
     </div>
     <button class="btn btn-next" id="btn-reset" style="font-size: 0.85rem;">Reset Progress</button>
+
+    <div class="nav-links">
+      <a href="mechanism.html">Mechanism of VT</a>
+      <a href="treatment.html">Treatment &amp; Trials</a>
+      <a href="pictures.html">Pictures &amp; Pathology</a>
+    </div>
 
     <div class="reference-card">
       <h3>Ventricular Tachycardia Mnemonic: VT ACED</h3>

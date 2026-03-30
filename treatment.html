@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VT Treatment &amp; Trials</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Times New Roman', Times, Georgia, serif;
+      background: #fdf6e3;
+      color: #3b3b3b;
+      min-height: 100vh;
+      padding: 32px;
+      line-height: 1.7;
+    }
+    .container { max-width: 800px; margin: 0 auto; }
+    .back-link {
+      display: inline-block;
+      color: #1f6feb;
+      text-decoration: none;
+      font-size: 1rem;
+      margin-bottom: 24px;
+    }
+    .back-link:hover { text-decoration: underline; }
+    h1 { font-size: 2.2rem; font-weight: 700; margin-bottom: 8px; }
+    h2 { font-size: 1.6rem; font-weight: 700; margin-top: 36px; margin-bottom: 12px; color: #2c2c2c; }
+    h3 { font-size: 1.25rem; font-weight: 600; margin-top: 24px; margin-bottom: 8px; color: #4a4234; }
+    p { margin-bottom: 16px; font-size: 1.05rem; }
+    .subtitle { color: #8a7e65; font-size: 1.1rem; margin-bottom: 32px; font-style: italic; }
+    .tx-box {
+      background: #fff8e8;
+      border: 1px solid #e0d5b8;
+      border-radius: 10px;
+      padding: 20px 24px;
+      margin: 20px 0;
+    }
+    .tx-box h3 { margin-top: 0; }
+    .tx-box p:last-child { margin-bottom: 0; }
+    .danger-box {
+      background: rgba(248, 81, 73, 0.08);
+      border: 1px solid #f0b8b8;
+      border-radius: 10px;
+      padding: 20px 24px;
+      margin: 20px 0;
+    }
+    .danger-box h3 { margin-top: 0; color: #cf222e; }
+    .danger-box p:last-child { margin-bottom: 0; }
+    .trial-card {
+      background: #dbeafe;
+      border: 1px solid #93c5fd;
+      border-radius: 10px;
+      padding: 20px 24px;
+      margin: 16px 0;
+    }
+    .trial-card h3 { margin-top: 0; color: #1d4ed8; }
+    .trial-card p:last-child { margin-bottom: 0; }
+    .trial-card .trial-meta {
+      font-size: 0.9rem;
+      color: #5b7cb0;
+      margin-bottom: 8px;
+    }
+    .flowchart {
+      text-align: center;
+      font-size: 1.1rem;
+      color: #1f6feb;
+      font-weight: 600;
+      margin: 20px 0;
+      line-height: 2.2;
+      background: #fff8e8;
+      border: 1px solid #e0d5b8;
+      border-radius: 10px;
+      padding: 24px;
+    }
+    .flowchart .step { color: #3b3b3b; font-weight: 400; }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+      font-size: 1rem;
+    }
+    th {
+      background: #fff8e8;
+      border: 1px solid #e0d5b8;
+      padding: 10px 14px;
+      text-align: left;
+      font-weight: 600;
+    }
+    td {
+      border: 1px solid #e0d5b8;
+      padding: 10px 14px;
+    }
+    tr:nth-child(even) td {
+      background: #fefcf5;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <a href="index.html" class="back-link">Back to Drill</a>
+    <h1>Treatment &amp; Trials</h1>
+    <p class="subtitle">How to manage VT acutely, chronically, and what the evidence says.</p>
+
+    <h2>Acute Management</h2>
+    <p>The first question is always hemodynamic stability. Everything else flows from there.</p>
+
+    <div class="flowchart">
+      Wide Complex Tachycardia<br>
+      <span class="step">Is the patient hemodynamically unstable?</span><br>
+      (hypotension, altered mental status, chest pain, acute heart failure)<br><br>
+      <strong>Unstable: Synchronized cardioversion. Now.</strong><br>
+      <span class="step">Don't wait for a 12-lead. Don't debate the rhythm. Cardiovert.</span><br><br>
+      <strong>Stable: You have time to think.</strong><br>
+      <span class="step">Get a 12-lead ECG. Apply VT ACED criteria. Choose pharmacotherapy.</span>
+    </div>
+
+    <h3>Stable Monomorphic VT</h3>
+
+    <div class="tx-box">
+      <h3>First line: Procainamide</h3>
+      <p>IV procainamide (20mg/min up to 17mg/kg, or until the arrhythmia terminates, hypotension develops, or QRS widens by 50%). Slows conduction in the reentry circuit, which can terminate the loop. Takes 20-30 minutes to load. Monitor BP closely.</p>
+      <p>The PROCAMIO trial (2017) showed procainamide was superior to amiodarone for terminating stable monomorphic VT, with fewer major adverse events.</p>
+    </div>
+
+    <div class="tx-box">
+      <h3>Second line: Amiodarone</h3>
+      <p>IV amiodarone 150mg over 10 minutes, then 1mg/min infusion for 6 hours, then 0.5mg/min. Multi-channel blocker. Slower to work than procainamide for acute termination, but more commonly used in practice (especially in the US) because of familiarity and broader antiarrhythmic effect.</p>
+    </div>
+
+    <div class="tx-box">
+      <h3>Alternative: Lidocaine</h3>
+      <p>IV lidocaine 1-1.5mg/kg bolus, then 1-4mg/min infusion. Sodium channel blocker. Faster onset than amiodarone but less effective overall. Historically first-line, now second-tier. Still reasonable if procainamide and amiodarone are unavailable or contraindicated.</p>
+    </div>
+
+    <h3>Stable Polymorphic VT</h3>
+
+    <div class="tx-box">
+      <h3>With prolonged QT (Torsades de Pointes)</h3>
+      <p>IV magnesium sulfate 2g bolus. This is the specific treatment. Also: stop all QT-prolonging drugs, correct potassium to >4.0 mEq/L, and consider overdrive pacing (transvenous or isoproterenol) to increase heart rate and shorten the QT interval. Amiodarone is contraindicated here because it prolongs QT further.</p>
+    </div>
+
+    <div class="tx-box">
+      <h3>With normal QT</h3>
+      <p>Treat the underlying cause. Most commonly ischemia. Proceed to urgent catheterization if acute coronary syndrome is suspected. Antiarrhythmic management similar to monomorphic VT (amiodarone or procainamide).</p>
+    </div>
+
+    <div class="danger-box">
+      <h3>Pre-excited AFib (WPW + Atrial Fibrillation)</h3>
+      <p>This is the one where the wrong drug kills the patient. AV node blockers (adenosine, beta-blockers, calcium channel blockers, digoxin) are contraindicated. They block the AV node, forcing all conduction through the accessory pathway, which can accelerate the ventricular rate to the point of ventricular fibrillation.</p>
+      <p>Correct treatment: procainamide (slows conduction in the accessory pathway) or synchronized cardioversion if unstable.</p>
+    </div>
+
+    <h2>Chronic Management</h2>
+
+    <h3>Implantable Cardioverter-Defibrillator (ICD)</h3>
+    <p>The ICD is the cornerstone of long-term VT management in patients with structural heart disease. It doesn't prevent VT, but it terminates it. The device continuously monitors the heart rhythm and delivers therapy when VT or VF is detected: antitachycardia pacing (ATP) for slower VT, or a shock for faster VT and VF.</p>
+    <p>ICDs have been shown to reduce mortality in both primary prevention (patients at risk for VT but who haven't had it yet) and secondary prevention (patients who have survived VT or cardiac arrest).</p>
+
+    <h3>Catheter Ablation</h3>
+    <p>An electrophysiologist threads catheters into the heart, maps the electrical activity, identifies the reentry circuit, and destroys it with radiofrequency energy or cryotherapy. The goal is to eliminate the slow conduction channel within the scar that sustains the circuit.</p>
+    <p>Ablation doesn't replace the ICD in most patients, but it reduces the frequency of VT episodes and ICD shocks, which significantly improves quality of life.</p>
+
+    <h3>Antiarrhythmic Drugs (Chronic)</h3>
+    <table>
+      <tr>
+        <th>Drug</th>
+        <th>Class</th>
+        <th>Role</th>
+        <th>Key Side Effects</th>
+      </tr>
+      <tr>
+        <td>Amiodarone</td>
+        <td>III (multi-channel)</td>
+        <td>Most effective at suppressing VT recurrence. Often combined with ICD.</td>
+        <td>Pulmonary toxicity, thyroid dysfunction, hepatotoxicity, photosensitivity. Long half-life (40-55 days).</td>
+      </tr>
+      <tr>
+        <td>Sotalol</td>
+        <td>III + beta-blocker</td>
+        <td>Alternative to amiodarone. Less toxic but less effective.</td>
+        <td>QT prolongation, bradycardia, torsades (proarrhythmic). Must monitor QTc.</td>
+      </tr>
+      <tr>
+        <td>Mexiletine</td>
+        <td>IB</td>
+        <td>Add-on to amiodarone or sotalol for refractory VT.</td>
+        <td>GI symptoms, tremor, dizziness.</td>
+      </tr>
+      <tr>
+        <td>Beta-blockers</td>
+        <td>II</td>
+        <td>Reduce sympathetic trigger for VT. First-line in long QT syndrome, CPVT.</td>
+        <td>Bradycardia, fatigue, bronchospasm.</td>
+      </tr>
+    </table>
+
+    <h2>Landmark Trials</h2>
+
+    <div class="trial-card">
+      <h3>AVID (1997)</h3>
+      <p class="trial-meta">Antiarrhythmics Versus Implantable Defibrillators | N Engl J Med</p>
+      <p>Compared ICD vs antiarrhythmic drugs (mostly amiodarone) in survivors of VT/VF arrest. ICD reduced all-cause mortality by 39% at 1 year and 31% at 3 years. This trial established the ICD as first-line secondary prevention for sustained VT/VF.</p>
+    </div>
+
+    <div class="trial-card">
+      <h3>MADIT II (2002)</h3>
+      <p class="trial-meta">Multicenter Automatic Defibrillator Implantation Trial II | N Engl J Med</p>
+      <p>Tested prophylactic ICD in patients with prior MI and EF ≤30%, regardless of whether they'd had VT. ICD reduced mortality by 31%. Established primary prevention ICD implantation for patients with ischemic cardiomyopathy and severely reduced EF.</p>
+    </div>
+
+    <div class="trial-card">
+      <h3>SCD-HeFT (2005)</h3>
+      <p class="trial-meta">Sudden Cardiac Death in Heart Failure Trial | N Engl J Med</p>
+      <p>Tested ICD vs amiodarone vs placebo in patients with EF ≤35% (both ischemic and nonischemic). ICD reduced mortality by 23%. Amiodarone was no better than placebo. Extended primary prevention ICD indication to nonischemic cardiomyopathy.</p>
+    </div>
+
+    <div class="trial-card">
+      <h3>PROCAMIO (2017)</h3>
+      <p class="trial-meta">Procainamide vs Amiodarone for Stable VT | JAMA Cardiology</p>
+      <p>Randomized stable monomorphic VT to IV procainamide vs IV amiodarone. Procainamide terminated VT more effectively (67% vs 38%) with fewer major cardiac adverse events (9% vs 41%). This trial challenged the widespread default use of amiodarone for stable VT.</p>
+    </div>
+
+    <div class="trial-card">
+      <h3>VANISH (2016)</h3>
+      <p class="trial-meta">Ventricular Tachycardia Ablation vs Escalated Antiarrhythmic Drug Therapy | N Engl J Med</p>
+      <p>Patients with ischemic cardiomyopathy, ICD, and VT despite antiarrhythmic drugs were randomized to catheter ablation vs escalated drug therapy. Ablation reduced the composite of death, VT storm, and appropriate ICD shock by 28%. Established ablation as superior to drug escalation in drug-refractory VT.</p>
+    </div>
+
+    <div class="trial-card">
+      <h3>DANISH (2016)</h3>
+      <p class="trial-meta">Danish ICD Study in Nonischemic Cardiomyopathy | N Engl J Med</p>
+      <p>Tested prophylactic ICD in nonischemic cardiomyopathy with EF ≤35%. ICD reduced sudden cardiac death but did not reduce all-cause mortality. Raised questions about primary prevention ICD benefit in the modern era of optimized heart failure therapy (CRT, neurohormonal blockade).</p>
+    </div>
+
+    <div class="trial-card">
+      <h3>VEST (2018)</h3>
+      <p class="trial-meta">Wearable Cardioverter-Defibrillator after MI | N Engl J Med</p>
+      <p>Tested the wearable defibrillator (LifeVest) in the early post-MI period (EF ≤35%). Did not significantly reduce arrhythmic death at 90 days, though overall mortality trended lower. Highlighted the gap period between MI and ICD eligibility (typically 40 days post-MI or 90 days post-revascularization).</p>
+    </div>
+
+    <h2>The Big Picture</h2>
+    <p>For sustained monomorphic VT in structural heart disease, the modern approach has three layers: (1) the ICD as a safety net, (2) catheter ablation to reduce episodes, and (3) antiarrhythmic drugs to suppress what ablation misses. The trials built this framework one piece at a time: AVID and MADIT proved the ICD saves lives, VANISH proved ablation beats drug escalation, and PROCAMIO refined the acute drug choice.</p>
+  </div>
+</body>
+</html>
