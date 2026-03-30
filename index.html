@@ -3,8 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Wide Complex Tachycardia</title>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <title>EKG Drill: Wide Complex Tachycardia</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
 
@@ -181,32 +180,6 @@
       color: #8b949e;
     }
 
-    #shader-bg {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      z-index: 0;
-      pointer-events: none;
-    }
-
-    #shader-bg canvas {
-      display: block;
-      width: 100%;
-      height: 100%;
-    }
-
-    #screen-home {
-      position: relative;
-      z-index: 1;
-    }
-
-    #screen-home .stat {
-      background: rgba(22, 27, 34, 0.85);
-      backdrop-filter: blur(8px);
-    }
-
     @media (max-width: 480px) {
       .answer-buttons { flex-direction: column; }
       .stats { flex-direction: column; align-items: center; }
@@ -215,7 +188,6 @@
   </style>
 </head>
 <body>
-  <div id="shader-bg"></div>
   <!-- Home Screen -->
   <div id="screen-home" class="screen active">
     <h1>Wide Complex Tachycardia</h1>
@@ -1221,81 +1193,6 @@
     }
 
     document.addEventListener('DOMContentLoaded', init);
-
-    // ========== Shader Background ==========
-
-    function initShader() {
-      var container = document.getElementById('shader-bg');
-      if (!container || typeof THREE === 'undefined') return;
-
-      var vertexShader = 'void main() { gl_Position = vec4(position, 1.0); }';
-
-      var fragmentShader = [
-        '#define TWO_PI 6.2831853072',
-        '#define PI 3.14159265359',
-        'precision highp float;',
-        'uniform vec2 resolution;',
-        'uniform float time;',
-        'void main(void) {',
-        '  vec2 uv = (gl_FragCoord.xy * 2.0 - resolution.xy) / min(resolution.x, resolution.y);',
-        '  float t = time * 0.05;',
-        '  float lineWidth = 0.002;',
-        '  vec3 color = vec3(0.0);',
-        '  for(int j = 0; j < 3; j++){',
-        '    for(int i = 0; i < 5; i++){',
-        '      color[j] += lineWidth * float(i*i) / abs(fract(t - 0.01*float(j) + float(i)*0.01) * 5.0 - length(uv) + mod(uv.x + uv.y, 0.2));',
-        '    }',
-        '  }',
-        '  gl_FragColor = vec4(color[0], color[1], color[2], 1.0);',
-        '}'
-      ].join('\n');
-
-      var camera = new THREE.Camera();
-      camera.position.z = 1;
-
-      var scene = new THREE.Scene();
-      var geometry = new THREE.PlaneGeometry(2, 2);
-
-      var uniforms = {
-        time: { type: 'f', value: 1.0 },
-        resolution: { type: 'v2', value: new THREE.Vector2() }
-      };
-
-      var material = new THREE.ShaderMaterial({
-        uniforms: uniforms,
-        vertexShader: vertexShader,
-        fragmentShader: fragmentShader
-      });
-
-      var mesh = new THREE.Mesh(geometry, material);
-      scene.add(mesh);
-
-      var renderer = new THREE.WebGLRenderer({ antialias: true });
-      renderer.setPixelRatio(window.devicePixelRatio);
-      container.appendChild(renderer.domElement);
-
-      function onResize() {
-        var w = window.innerWidth;
-        var h = window.innerHeight;
-        renderer.setSize(w, h);
-        uniforms.resolution.value.x = renderer.domElement.width;
-        uniforms.resolution.value.y = renderer.domElement.height;
-      }
-
-      onResize();
-      window.addEventListener('resize', onResize);
-
-      function animateShader() {
-        requestAnimationFrame(animateShader);
-        if (app.screen !== 'home') return;
-        uniforms.time.value += 0.05;
-        renderer.render(scene, camera);
-      }
-
-      animateShader();
-    }
-
-    document.addEventListener('DOMContentLoaded', initShader);
   </script>
 </body>
 </html>
