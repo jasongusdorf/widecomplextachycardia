@@ -1284,18 +1284,19 @@
     function renderHome() {
       loadState();
       var stats = getStats(CARDS);
-      document.getElementById('stat-due').textContent = stats.dueAndNew;
-      document.getElementById('stat-mastered').textContent = stats.mastered;
-      document.getElementById('stat-streak').textContent = app.streak;
+      var seen = CARDS.filter(function(c) { return !isNew(c.id); }).length;
 
       var newBtn = document.getElementById('btn-start-new');
-      var seen = CARDS.filter(function(c) { return !isNew(c.id); }).length;
+      newBtn.textContent = 'Shuffle New (' + stats.unseen + ')';
       newBtn.disabled = stats.unseen === 0;
       newBtn.style.opacity = stats.unseen === 0 ? '0.5' : '1';
 
       var oldBtn = document.getElementById('btn-start-old');
+      oldBtn.textContent = 'Shuffle Old (' + seen + ')';
       oldBtn.disabled = seen === 0;
       oldBtn.style.opacity = seen === 0 ? '0.5' : '1';
+
+      document.getElementById('btn-start-all').textContent = 'Shuffle All (' + CARDS.length + ')';
     }
 
     // ========== Card Screens ==========
