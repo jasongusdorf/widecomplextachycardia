@@ -154,8 +154,8 @@ def main():
     csv_path = filtered_dir / "metadata.csv"
     with open(csv_path, "w", newline="") as f:
         writer = csv.DictWriter(f, fieldnames=[
-            "filename", "category", "pmcid", "caption",
-            "license", "article_title", "doi",
+            "id", "filename", "category", "pmcid", "caption",
+            "license", "article_title", "doi", "imageUrl", "thumbUrl",
         ])
         writer.writeheader()
         writer.writerows(metadata_rows)
