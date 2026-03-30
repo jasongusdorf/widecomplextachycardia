@@ -202,16 +202,17 @@
         <span class="stat-label">Streak</span>
       </div>
     </div>
-    <button class="btn btn-primary" id="btn-start">Start</button>
-    <button class="btn btn-next" id="btn-reset" style="margin-top: 12px; font-size: 0.85rem;">Reset Progress</button>
+    <div class="answer-buttons" style="margin-bottom: 12px;">
+      <button class="btn btn-primary" id="btn-start-new">Shuffle New</button>
+      <button class="btn btn-mmvt" id="btn-start-old">Shuffle Old</button>
+      <button class="btn btn-pmvt" id="btn-start-all">Shuffle All</button>
+    </div>
+    <button class="btn btn-next" id="btn-reset" style="font-size: 0.85rem;">Reset Progress</button>
   </div>
 
   <!-- Card Front -->
   <div id="screen-front" class="screen">
-    <div style="width: 100%; display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px;">
-      <button class="btn btn-next" id="btn-home-front" style="padding: 8px 16px; font-size: 0.85rem;">Home</button>
-      <p class="progress" id="card-progress" style="margin-bottom: 0;">Card 1 of 10</p>
-    </div>
+    <p class="progress" id="card-progress">Card 1 of 10</p>
     <img class="ekg-image" id="ekg-front" src="" alt="EKG Strip">
     <div class="answer-buttons">
       <button class="btn btn-mmvt" id="btn-mmvt">MMVT</button>
@@ -222,9 +223,6 @@
 
   <!-- Card Back -->
   <div id="screen-back" class="screen">
-    <div style="width: 100%; display: flex; justify-content: flex-start; margin-bottom: 8px;">
-      <button class="btn btn-next" id="btn-home-back" style="padding: 8px 16px; font-size: 0.85rem;">Home</button>
-    </div>
     <div class="banner" id="result-banner"></div>
     <img class="ekg-image-small" id="ekg-back" src="" alt="EKG Strip">
     <p class="answer-label" id="correct-answer"></p>
@@ -1033,16 +1031,14 @@
       document.getElementById('stat-mastered').textContent = stats.mastered;
       document.getElementById('stat-streak').textContent = app.streak;
 
-      var startBtn = document.getElementById('btn-start');
-      startBtn.disabled = stats.dueAndNew === 0;
-      startBtn.textContent = stats.dueAndNew === 0 ? 'All caught up!' : 'Start';
-      if (stats.dueAndNew === 0) {
-        startBtn.style.opacity = '0.5';
-        startBtn.style.cursor = 'default';
-      } else {
-        startBtn.style.opacity = '1';
-        startBtn.style.cursor = 'pointer';
-      }
+      var newBtn = document.getElementById('btn-start-new');
+      var seen = CARDS.filter(function(c) { return !isNew(c.id); }).length;
+      newBtn.disabled = stats.unseen === 0;
+      newBtn.style.opacity = stats.unseen === 0 ? '0.5' : '1';
+
+      var oldBtn = document.getElementById('btn-start-old');
+      oldBtn.disabled = seen === 0;
+      oldBtn.style.opacity = seen === 0 ? '0.5' : '1';
     }
 
     // ========== Card Screens ==========
@@ -1088,14 +1084,39 @@
 
     // ========== Event Handlers ==========
 
-    function handleStart() {
-      var queue = getSessionQueue(CARDS);
+    function shuffle(arr) {
+      var a = arr.slice();
+      for (var i = a.length - 1; i > 0; i--) {
+        var j = Math.floor(Math.random() * (i + 1));
+        var tmp = a[i];
+        a[i] = a[j];
+        a[j] = tmp;
+      }
+      return a;
+    }
+
+    function startSession(queue) {
       if (queue.length === 0) return;
-      app.sessionQueue = queue;
+      app.sessionQueue = shuffle(queue);
       app.currentIndex = 0;
       app.sessionCorrect = 0;
       app.sessionTotal = 0;
       showCardFront();
+    }
+
+    function handleStartNew() {
+      var unseen = CARDS.filter(function(c) { return isNew(c.id); });
+      startSession(unseen);
+    }
+
+    function handleStartOld() {
+      var seen = CARDS.filter(function(c) { return !isNew(c.id); });
+      if (seen.length === 0) seen = CARDS;
+      startSession(seen);
+    }
+
+    function handleStartAll() {
+      startSession(CARDS);
     }
 
     function handleAnswer(answer) {
@@ -1140,15 +1161,15 @@
     function init() {
       loadState();
 
-      document.getElementById('btn-start').addEventListener('click', handleStart);
+      document.getElementById('btn-start-new').addEventListener('click', handleStartNew);
+      document.getElementById('btn-start-old').addEventListener('click', handleStartOld);
+      document.getElementById('btn-start-all').addEventListener('click', handleStartAll);
       document.getElementById('btn-mmvt').addEventListener('click', function() { handleAnswer('mmvt'); });
       document.getElementById('btn-pmvt').addEventListener('click', function() { handleAnswer('pmvt'); });
       document.getElementById('btn-notvt').addEventListener('click', function() { handleAnswer('not-vt'); });
       document.getElementById('btn-next').addEventListener('click', handleNext);
       document.getElementById('btn-done').addEventListener('click', handleDone);
       document.getElementById('btn-reset').addEventListener('click', handleReset);
-      document.getElementById('btn-home-front').addEventListener('click', handleDone);
-      document.getElementById('btn-home-back').addEventListener('click', handleDone);
 
       document.addEventListener('keydown', function(e) {
         if (app.screen === 'front') {
@@ -1158,7 +1179,7 @@
         } else if (app.screen === 'back') {
           if (e.key === ' ' || e.key === 'Enter') handleNext();
         } else if (app.screen === 'home') {
-          if (e.key === ' ' || e.key === 'Enter') handleStart();
+          if (e.key === ' ' || e.key === 'Enter') handleStartAll();
         } else if (app.screen === 'complete') {
           if (e.key === ' ' || e.key === 'Enter') handleDone();
         }
