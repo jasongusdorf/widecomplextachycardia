@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>EKG Drill: MMVT vs PMVT</title>
+  <title>EKG Drill: Wide Complex Tachycardia</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
 
@@ -83,6 +83,12 @@
       flex: 1;
     }
 
+    .btn-notvt {
+      background: #da3633;
+      color: #fff;
+      flex: 1;
+    }
+
     .btn-next {
       background: #30363d;
       color: #e6edf3;
@@ -91,7 +97,7 @@
 
     .answer-buttons {
       display: flex;
-      gap: 16px;
+      gap: 12px;
       width: 100%;
       margin-top: 20px;
     }
@@ -181,7 +187,7 @@
   <!-- Home Screen -->
   <div id="screen-home" class="screen active">
     <h1>EKG Drill</h1>
-    <h2>MMVT vs PMVT</h2>
+    <h2>Wide Complex Tachycardia</h2>
     <div class="stats">
       <div class="stat">
         <span class="stat-value" id="stat-due">0</span>
@@ -207,6 +213,7 @@
     <div class="answer-buttons">
       <button class="btn btn-mmvt" id="btn-mmvt">MMVT</button>
       <button class="btn btn-pmvt" id="btn-pmvt">PMVT</button>
+      <button class="btn btn-notvt" id="btn-notvt">Not VT</button>
     </div>
   </div>
 
@@ -653,6 +660,106 @@
           'Changing QRS axis and amplitude from complex to complex',
           'No consistent bundle branch block pattern: complexes shift in shape and direction'
         ]
+      },
+      // ===== NOT VT (Wide Complex Tachycardia Mimics) =====
+      {
+        id: 'notvt-001',
+        image: 'images/notvt-001.png',
+        answer: 'not-vt',
+        explanationBullets: [
+          'Atrial fibrillation with LBBB: wide QRS mimics VT, but the rhythm is irregularly irregular',
+          'Irregular R-R intervals are the key clue: VT is almost always regular',
+          'LBBB morphology is consistent in every beat (rSR\' pattern, not bizarre)',
+          'No AV dissociation, no fusion or capture beats'
+        ]
+      },
+      {
+        id: 'notvt-002',
+        image: 'images/notvt-002.jpg',
+        answer: 'not-vt',
+        explanationBullets: [
+          'SVT with RBBB aberrancy in a 44-year-old male',
+          'Wide QRS with classic rsR\' in V1 consistent with RBBB, not VT',
+          'Regular, narrow-appearing P waves may be visible before each QRS',
+          'Typical RBBB pattern (V1 rsR\', V6 wide S) favors supraventricular origin'
+        ]
+      },
+      {
+        id: 'notvt-003',
+        image: 'images/notvt-003.gif',
+        answer: 'not-vt',
+        explanationBullets: [
+          'Pre-excited atrial fibrillation (WPW + AFib) in a 29-year-old',
+          'Bizarre, wide QRS complexes that look like VT, but the rhythm is irregularly irregular',
+          'Varying QRS morphology from beat to beat due to different degrees of pre-excitation',
+          'Very fast rate with some extremely short R-R intervals (danger of VF if AV node blockers given)'
+        ]
+      },
+      {
+        id: 'notvt-004',
+        image: 'images/notvt-004.jpg',
+        answer: 'not-vt',
+        explanationBullets: [
+          'Sinus tachycardia with wide QRS (bundle branch block)',
+          'P waves visible before each QRS complex, with a consistent PR interval',
+          'Wide QRS due to conduction delay, not ventricular origin',
+          'Rate is appropriate for sinus tachycardia; P-wave axis is normal'
+        ]
+      },
+      {
+        id: 'notvt-005',
+        image: 'images/notvt-005.png',
+        answer: 'not-vt',
+        explanationBullets: [
+          'Atrial fibrillation with RVR and Ashman phenomenon (RBBB aberrancy)',
+          'Irregularly irregular baseline rhythm confirms AFib, not VT',
+          'Wide beats follow short-long-short R-R cycle (Ashman phenomenon)',
+          'Aberrant beats have RBBB morphology, not the bizarre shapes typical of VT'
+        ]
+      },
+      {
+        id: 'notvt-006',
+        image: 'images/notvt-006.jpg',
+        answer: 'not-vt',
+        explanationBullets: [
+          'Supraventricular tachycardia (SVT) with narrow-to-borderline QRS',
+          'Regular rhythm at a very fast rate, but QRS complexes are not truly wide',
+          'No AV dissociation; the atria and ventricles are linked 1:1',
+          'Absence of wide, bizarre QRS morphology argues against VT'
+        ]
+      },
+      {
+        id: 'notvt-007',
+        image: 'images/notvt-007.jpg',
+        answer: 'not-vt',
+        explanationBullets: [
+          'Atrial fibrillation with rapid ventricular response',
+          'Irregularly irregular rhythm is the hallmark of AFib, not VT',
+          'QRS complexes vary in timing but not in fundamental morphology',
+          'No fusion beats, no capture beats, no AV dissociation'
+        ]
+      },
+      {
+        id: 'notvt-008',
+        image: 'images/notvt-008.jpg',
+        answer: 'not-vt',
+        explanationBullets: [
+          'Wolff-Parkinson-White (WPW) pattern with sinus rhythm and delta waves',
+          'Short PR interval (<120ms) with slurred upstroke (delta wave) on QRS',
+          'Wide QRS is due to ventricular pre-excitation via accessory pathway, not VT',
+          'During tachycardia, this pattern produces wide complexes that closely mimic VT'
+        ]
+      },
+      {
+        id: 'notvt-009',
+        image: 'images/notvt-009.jpg',
+        answer: 'not-vt',
+        explanationBullets: [
+          'Atrial flutter with 2:1 conduction',
+          'Regular rhythm that can mimic VT, but flutter waves (sawtooth) visible in inferior leads',
+          'QRS complexes are conducted from the atria, not generated in the ventricles',
+          'Carotid sinus massage or adenosine would unmask the flutter waves'
+        ]
       }
     ];
 
@@ -804,8 +911,8 @@
       banner.className = 'banner ' + (correct ? 'banner-correct' : 'banner-incorrect');
 
       document.getElementById('ekg-back').src = card.image;
-      document.getElementById('correct-answer').textContent =
-        'Answer: ' + card.answer.toUpperCase();
+      var answerLabel = card.answer === 'not-vt' ? 'NOT VT' : card.answer.toUpperCase();
+      document.getElementById('correct-answer').textContent = 'Answer: ' + answerLabel;
 
       var list = document.getElementById('explanation-list');
       while (list.firstChild) {
@@ -886,6 +993,7 @@
       document.getElementById('btn-start').addEventListener('click', handleStart);
       document.getElementById('btn-mmvt').addEventListener('click', function() { handleAnswer('mmvt'); });
       document.getElementById('btn-pmvt').addEventListener('click', function() { handleAnswer('pmvt'); });
+      document.getElementById('btn-notvt').addEventListener('click', function() { handleAnswer('not-vt'); });
       document.getElementById('btn-next').addEventListener('click', handleNext);
       document.getElementById('btn-done').addEventListener('click', handleDone);
       document.getElementById('btn-reset').addEventListener('click', handleReset);
@@ -894,6 +1002,7 @@
         if (app.screen === 'front') {
           if (e.key === '1' || e.key === 'm') handleAnswer('mmvt');
           if (e.key === '2' || e.key === 'p') handleAnswer('pmvt');
+          if (e.key === '3' || e.key === 'n') handleAnswer('not-vt');
         } else if (app.screen === 'back') {
           if (e.key === ' ' || e.key === 'Enter') handleNext();
         } else if (app.screen === 'home') {
