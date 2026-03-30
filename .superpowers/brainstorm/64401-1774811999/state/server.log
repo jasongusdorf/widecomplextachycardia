@@ -1,5 +1,0 @@
-{"type":"server-started","port":55905,"host":"127.0.0.1","url_host":"localhost","url":"http://localhost:55905","screen_dir":"/Users/jasongusdorf/CodingProjects/EKG Website/.superpowers/brainstorm/64401-1774811999/content","state_dir":"/Users/jasongusdorf/CodingProjects/EKG Website/.superpowers/brainstorm/64401-1774811999/state"}
-{"type":"screen-added","file":"/Users/jasongusdorf/CodingProjects/EKG Website/.superpowers/brainstorm/64401-1774811999/content/approaches.html"}
-{"type":"screen-added","file":"/Users/jasongusdorf/CodingProjects/EKG Website/.superpowers/brainstorm/64401-1774811999/content/waiting.html"}
-{"type":"screen-added","file":"/Users/jasongusdorf/CodingProjects/EKG Website/.superpowers/brainstorm/64401-1774811999/content/demo.html"}
-{"type":"server-stopped","reason":"idle timeout"}
