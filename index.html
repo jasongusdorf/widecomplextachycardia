@@ -180,6 +180,120 @@
       color: #8a7e65;
     }
 
+    .reference-card {
+      width: 100%;
+      margin-top: 32px;
+      background: #fff8e8;
+      border: 1px solid #e0d5b8;
+      border-radius: 12px;
+      padding: 24px 28px;
+      text-align: left;
+    }
+
+    .reference-card h3 {
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin-bottom: 4px;
+      text-align: center;
+      letter-spacing: 0.04em;
+    }
+
+    .reference-card .mnemonic-subtitle {
+      font-size: 0.95rem;
+      color: #8a7e65;
+      text-align: center;
+      margin-bottom: 16px;
+      font-style: italic;
+    }
+
+    .reference-card .criteria {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 20px 0;
+    }
+
+    .reference-card .criteria li {
+      padding: 6px 0;
+      font-size: 1.05rem;
+      line-height: 1.5;
+      border-bottom: 1px solid #efe6d0;
+    }
+
+    .reference-card .criteria li:last-child {
+      border-bottom: none;
+    }
+
+    .reference-card .criteria .letter {
+      font-weight: 700;
+      color: #1f6feb;
+      font-size: 1.15rem;
+    }
+
+    .reference-card .criteria .tag {
+      display: inline-block;
+      font-size: 0.7rem;
+      font-weight: 600;
+      padding: 2px 6px;
+      border-radius: 4px;
+      margin-left: 8px;
+      vertical-align: middle;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+
+    .reference-card .tag-dx { background: #dafbe1; color: #1a7f37; }
+    .reference-card .tag-strong { background: #dbeafe; color: #1d4ed8; }
+
+    .reference-card .full-ref {
+      margin-top: 0;
+      padding-top: 16px;
+      border-top: 1px solid #e0d5b8;
+    }
+
+    .reference-card .full-ref summary {
+      cursor: pointer;
+      font-weight: 600;
+      font-size: 1rem;
+      color: #5c5340;
+    }
+
+    .reference-card .full-ref summary:hover {
+      color: #3b3b3b;
+    }
+
+    .reference-card .ref-section {
+      margin-top: 12px;
+    }
+
+    .reference-card .ref-section h4 {
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: #8a7e65;
+      margin-bottom: 6px;
+    }
+
+    .reference-card .ref-section ul {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 14px 0;
+    }
+
+    .reference-card .ref-section li {
+      padding: 3px 0;
+      font-size: 0.95rem;
+      line-height: 1.5;
+      padding-left: 16px;
+      position: relative;
+    }
+
+    .reference-card .ref-section li::before {
+      content: "•";
+      position: absolute;
+      left: 0;
+      color: #8a7e65;
+    }
+
     @media (max-width: 480px) {
       .answer-buttons { flex-direction: column; }
       .stats { flex-direction: column; align-items: center; }
@@ -211,6 +325,60 @@
       <button class="btn btn-pmvt" id="btn-start-all">Shuffle All</button>
     </div>
     <button class="btn btn-next" id="btn-reset" style="font-size: 0.85rem;">Reset Progress</button>
+
+    <div class="reference-card">
+      <h3>VT ACED</h3>
+      <p class="mnemonic-subtitle">Six findings that confirm or strongly favor VT over SVT with aberrancy</p>
+      <ul class="criteria">
+        <li><span class="letter">V</span>ery wide QRS (&gt;160ms) <span class="tag tag-strong">strongly favors</span></li>
+        <li><span class="letter">T</span>otal concordance (V1-V6 all deflect the same direction) <span class="tag tag-strong">strongly favors</span></li>
+        <li><span class="letter">A</span>V dissociation (P waves marching independently of QRS) <span class="tag tag-dx">pathognomonic</span></li>
+        <li><span class="letter">C</span>apture and fusion beats (narrow or hybrid beats during the run) <span class="tag tag-dx">pathognomonic</span></li>
+        <li><span class="letter">E</span>xtreme axis (northwest axis, between -90&deg; and +180&deg;) <span class="tag tag-strong">strongly favors</span></li>
+        <li><span class="letter">D</span>oesn't fit typical BBB (bizarre morphology, no classic rsR' or rS) <span class="tag tag-strong">strongly favors</span></li>
+      </ul>
+
+      <details class="full-ref">
+        <summary>Full reference</summary>
+
+        <div class="ref-section">
+          <h4>Pathognomonic for VT (100% specific)</h4>
+          <ul>
+            <li>AV dissociation</li>
+            <li>Fusion beats (hybrid complexes where sinus and VT impulses collide)</li>
+            <li>Capture beats (a narrow sinus beat sneaks through during the wide complex run)</li>
+          </ul>
+        </div>
+
+        <div class="ref-section">
+          <h4>Strongly favor VT</h4>
+          <ul>
+            <li>Concordance (positive or negative in V1-V6)</li>
+            <li>Northwest axis (extreme axis deviation)</li>
+            <li>QRS &gt; 160ms (the wider, the more likely VT)</li>
+            <li>Brugada sign (onset of QRS to nadir of S wave &gt;100ms in any precordial lead)</li>
+            <li>Josephson sign (notching near the nadir of the S wave)</li>
+            <li>R-wave peak time &gt;50ms in lead II</li>
+            <li>No RS complex in any precordial lead (all Q/QS, or all R)</li>
+            <li>RS interval &gt;100ms in any precordial lead</li>
+            <li>Lead aVR: initial R wave, R &gt;40ms, or notch on descending limb (Vereckei criteria)</li>
+            <li>Morphology doesn't fit typical RBBB or LBBB (bizarre QRS)</li>
+            <li>History of structural heart disease or prior MI</li>
+          </ul>
+        </div>
+
+        <div class="ref-section">
+          <h4>Favor SVT with aberrancy</h4>
+          <ul>
+            <li>Typical RBBB pattern (rsR' in V1, wide S in V6)</li>
+            <li>Typical LBBB pattern (narrow r, swift S descent in V1)</li>
+            <li>Previous ECG shows same BBB morphology in sinus rhythm</li>
+            <li>Young patient, no structural heart disease</li>
+            <li>Irregular rhythm (favors AFib with aberrancy over VT)</li>
+          </ul>
+        </div>
+      </details>
+    </div>
   </div>
 
   <!-- Card Front -->
