@@ -139,6 +139,7 @@ def main():
             total_matched += 1
 
             metadata_rows.append({
+                "id": dest_name,
                 "filename": dest_name,
                 "category": category,
                 "pmcid": pmcid,
@@ -146,6 +147,8 @@ def main():
                 "license": license_text,
                 "article_title": entry.get("title", ""),
                 "doi": entry.get("doi", ""),
+                "imageUrl": f"{category}/{dest_name}",
+                "thumbUrl": f"{category}/{dest_name}",
             })
 
     csv_path = filtered_dir / "metadata.csv"
