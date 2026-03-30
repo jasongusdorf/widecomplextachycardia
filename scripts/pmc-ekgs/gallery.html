@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EKG Curation Gallery</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: #f5f5f5;
+      color: #111;
+      min-height: 100vh;
+    }
+
+    /* Toolbar */
+    #toolbar {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: #fff;
+      border-bottom: 1px solid #e5e7eb;
+      padding: 12px 20px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 12px;
+    }
+
+    #toolbar h1 {
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: #111;
+      white-space: nowrap;
+    }
+
+    #stats {
+      font-size: 0.82rem;
+      color: #6b7280;
+      white-space: nowrap;
+    }
+
+    #filter-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      flex: 1;
+    }
+
+    .filter-btn {
+      padding: 4px 12px;
+      border: 1px solid #d1d5db;
+      border-radius: 9999px;
+      background: #fff;
+      font-size: 0.82rem;
+      cursor: pointer;
+      color: #374151;
+      transition: background 0.15s, color 0.15s, border-color 0.15s;
+    }
+
+    .filter-btn:hover {
+      border-color: #2563eb;
+      color: #2563eb;
+    }
+
+    .filter-btn.active {
+      background: #2563eb;
+      color: #fff;
+      border-color: #2563eb;
+    }
+
+    #export-btn {
+      padding: 6px 16px;
+      background: #2563eb;
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      cursor: pointer;
+      white-space: nowrap;
+      transition: background 0.15s;
+    }
+
+    #export-btn:hover { background: #1d4ed8; }
+
+    /* Grid */
+    #grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 16px;
+      padding: 20px;
+    }
+
+    /* Card */
+    .card {
+      background: #fff;
+      border-radius: 10px;
+      border: 2px solid transparent;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      transition: border-color 0.2s, opacity 0.2s, box-shadow 0.2s;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+    }
+
+    .card:hover { box-shadow: 0 4px 12px rgba(0,0,0,0.12); }
+
+    .card.approved { border-color: #16a34a; }
+
+    .card.rejected { opacity: 0.4; }
+
+    .card-thumb {
+      width: 100%;
+      aspect-ratio: 4 / 3;
+      object-fit: cover;
+      cursor: zoom-in;
+      background: #f3f4f6;
+      display: block;
+    }
+
+    .card-body {
+      padding: 12px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      flex: 1;
+    }
+
+    .card-caption {
+      font-size: 0.82rem;
+      color: #374151;
+      line-height: 1.45;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+
+    .card-meta {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 0.78rem;
+      color: #6b7280;
+      gap: 8px;
+    }
+
+    .card-meta a {
+      color: #2563eb;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .card-meta a:hover { text-decoration: underline; }
+
+    .card-license {
+      font-size: 0.75rem;
+      color: #9ca3af;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .card-controls {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding-top: 4px;
+      border-top: 1px solid #f3f4f6;
+      margin-top: auto;
+    }
+
+    .btn-approve,
+    .btn-reject {
+      padding: 5px 14px;
+      border-radius: 6px;
+      border: 1px solid transparent;
+      font-size: 0.82rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.15s, color 0.15s, border-color 0.15s;
+    }
+
+    .btn-approve {
+      background: #f0fdf4;
+      color: #16a34a;
+      border-color: #bbf7d0;
+    }
+
+    .btn-approve:hover,
+    .btn-approve.active {
+      background: #16a34a;
+      color: #fff;
+      border-color: #16a34a;
+    }
+
+    .btn-reject {
+      background: #fef2f2;
+      color: #dc2626;
+      border-color: #fecaca;
+    }
+
+    .btn-reject:hover,
+    .btn-reject.active {
+      background: #dc2626;
+      color: #fff;
+      border-color: #dc2626;
+    }
+
+    .card-category {
+      margin-left: auto;
+      padding: 4px 8px;
+      border: 1px solid #d1d5db;
+      border-radius: 6px;
+      font-size: 0.78rem;
+      background: #fff;
+      color: #374151;
+      cursor: pointer;
+    }
+
+    /* Empty state */
+    #empty-state {
+      grid-column: 1 / -1;
+      text-align: center;
+      padding: 60px 20px;
+      color: #9ca3af;
+      font-size: 0.95rem;
+    }
+
+    /* Lightbox */
+    #lightbox {
+      display: none;
+      position: fixed;
+      inset: 0;
+      z-index: 200;
+      background: rgba(0,0,0,0.85);
+      align-items: center;
+      justify-content: center;
+      cursor: zoom-out;
+    }
+
+    #lightbox.open { display: flex; }
+
+    #lightbox img {
+      max-width: 90vw;
+      max-height: 90vh;
+      object-fit: contain;
+      border-radius: 4px;
+      box-shadow: 0 8px 40px rgba(0,0,0,0.6);
+      cursor: default;
+    }
+
+    #lightbox-close {
+      position: absolute;
+      top: 18px;
+      right: 22px;
+      background: none;
+      border: none;
+      color: #fff;
+      font-size: 2rem;
+      cursor: pointer;
+      line-height: 1;
+      opacity: 0.8;
+    }
+
+    #lightbox-close:hover { opacity: 1; }
+
+    /* Error banner */
+    #load-error {
+      display: none;
+      background: #fef2f2;
+      color: #dc2626;
+      border: 1px solid #fecaca;
+      border-radius: 8px;
+      padding: 14px 20px;
+      margin: 20px;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+<div id="toolbar">
+  <h1>EKG Curation Gallery</h1>
+  <span id="stats"></span>
+  <div id="filter-group"></div>
+  <button id="export-btn" type="button">Export JSON</button>
+</div>
+
+<div id="load-error"></div>
+
+<div id="grid"></div>
+
+<!-- Lightbox -->
+<div id="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer">
+  <button id="lightbox-close" type="button" aria-label="Close">&times;</button>
+  <img id="lightbox-img" src="" alt="">
+</div>
+
+<!-- Data source: must define window.GALLERY_DATA as an array -->
+<script src="data/filtered/gallery-data.js"></script>
+<script>
+(function () {
+  'use strict';
+
+  // ── Constants ────────────────────────────────────────────────────────────────
+  const STORAGE_KEY = 'ekg-selections';
+  const CATEGORIES  = ['MMVT', 'PMVT', 'NotVT'];
+  const FILTERS     = ['All', 'MMVT', 'PMVT', 'NotVT', 'Pending', 'Approved', 'Rejected'];
+  const PMC_BASE    = 'https://www.ncbi.nlm.nih.gov/pmc/articles/';
+
+  // ── State ────────────────────────────────────────────────────────────────────
+  let data        = [];
+  let selections  = {};   // { [id]: { status: 'approved'|'rejected'|'pending', category } }
+  let activeFilter = 'All';
+
+  // ── Persistence ──────────────────────────────────────────────────────────────
+  function loadSelections() {
+    try {
+      const raw = localStorage.getItem(STORAGE_KEY);
+      if (raw) selections = JSON.parse(raw);
+    } catch (_) {
+      selections = {};
+    }
+  }
+
+  function saveSelections() {
+    try {
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(selections));
+    } catch (_) {}
+  }
+
+  // ── Data validation ───────────────────────────────────────────────────────────
+  function loadData() {
+    if (!Array.isArray(window.GALLERY_DATA)) {
+      showError('gallery-data.js did not expose a GALLERY_DATA array. Check the file and reload.');
+      return false;
+    }
+    data = window.GALLERY_DATA;
+    return true;
+  }
+
+  function showError(msg) {
+    const el = document.getElementById('load-error');
+    el.textContent = msg;
+    el.style.display = 'block';
+  }
+
+  // ── Helpers ───────────────────────────────────────────────────────────────────
+  function getStatus(id) {
+    return (selections[id] && selections[id].status) || 'pending';
+  }
+
+  function getCategory(id, fallback) {
+    return (selections[id] && selections[id].category) || fallback || CATEGORIES[0];
+  }
+
+  function setSelection(id, patch) {
+    if (!selections[id]) {
+      selections[id] = { status: 'pending', category: CATEGORIES[0] };
+    }
+    Object.assign(selections[id], patch);
+    saveSelections();
+  }
+
+  // ── Stats ─────────────────────────────────────────────────────────────────────
+  function updateStats() {
+    let approved = 0, rejected = 0, pending = 0;
+    for (const item of data) {
+      const s = getStatus(item.id);
+      if (s === 'approved') approved++;
+      else if (s === 'rejected') rejected++;
+      else pending++;
+    }
+    const el = document.getElementById('stats');
+    el.textContent =
+      data.length + ' total \u00b7 ' +
+      approved   + ' approved \u00b7 ' +
+      rejected   + ' rejected \u00b7 ' +
+      pending    + ' pending';
+  }
+
+  // ── Filter toolbar ────────────────────────────────────────────────────────────
+  function buildFilterButtons() {
+    const group = document.getElementById('filter-group');
+    for (const f of FILTERS) {
+      const btn = document.createElement('button');
+      btn.type = 'button';
+      btn.className = 'filter-btn' + (f === activeFilter ? ' active' : '');
+      btn.textContent = f;
+      btn.addEventListener('click', function () {
+        activeFilter = f;
+        document.querySelectorAll('.filter-btn').forEach(function (b) {
+          b.classList.toggle('active', b.textContent === f);
+        });
+        renderGrid();
+      });
+      group.appendChild(btn);
+    }
+  }
+
+  function itemMatchesFilter(item) {
+    if (activeFilter === 'All') return true;
+    const status   = getStatus(item.id);
+    const category = getCategory(item.id, item.category);
+    if (activeFilter === 'Approved') return status === 'approved';
+    if (activeFilter === 'Rejected') return status === 'rejected';
+    if (activeFilter === 'Pending')  return status === 'pending';
+    return category === activeFilter;
+  }
+
+  // ── Card construction ─────────────────────────────────────────────────────────
+  function buildCard(item) {
+    const status   = getStatus(item.id);
+    const category = getCategory(item.id, item.category);
+
+    const card = document.createElement('div');
+    card.className = 'card' + (status === 'approved' ? ' approved' : '') + (status === 'rejected' ? ' rejected' : '');
+    card.dataset.id = item.id;
+
+    // Thumbnail
+    const img = document.createElement('img');
+    img.className = 'card-thumb';
+    img.alt = item.caption || '';
+    img.src = item.thumbUrl || item.imageUrl || '';
+    img.loading = 'lazy';
+    img.addEventListener('click', function () {
+      openLightbox(item.imageUrl || item.thumbUrl || '', item.caption || '');
+    });
+    card.appendChild(img);
+
+    // Body
+    const body = document.createElement('div');
+    body.className = 'card-body';
+
+    // Caption
+    const caption = document.createElement('p');
+    caption.className = 'card-caption';
+    caption.textContent = item.caption || '(no caption)';
+    body.appendChild(caption);
+
+    // Meta row
+    const meta = document.createElement('div');
+    meta.className = 'card-meta';
+
+    const pmcLink = document.createElement('a');
+    pmcLink.href   = PMC_BASE + encodeURIComponent(item.pmcid) + '/';
+    pmcLink.target = '_blank';
+    pmcLink.rel    = 'noopener noreferrer';
+    pmcLink.textContent = item.pmcid || '';
+    meta.appendChild(pmcLink);
+
+    const license = document.createElement('span');
+    license.className = 'card-license';
+    license.textContent = item.license || '';
+    meta.appendChild(license);
+
+    body.appendChild(meta);
+
+    // Controls
+    const controls = document.createElement('div');
+    controls.className = 'card-controls';
+
+    const approveBtn = document.createElement('button');
+    approveBtn.type = 'button';
+    approveBtn.className = 'btn-approve' + (status === 'approved' ? ' active' : '');
+    approveBtn.textContent = 'Approve';
+    approveBtn.addEventListener('click', function () {
+      const current = getStatus(item.id);
+      const next    = current === 'approved' ? 'pending' : 'approved';
+      setSelection(item.id, { status: next });
+      refreshCard(item);
+      updateStats();
+    });
+
+    const rejectBtn = document.createElement('button');
+    rejectBtn.type = 'button';
+    rejectBtn.className = 'btn-reject' + (status === 'rejected' ? ' active' : '');
+    rejectBtn.textContent = 'Reject';
+    rejectBtn.addEventListener('click', function () {
+      const current = getStatus(item.id);
+      const next    = current === 'rejected' ? 'pending' : 'rejected';
+      setSelection(item.id, { status: next });
+      refreshCard(item);
+      updateStats();
+    });
+
+    const catSelect = document.createElement('select');
+    catSelect.className = 'card-category';
+    catSelect.setAttribute('aria-label', 'Category');
+    for (const cat of CATEGORIES) {
+      const opt = document.createElement('option');
+      opt.value = cat;
+      opt.textContent = cat;
+      if (cat === category) opt.selected = true;
+      catSelect.appendChild(opt);
+    }
+    catSelect.addEventListener('change', function () {
+      setSelection(item.id, { category: catSelect.value });
+    });
+
+    controls.appendChild(approveBtn);
+    controls.appendChild(rejectBtn);
+    controls.appendChild(catSelect);
+    body.appendChild(controls);
+
+    card.appendChild(body);
+    return card;
+  }
+
+  // Re-render a single card in-place after a status change.
+  function refreshCard(item) {
+    const existing = document.querySelector('.card[data-id="' + item.id + '"]');
+    if (!existing) return;
+
+    // If the current filter no longer matches, remove the card.
+    if (!itemMatchesFilter(item)) {
+      existing.remove();
+      checkEmpty();
+      return;
+    }
+
+    const replacement = buildCard(item);
+    existing.replaceWith(replacement);
+  }
+
+  // ── Grid render ────────────────────────────────────────────────────────────────
+  function renderGrid() {
+    const grid = document.getElementById('grid');
+    // Remove all existing cards (keep empty-state placeholder if any)
+    const cards = grid.querySelectorAll('.card');
+    cards.forEach(function (c) { c.remove(); });
+    const es = grid.querySelector('#empty-state');
+    if (es) es.remove();
+
+    const visible = data.filter(itemMatchesFilter);
+    if (visible.length === 0) {
+      const empty = document.createElement('div');
+      empty.id = 'empty-state';
+      empty.textContent = 'No images match this filter.';
+      grid.appendChild(empty);
+      return;
+    }
+
+    const fragment = document.createDocumentFragment();
+    for (const item of visible) {
+      fragment.appendChild(buildCard(item));
+    }
+    grid.appendChild(fragment);
+  }
+
+  function checkEmpty() {
+    const grid  = document.getElementById('grid');
+    const cards = grid.querySelectorAll('.card');
+    if (cards.length === 0) {
+      const empty = document.createElement('div');
+      empty.id = 'empty-state';
+      empty.textContent = 'No images match this filter.';
+      grid.appendChild(empty);
+    }
+  }
+
+  // ── Lightbox ───────────────────────────────────────────────────────────────────
+  function openLightbox(src, alt) {
+    const lb  = document.getElementById('lightbox');
+    const img = document.getElementById('lightbox-img');
+    img.src = src;
+    img.alt = alt;
+    lb.classList.add('open');
+  }
+
+  function closeLightbox() {
+    const lb  = document.getElementById('lightbox');
+    const img = document.getElementById('lightbox-img');
+    lb.classList.remove('open');
+    img.src = '';
+    img.alt = '';
+  }
+
+  document.getElementById('lightbox').addEventListener('click', function (e) {
+    // Close when clicking the backdrop (not the image itself)
+    if (e.target !== document.getElementById('lightbox-img')) {
+      closeLightbox();
+    }
+  });
+
+  document.getElementById('lightbox-close').addEventListener('click', closeLightbox);
+
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape') closeLightbox();
+  });
+
+  // ── Export ─────────────────────────────────────────────────────────────────────
+  document.getElementById('export-btn').addEventListener('click', function () {
+    const approved = data
+      .filter(function (item) { return getStatus(item.id) === 'approved'; })
+      .map(function (item) {
+        return {
+          id:       item.id,
+          pmcid:    item.pmcid,
+          imageUrl: item.imageUrl,
+          caption:  item.caption,
+          license:  item.license,
+          category: getCategory(item.id, item.category),
+        };
+      });
+
+    const blob = new Blob(
+      [JSON.stringify({ exported: new Date().toISOString(), count: approved.length, selections: approved }, null, 2)],
+      { type: 'application/json' }
+    );
+    const url = URL.createObjectURL(blob);
+    const a   = document.createElement('a');
+    a.href     = url;
+    a.download = 'selections.json';
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    URL.revokeObjectURL(url);
+  });
+
+  // ── Boot ───────────────────────────────────────────────────────────────────────
+  loadSelections();
+  if (loadData()) {
+    buildFilterButtons();
+    updateStats();
+    renderGrid();
+  }
+
+}());
+</script>
+</body>
+</html>
