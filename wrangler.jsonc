@@ -6,9 +6,13 @@
     "enabled": true
   },
   "assets": {
-    "directory": "."
+    "directory": "./public"
   },
   "compatibility_flags": [
     "nodejs_compat"
+  ],
+  "routes": [
+    { "pattern": "widecomplextachycardia.com", "custom_domain": true },
+    { "pattern": "www.widecomplextachycardia.com", "custom_domain": true }
   ]
 }
