@@ -89,11 +89,70 @@
     .tag-dx { background: #dafbe1; color: #1a7f37; }
     .tag-strong { background: #dbeafe; color: #1d4ed8; }
     .tag-svt { background: #fef3c7; color: #92400e; }
+
+    .ekg-diagram {
+      display: block;
+      margin: 12px auto 4px;
+      max-width: 100%;
+      height: auto;
+    }
+    .ekg-label {
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 10px;
+      fill: #8a7e65;
+    }
+    .ekg-label-bold {
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 10px;
+      fill: #4a4234;
+      font-weight: 700;
+    }
+    .ekg-trace {
+      fill: none;
+      stroke: #2c2c2c;
+      stroke-width: 1.5;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+    .ekg-trace-vt {
+      fill: none;
+      stroke: #b91c1c;
+      stroke-width: 1.5;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+    .ekg-trace-normal {
+      fill: none;
+      stroke: #1a7f37;
+      stroke-width: 1.5;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+    .ekg-trace-thin {
+      fill: none;
+      stroke: #b91c1c;
+      stroke-width: 1;
+      stroke-dasharray: 3,2;
+    }
+    .ekg-annotation {
+      fill: none;
+      stroke: #1f6feb;
+      stroke-width: 1;
+    }
+    .ekg-annotation-text {
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 9px;
+      fill: #1f6feb;
+    }
+    .ekg-grid {
+      stroke: #e8dcc4;
+      stroke-width: 0.5;
+    }
   </style>
 </head>
 <body>
   <div class="container">
-    <a href="index.html" class="back-link">Back to Drill</a>
+    <a href="index.html" class="back-link">Home</a>
     <h1>Full EKG Criteria</h1>
     <p class="subtitle">Click any criterion to expand its explanation. Every finding you need to distinguish VT from SVT with aberrancy.</p>
 
@@ -101,17 +160,89 @@
     <div class="section-card">
       <details class="ref-item">
         <summary>AV dissociation</summary>
-        <div class="ref-explain">The atria and ventricles beat independently. P waves march at their own rate, unrelated to the QRS complexes. This proves the wide complex rhythm originates in the ventricles, because in SVT the atria and ventricles are linked. Look for P waves "walking through" the QRS complexes at a slower rate, especially visible in leads II and V1.</div>
+        <div class="ref-explain">The atria and ventricles beat independently. P waves march at their own rate, unrelated to the QRS complexes. This proves the wide complex rhythm originates in the ventricles, because in SVT the atria and ventricles are linked. Look for P waves "walking through" the QRS complexes at a slower rate, especially visible in leads II and V1.
+          <svg class="ekg-diagram" viewBox="0 0 360 80" width="360" height="80">
+            <!-- baseline -->
+            <line x1="0" y1="45" x2="360" y2="45" class="ekg-grid"/>
+            <!-- Wide QRS complexes (VT rate) -->
+            <polyline class="ekg-trace-vt" points="0,45 30,45 33,48 36,20 42,70 48,15 54,65 57,42 60,45 100,45 103,48 106,20 112,70 118,15 124,65 127,42 130,45 170,45 173,48 176,20 182,70 188,15 194,65 197,42 200,45 240,45 243,48 246,20 252,70 258,15 264,65 267,42 270,45 310,45 313,48 316,20 322,70 328,15 334,65 337,42 340,45 360,45"/>
+            <!-- Independent P waves (slower sinus rate) - small bumps -->
+            <polyline class="ekg-trace-normal" points="13,45 16,40 20,36 24,40 27,45"/>
+            <polyline class="ekg-trace-normal" points="88,45 91,40 95,36 99,40 102,45"/>
+            <polyline class="ekg-trace-normal" points="162,45 165,40 169,36 173,40 176,45"/>
+            <polyline class="ekg-trace-normal" points="237,45 240,40 244,36 248,40 251,45"/>
+            <polyline class="ekg-trace-normal" points="311,45 314,40 318,36 322,40 325,45"/>
+            <!-- P labels -->
+            <text x="18" y="30" class="ekg-annotation-text">P</text>
+            <text x="93" y="30" class="ekg-annotation-text">P</text>
+            <text x="167" y="30" class="ekg-annotation-text">P</text>
+            <text x="242" y="30" class="ekg-annotation-text">P</text>
+            <text x="316" y="30" class="ekg-annotation-text">P</text>
+            <!-- legend -->
+            <text x="5" y="75" class="ekg-label">P waves (green) march independently of wide QRS complexes (red)</text>
+          </svg>
+        </div>
       </details>
 
       <details class="ref-item">
         <summary>Fusion beats</summary>
-        <div class="ref-explain">A hybrid QRS complex that occurs when a sinus impulse and a ventricular impulse activate the ventricles simultaneously. The resulting QRS is intermediate in morphology between the patient's normal sinus beat and the wide VT beat. Fusion beats prove two independent pacemakers are firing (sinus node and ventricular focus), which only happens in VT.</div>
+        <div class="ref-explain">A hybrid QRS complex that occurs when a sinus impulse and a ventricular impulse activate the ventricles simultaneously. The resulting QRS is intermediate in morphology between the patient's normal sinus beat and the wide VT beat. Fusion beats prove two independent pacemakers are firing (sinus node and ventricular focus), which only happens in VT.
+          <svg class="ekg-diagram" viewBox="0 0 360 90" width="360" height="90">
+            <line x1="0" y1="45" x2="360" y2="45" class="ekg-grid"/>
+            <!-- Normal sinus beat -->
+            <polyline class="ekg-trace-normal" points="10,45 18,45 20,42 23,38 26,42 28,45 30,47 32,22 36,60 38,45 48,45"/>
+            <text x="14" y="14" class="ekg-label-bold">Normal</text>
+            <!-- Arrow -->
+            <text x="55" y="48" class="ekg-label" style="font-size:14px">+</text>
+            <!-- VT beat -->
+            <polyline class="ekg-trace-vt" points="70,45 75,45 78,50 81,18 87,72 93,14 99,68 102,42 105,45 120,45"/>
+            <text x="78" y="14" class="ekg-label-bold">VT beat</text>
+            <!-- Arrow -->
+            <text x="128" y="48" class="ekg-label" style="font-size:14px">=</text>
+            <!-- Fusion beat (intermediate) -->
+            <polyline class="ekg-trace" points="142,45 148,45 150,43 153,39 155,43 157,45 159,48 162,24 166,62 170,20 174,58 176,43 178,45 195,45"/>
+            <text x="148" y="14" class="ekg-label-bold" style="fill:#1f6feb">Fusion</text>
+            <!-- Bracket showing intermediate width -->
+            <line x1="159" y1="72" x2="176" y2="72" class="ekg-annotation"/>
+            <text x="152" y="82" class="ekg-annotation-text">intermediate width</text>
+            <!-- Divider -->
+            <line x1="215" y1="10" x2="215" y2="75" stroke="#e0d5b8" stroke-width="1" stroke-dasharray="4,3"/>
+            <!-- In-context example -->
+            <text x="225" y="14" class="ekg-label">In context (arrow = fusion beat):</text>
+            <!-- VT run with fusion beat in the middle -->
+            <polyline class="ekg-trace-vt" points="220,45 225,45 228,50 231,18 237,72 243,14 249,68 252,42 255,45 275,45 278,50 281,18 287,72 293,14 299,68 302,42 305,45"/>
+            <!-- Fusion beat -->
+            <polyline class="ekg-trace" points="255,45 261,45 263,43 265,39 267,43 269,45 271,48 273,26 276,60 279,22 282,56 284,43 286,45" style="stroke:#1f6feb"/>
+            <!-- Arrow pointing to fusion -->
+            <line x1="275" y1="78" x2="275" y2="68" class="ekg-annotation"/>
+            <polygon points="275,65 273,70 277,70" fill="#1f6feb"/>
+          </svg>
+        </div>
       </details>
 
       <details class="ref-item">
         <summary>Capture beats</summary>
-        <div class="ref-explain">A narrow, normal-looking QRS complex that appears suddenly in the middle of a wide complex tachycardia. It occurs when a sinus impulse "captures" the ventricles through the normal conduction system during a brief window when the ventricles are not refractory. A narrow beat during a wide complex run proves the wide beats are ventricular in origin.</div>
+        <div class="ref-explain">A narrow, normal-looking QRS complex that appears suddenly in the middle of a wide complex tachycardia. It occurs when a sinus impulse "captures" the ventricles through the normal conduction system during a brief window when the ventricles are not refractory. A narrow beat during a wide complex run proves the wide beats are ventricular in origin.
+          <svg class="ekg-diagram" viewBox="0 0 360 80" width="360" height="80">
+            <line x1="0" y1="45" x2="360" y2="45" class="ekg-grid"/>
+            <!-- VT beats -->
+            <polyline class="ekg-trace-vt" points="0,45 15,45 18,50 21,18 27,72 33,14 39,68 42,42 45,45 75,45 78,50 81,18 87,72 93,14 99,68 102,42 105,45"/>
+            <!-- Capture beat (narrow, normal) -->
+            <polyline class="ekg-trace-normal" points="105,45 127,45 129,42 132,38 135,42 137,45 139,47 141,20 145,62 147,45 155,45"/>
+            <!-- P wave before capture -->
+            <text x="128" y="30" class="ekg-annotation-text">P</text>
+            <!-- More VT beats -->
+            <polyline class="ekg-trace-vt" points="155,45 170,45 173,50 176,18 182,72 188,14 194,68 197,42 200,45 230,45 233,50 236,18 242,72 248,14 254,68 257,42 260,45 290,45 293,50 296,18 302,72 308,14 314,68 317,42 320,45 360,45"/>
+            <!-- Arrow to capture beat -->
+            <line x1="141" y1="72" x2="141" y2="66" class="ekg-annotation"/>
+            <polygon points="141,63 139,68 143,68" fill="#1f6feb"/>
+            <text x="120" y="76" class="ekg-annotation-text">capture beat</text>
+            <!-- Labels -->
+            <text x="20" y="12" class="ekg-label">wide VT</text>
+            <text x="130" y="12" class="ekg-label" style="fill:#1a7f37">narrow!</text>
+            <text x="220" y="12" class="ekg-label">wide VT continues</text>
+          </svg>
+        </div>
       </details>
     </div>
 
@@ -119,37 +250,213 @@
     <div class="section-card">
       <details class="ref-item">
         <summary>Concordance (positive or negative in V1-V6)</summary>
-        <div class="ref-explain">All six precordial leads (V1 through V6) show QRS complexes deflecting in the same direction: either all predominantly positive (positive concordance) or all predominantly negative (negative concordance). In normal conduction and typical BBB, the QRS transitions from negative to positive across the precordial leads. When all leads agree, the impulse is coming from a single ventricular focus, not through the normal His-Purkinje system.</div>
+        <div class="ref-explain">All six precordial leads (V1 through V6) show QRS complexes deflecting in the same direction: either all predominantly positive (positive concordance) or all predominantly negative (negative concordance). In normal conduction and typical BBB, the QRS transitions from negative to positive across the precordial leads. When all leads agree, the impulse is coming from a single ventricular focus, not through the normal His-Purkinje system.
+          <svg class="ekg-diagram" viewBox="0 0 360 75" width="360" height="75">
+            <!-- Positive concordance -->
+            <text x="5" y="10" class="ekg-label-bold">Positive concordance:</text>
+            <!-- V1-V6 mini strips, all upward -->
+            <text x="5" y="35" class="ekg-label">V1</text>
+            <polyline class="ekg-trace-vt" points="20,38 24,38 26,16 30,44 33,38 48,38"/>
+            <text x="53" y="35" class="ekg-label">V2</text>
+            <polyline class="ekg-trace-vt" points="68,38 72,38 74,14 78,44 81,38 96,38"/>
+            <text x="101" y="35" class="ekg-label">V3</text>
+            <polyline class="ekg-trace-vt" points="116,38 120,38 122,15 126,44 129,38 144,38"/>
+            <text x="149" y="35" class="ekg-label">V4</text>
+            <polyline class="ekg-trace-vt" points="164,38 168,38 170,16 174,44 177,38 192,38"/>
+            <text x="197" y="35" class="ekg-label">V5</text>
+            <polyline class="ekg-trace-vt" points="212,38 216,38 218,14 222,44 225,38 240,38"/>
+            <text x="245" y="35" class="ekg-label">V6</text>
+            <polyline class="ekg-trace-vt" points="260,38 264,38 266,15 270,44 273,38 288,38"/>
+            <text x="295" y="35" class="ekg-label" style="fill:#b91c1c">all up = VT</text>
+            <!-- Negative concordance -->
+            <text x="5" y="55" class="ekg-label-bold">Negative concordance:</text>
+            <text x="5" y="70" class="ekg-label">V1</text>
+            <polyline class="ekg-trace-vt" points="20,63 24,63 26,58 30,72 33,63 48,63"/>
+            <text x="53" y="70" class="ekg-label">V2</text>
+            <polyline class="ekg-trace-vt" points="68,63 72,63 74,58 78,73 81,63 96,63"/>
+            <text x="101" y="70" class="ekg-label">V3</text>
+            <polyline class="ekg-trace-vt" points="116,63 120,63 122,58 126,73 129,63 144,63"/>
+            <text x="149" y="70" class="ekg-label">V4</text>
+            <polyline class="ekg-trace-vt" points="164,63 168,63 170,58 174,72 177,63 192,63"/>
+            <text x="197" y="70" class="ekg-label">V5</text>
+            <polyline class="ekg-trace-vt" points="212,63 216,63 218,58 222,73 225,63 240,63"/>
+            <text x="245" y="70" class="ekg-label">V6</text>
+            <polyline class="ekg-trace-vt" points="260,63 264,63 266,58 270,72 273,63 288,63"/>
+            <text x="295" y="70" class="ekg-label" style="fill:#b91c1c">all down = VT</text>
+          </svg>
+        </div>
       </details>
 
       <details class="ref-item">
         <summary>Northwest axis (extreme axis deviation)</summary>
-        <div class="ref-explain">The QRS axis falls between -90 and +180 degrees, meaning it points up and to the right. On the ECG, this produces negative QRS in both leads I and aVF. This "no man's land" axis is nearly impossible to produce through the normal conduction system, even with aberrancy, and strongly suggests a ventricular origin.</div>
+        <div class="ref-explain">The QRS axis falls between -90 and +180 degrees, meaning it points up and to the right. On the ECG, this produces negative QRS in both leads I and aVF. This "no man's land" axis is nearly impossible to produce through the normal conduction system, even with aberrancy, and strongly suggests a ventricular origin.
+          <svg class="ekg-diagram" viewBox="0 0 360 100" width="360" height="100">
+            <!-- Axis circle -->
+            <circle cx="70" cy="50" r="40" fill="none" stroke="#e0d5b8" stroke-width="1"/>
+            <line x1="30" y1="50" x2="110" y2="50" stroke="#e0d5b8" stroke-width="0.5"/>
+            <line x1="70" y1="10" x2="70" y2="90" stroke="#e0d5b8" stroke-width="0.5"/>
+            <!-- Quadrant labels -->
+            <text x="84" y="44" class="ekg-label" style="font-size:8px">Normal</text>
+            <text x="84" y="64" class="ekg-label" style="font-size:8px">RAD</text>
+            <text x="36" y="44" class="ekg-label" style="font-size:8px">LAD</text>
+            <!-- Northwest shading -->
+            <path d="M70,50 L30,50 A40,40 0 0,0 70,10 Z" fill="#b91c1c" fill-opacity="0.15"/>
+            <path d="M70,50 L70,90 A40,40 0 0,0 30,50 Z" fill="#b91c1c" fill-opacity="0.1"/>
+            <text x="36" y="78" class="ekg-label" style="font-size:7px;fill:#b91c1c">Northwest</text>
+            <text x="38" y="36" class="ekg-label" style="font-size:7px;fill:#b91c1c">"no man's</text>
+            <text x="42" y="44" class="ekg-label" style="font-size:7px;fill:#b91c1c">land"</text>
+            <!-- Arrow pointing northwest -->
+            <line x1="70" y1="50" x2="42" y2="22" stroke="#b91c1c" stroke-width="2"/>
+            <polygon points="40,20 46,22 42,28" fill="#b91c1c"/>
+            <!-- Degree labels -->
+            <text x="112" y="53" class="ekg-label" style="font-size:8px">0°</text>
+            <text x="67" y="8" class="ekg-label" style="font-size:8px">-90°</text>
+            <text x="62" y="98" class="ekg-label" style="font-size:8px">+90°</text>
+            <text x="16" y="53" class="ekg-label" style="font-size:8px">±180°</text>
+            <!-- Lead examples -->
+            <text x="145" y="18" class="ekg-label-bold">Lead I: negative</text>
+            <line x1="145" y1="35" x2="230" y2="35" class="ekg-grid"/>
+            <polyline class="ekg-trace-vt" points="145,35 160,35 163,32 167,50 173,35 190,35"/>
+            <text x="145" y="62" class="ekg-label-bold">Lead aVF: negative</text>
+            <line x1="145" y1="78" x2="230" y2="78" class="ekg-grid"/>
+            <polyline class="ekg-trace-vt" points="145,78 160,78 163,75 167,93 173,78 190,78"/>
+            <text x="240" y="55" class="ekg-label" style="fill:#b91c1c">Both negative</text>
+            <text x="240" y="65" class="ekg-label" style="fill:#b91c1c">= northwest axis</text>
+          </svg>
+        </div>
       </details>
 
       <details class="ref-item">
         <summary>QRS &gt; 160ms</summary>
-        <div class="ref-explain">The wider the QRS, the more likely the rhythm is VT. Typical RBBB aberrancy produces a QRS of 120-140ms. LBBB aberrancy rarely exceeds 160ms. A QRS wider than 160ms suggests the impulse is spreading slowly through ventricular muscle rather than using the fast His-Purkinje conduction system. QRS &gt;200ms in the absence of drugs or hyperkalemia is almost always VT.</div>
+        <div class="ref-explain">The wider the QRS, the more likely the rhythm is VT. Typical RBBB aberrancy produces a QRS of 120-140ms. LBBB aberrancy rarely exceeds 160ms. A QRS wider than 160ms suggests the impulse is spreading slowly through ventricular muscle rather than using the fast His-Purkinje conduction system. QRS &gt;200ms in the absence of drugs or hyperkalemia is almost always VT.
+          <svg class="ekg-diagram" viewBox="0 0 360 75" width="360" height="75">
+            <line x1="0" y1="40" x2="360" y2="40" class="ekg-grid"/>
+            <!-- Narrow QRS (aberrancy ~130ms) -->
+            <text x="15" y="12" class="ekg-label-bold">Aberrancy (~130ms)</text>
+            <polyline class="ekg-trace-normal" points="30,40 42,40 44,43 47,18 51,55 55,15 59,50 61,38 63,40 90,40"/>
+            <line x1="44" y1="62" x2="61" y2="62" class="ekg-annotation"/>
+            <line x1="44" y1="58" x2="44" y2="66" class="ekg-annotation"/>
+            <line x1="61" y1="58" x2="61" y2="66" class="ekg-annotation"/>
+            <text x="44" y="74" class="ekg-annotation-text">130ms</text>
+            <!-- Wide QRS (VT ~180ms) -->
+            <text x="165" y="12" class="ekg-label-bold" style="fill:#b91c1c">VT (~180ms)</text>
+            <polyline class="ekg-trace-vt" points="160,40 175,40 178,44 182,16 188,62 194,10 200,65 206,12 212,58 215,38 218,40 260,40"/>
+            <line x1="178" y1="62" x2="218" y2="62" class="ekg-annotation"/>
+            <line x1="178" y1="58" x2="178" y2="66" class="ekg-annotation"/>
+            <line x1="218" y1="58" x2="218" y2="66" class="ekg-annotation"/>
+            <text x="186" y="74" class="ekg-annotation-text">180ms</text>
+            <text x="270" y="40" class="ekg-label" style="fill:#b91c1c">wider = more</text>
+            <text x="270" y="50" class="ekg-label" style="fill:#b91c1c">likely VT</text>
+          </svg>
+        </div>
       </details>
 
       <details class="ref-item">
         <summary>Brugada sign</summary>
-        <div class="ref-explain">Measured from the onset of the QRS to the nadir (deepest point) of the S wave in any precordial lead. If this interval exceeds 100ms, it suggests the impulse is conducting slowly through ventricular myocardium rather than the rapid His-Purkinje system. In SVT with aberrancy, the initial part of the QRS is conducted normally and reaches the S-wave nadir quickly.</div>
+        <div class="ref-explain">Measured from the onset of the QRS to the nadir (deepest point) of the S wave in any precordial lead. If this interval exceeds 100ms, it suggests the impulse is conducting slowly through ventricular myocardium rather than the rapid His-Purkinje system. In SVT with aberrancy, the initial part of the QRS is conducted normally and reaches the S-wave nadir quickly.
+          <svg class="ekg-diagram" viewBox="0 0 360 90" width="360" height="90">
+            <!-- SVT example -->
+            <text x="15" y="12" class="ekg-label-bold">SVT with aberrancy:</text>
+            <line x1="10" y1="45" x2="150" y2="45" class="ekg-grid"/>
+            <polyline class="ekg-trace-normal" points="20,45 40,45 43,48 46,22 50,45 52,48 54,60 56,45 70,45 72,38 76,45 100,45"/>
+            <!-- RS measurement - short -->
+            <line x1="43" y1="75" x2="54" y2="75" class="ekg-annotation"/>
+            <line x1="43" y1="71" x2="43" y2="79" class="ekg-annotation"/>
+            <line x1="54" y1="71" x2="54" y2="79" class="ekg-annotation"/>
+            <text x="38" y="88" class="ekg-annotation-text">&lt;100ms</text>
+            <!-- Nadir arrow -->
+            <text x="51" y="72" class="ekg-annotation-text" style="font-size:7px">nadir</text>
+            <!-- VT example -->
+            <text x="190" y="12" class="ekg-label-bold" style="fill:#b91c1c">VT:</text>
+            <line x1="180" y1="45" x2="350" y2="45" class="ekg-grid"/>
+            <polyline class="ekg-trace-vt" points="190,45 210,45 213,48 216,28 220,38 224,25 228,40 232,48 236,55 240,62 244,68 246,65 248,45 270,45 272,38 276,45 310,45"/>
+            <!-- RS measurement - long -->
+            <line x1="213" y1="75" x2="244" y2="75" class="ekg-annotation"/>
+            <line x1="213" y1="71" x2="213" y2="79" class="ekg-annotation"/>
+            <line x1="244" y1="71" x2="244" y2="79" class="ekg-annotation"/>
+            <text x="215" y="88" class="ekg-annotation-text">&gt;100ms = VT</text>
+            <!-- Nadir arrow -->
+            <text x="240" y="72" class="ekg-annotation-text" style="font-size:7px">nadir</text>
+          </svg>
+        </div>
       </details>
 
       <details class="ref-item">
         <summary>Josephson sign</summary>
-        <div class="ref-explain">A small notch or "hitch" near the nadir (lowest point) of the S wave in any precordial lead. This notching reflects slow, irregular conduction through scarred ventricular myocardium. In SVT with aberrancy, the S wave descends and returns smoothly without notching. The Josephson sign is subtle but highly specific when present.</div>
+        <div class="ref-explain">A small notch or "hitch" near the nadir (lowest point) of the S wave in any precordial lead. This notching reflects slow, irregular conduction through scarred ventricular myocardium. In SVT with aberrancy, the S wave descends and returns smoothly without notching. The Josephson sign is subtle but highly specific when present.
+          <svg class="ekg-diagram" viewBox="0 0 360 80" width="360" height="80">
+            <!-- Smooth S wave (SVT) -->
+            <text x="20" y="12" class="ekg-label-bold">Smooth S wave (SVT):</text>
+            <line x1="10" y1="35" x2="150" y2="35" class="ekg-grid"/>
+            <polyline class="ekg-trace-normal" points="30,35 50,35 53,38 56,18 60,35 62,38 65,55 68,35 90,35"/>
+            <!-- Josephson sign (VT) -->
+            <text x="190" y="12" class="ekg-label-bold" style="fill:#b91c1c">Josephson sign (VT):</text>
+            <line x1="180" y1="35" x2="340" y2="35" class="ekg-grid"/>
+            <polyline class="ekg-trace-vt" points="200,35 220,35 223,38 226,18 230,35 232,38 235,52 238,58 240,55 242,60 245,35 265,35"/>
+            <!-- Arrow to notch -->
+            <line x1="240" y1="73" x2="240" y2="65" class="ekg-annotation"/>
+            <polygon points="240,63 238,68 242,68" fill="#1f6feb"/>
+            <text x="222" y="78" class="ekg-annotation-text">notch near nadir</text>
+            <!-- Circle the notch -->
+            <circle cx="240" cy="57" r="6" class="ekg-annotation" stroke-dasharray="2,2"/>
+          </svg>
+        </div>
       </details>
 
       <details class="ref-item">
         <summary>R-wave peak time &gt;50ms in lead II</summary>
-        <div class="ref-explain">The time from QRS onset to the peak of the R wave in lead II. In normal conduction and aberrancy, the R wave peaks quickly (&lt;50ms) because the impulse travels through the fast conduction system. In VT, the impulse spreads slowly through ventricular muscle, so the R wave takes longer to reach its peak. Measured from the first deflection of the QRS to the tip of the R wave.</div>
+        <div class="ref-explain">The time from QRS onset to the peak of the R wave in lead II. In normal conduction and aberrancy, the R wave peaks quickly (&lt;50ms) because the impulse travels through the fast conduction system. In VT, the impulse spreads slowly through ventricular muscle, so the R wave takes longer to reach its peak. Measured from the first deflection of the QRS to the tip of the R wave.
+          <svg class="ekg-diagram" viewBox="0 0 360 80" width="360" height="80">
+            <!-- SVT: fast R peak -->
+            <text x="15" y="12" class="ekg-label-bold">SVT (fast R peak):</text>
+            <line x1="10" y1="45" x2="150" y2="45" class="ekg-grid"/>
+            <polyline class="ekg-trace-normal" points="30,45 48,45 50,42 53,15 56,45 58,48 62,58 65,45 90,45"/>
+            <!-- R peak time measurement -->
+            <line x1="50" y1="68" x2="53" y2="68" class="ekg-annotation"/>
+            <line x1="50" y1="64" x2="50" y2="72" class="ekg-annotation"/>
+            <line x1="53" y1="64" x2="53" y2="72" class="ekg-annotation"/>
+            <text x="40" y="78" class="ekg-annotation-text">&lt;50ms</text>
+            <!-- Arrow to peak -->
+            <circle cx="53" cy="15" r="3" class="ekg-annotation" fill="none"/>
+            <!-- VT: slow R peak -->
+            <text x="190" y="12" class="ekg-label-bold" style="fill:#b91c1c">VT (slow R peak):</text>
+            <line x1="180" y1="45" x2="340" y2="45" class="ekg-grid"/>
+            <polyline class="ekg-trace-vt" points="200,45 218,45 220,42 224,35 228,28 232,22 236,16 238,15 240,18 244,35 248,45 250,48 254,58 258,45 280,45"/>
+            <!-- R peak time measurement -->
+            <line x1="220" y1="68" x2="238" y2="68" class="ekg-annotation"/>
+            <line x1="220" y1="64" x2="220" y2="72" class="ekg-annotation"/>
+            <line x1="238" y1="64" x2="238" y2="72" class="ekg-annotation"/>
+            <text x="218" y="78" class="ekg-annotation-text">&gt;50ms = VT</text>
+            <!-- Arrow to peak -->
+            <circle cx="238" cy="15" r="3" class="ekg-annotation" fill="none"/>
+          </svg>
+        </div>
       </details>
 
       <details class="ref-item">
         <summary>No RS complex in any precordial lead</summary>
-        <div class="ref-explain">In normal conduction, at least one precordial lead (V1-V6) shows a biphasic RS complex: an initial R wave followed by an S wave. If every precordial lead shows only a monophasic complex (all R, all S, all QS, or all qR), it means no lead captures the normal transition of the wavefront across the precordium. This pattern is not possible with aberrancy and confirms VT. Part of the Brugada criteria algorithm.</div>
+        <div class="ref-explain">In normal conduction, at least one precordial lead (V1-V6) shows a biphasic RS complex: an initial R wave followed by an S wave. If every precordial lead shows only a monophasic complex (all R, all S, all QS, or all qR), it means no lead captures the normal transition of the wavefront across the precordium. This pattern is not possible with aberrancy and confirms VT. Part of the Brugada criteria algorithm.
+          <svg class="ekg-diagram" viewBox="0 0 360 70" width="360" height="70">
+            <text x="5" y="12" class="ekg-label-bold">Monophasic complexes (no RS) = VT:</text>
+            <!-- All R (monophasic positive) -->
+            <text x="10" y="45" class="ekg-label" style="font-size:8px">all R</text>
+            <line x1="35" y1="48" x2="85" y2="48" class="ekg-grid"/>
+            <polyline class="ekg-trace-vt" points="38,48 48,48 50,44 53,20 57,48 70,48"/>
+            <!-- All QS (monophasic negative) -->
+            <text x="95" y="45" class="ekg-label" style="font-size:8px">all QS</text>
+            <line x1="120" y1="38" x2="175" y2="38" class="ekg-grid"/>
+            <polyline class="ekg-trace-vt" points="125,38 135,38 138,42 142,62 146,38 158,38"/>
+            <!-- qR pattern -->
+            <text x="183" y="45" class="ekg-label" style="font-size:8px">all qR</text>
+            <line x1="208" y1="48" x2="265" y2="48" class="ekg-grid"/>
+            <polyline class="ekg-trace-vt" points="213,48 223,48 225,53 227,48 229,44 232,20 236,48 250,48"/>
+            <!-- Normal RS for comparison -->
+            <text x="5" y="62" class="ekg-label-bold" style="fill:#1a7f37">Normal biphasic RS (not VT):</text>
+            <line x1="190" y1="58" x2="265" y2="58" class="ekg-grid"/>
+            <polyline class="ekg-trace-normal" points="198,58 210,58 212,54 215,40 218,58 220,62 224,70 227,58 245,58"/>
+            <text x="250" y="65" class="ekg-label" style="font-size:8px;fill:#1a7f37">has R then S</text>
+          </svg>
+        </div>
       </details>
 
       <details class="ref-item">
@@ -164,7 +471,37 @@
 
       <details class="ref-item">
         <summary>Morphology doesn't fit typical RBBB or LBBB</summary>
-        <div class="ref-explain">In SVT with aberrancy, the wide QRS should still resemble a classic bundle branch block pattern. Typical RBBB: rsR' ("rabbit ears") in V1 with a wide S wave in V6. Typical LBBB: narrow r wave with a swift, clean descent into S in V1, and a broad R wave in V6. If the wide QRS doesn't match either of these patterns (bizarre morphology, concordant precordial leads, no typical rabbit ears), VT is far more likely.</div>
+        <div class="ref-explain">In SVT with aberrancy, the wide QRS should still resemble a classic bundle branch block pattern. Typical RBBB: rsR' ("rabbit ears") in V1 with a wide S wave in V6. Typical LBBB: narrow r wave with a swift, clean descent into S in V1, and a broad R wave in V6. If the wide QRS doesn't match either of these patterns (bizarre morphology, concordant precordial leads, no typical rabbit ears), VT is far more likely.
+          <svg class="ekg-diagram" viewBox="0 0 360 90" width="360" height="90">
+            <!-- Typical RBBB in V1 -->
+            <text x="5" y="12" class="ekg-label-bold" style="fill:#1a7f37">Typical RBBB in V1 (SVT):</text>
+            <line x1="5" y1="40" x2="100" y2="40" class="ekg-grid"/>
+            <!-- rsR' pattern: small r, small s, tall R' -->
+            <polyline class="ekg-trace-normal" points="15,40 25,40 27,36 29,40 31,44 33,40 35,36 38,22 41,18 43,22 47,40 60,40"/>
+            <text x="26" y="50" class="ekg-label" style="font-size:7px">r</text>
+            <text x="31" y="50" class="ekg-label" style="font-size:7px">s</text>
+            <text x="38" y="14" class="ekg-label" style="font-size:7px">R'</text>
+            <text x="65" y="35" class="ekg-label" style="font-size:8px;fill:#1a7f37">"rabbit ears"</text>
+            <!-- Typical LBBB in V1 -->
+            <text x="5" y="62" class="ekg-label-bold" style="fill:#1a7f37">Typical LBBB in V1 (SVT):</text>
+            <line x1="5" y1="75" x2="100" y2="75" class="ekg-grid"/>
+            <!-- narrow r, swift clean S descent -->
+            <polyline class="ekg-trace-normal" points="15,75 25,75 27,72 28,75 30,78 34,88 36,75 50,75"/>
+            <text x="55" y="82" class="ekg-label" style="font-size:8px;fill:#1a7f37">narrow r, clean S</text>
+            <!-- Atypical / VT morphology in V1 -->
+            <text x="185" y="12" class="ekg-label-bold" style="fill:#b91c1c">Atypical (VT):</text>
+            <line x1="180" y1="40" x2="340" y2="40" class="ekg-grid"/>
+            <!-- Broad, notched, bizarre -->
+            <polyline class="ekg-trace-vt" points="190,40 205,40 208,44 212,22 216,30 220,18 224,28 228,35 232,48 236,56 240,60 243,55 246,40 265,40"/>
+            <text x="270" y="35" class="ekg-label" style="font-size:8px;fill:#b91c1c">broad, notched,</text>
+            <text x="270" y="44" class="ekg-label" style="font-size:8px;fill:#b91c1c">doesn't fit BBB</text>
+            <!-- Atypical LBBB -->
+            <line x1="180" y1="75" x2="340" y2="75" class="ekg-grid"/>
+            <polyline class="ekg-trace-vt" points="190,75 205,75 207,70 210,66 213,75 215,78 219,82 222,86 225,88 228,85 230,82 232,75 250,75"/>
+            <text x="255" y="82" class="ekg-label" style="font-size:8px;fill:#b91c1c">wide r (&gt;30ms),</text>
+            <text x="255" y="90" class="ekg-label" style="font-size:8px;fill:#b91c1c">notched S descent</text>
+          </svg>
+        </div>
       </details>
 
       <details class="ref-item">
@@ -177,12 +514,44 @@
     <div class="section-card">
       <details class="ref-item">
         <summary>Typical RBBB pattern (rsR' in V1, wide S in V6)</summary>
-        <div class="ref-explain">A classic triphasic rsR' ("rabbit ears") in V1 with the second R' taller than the first r, plus a wide S wave in leads I and V6. This pattern reflects normal septal depolarization (r) followed by delayed right ventricular activation (R'). When a wide complex tachycardia perfectly matches this pattern, it suggests the impulse traveled through the AV node normally but encountered a refractory right bundle branch.</div>
+        <div class="ref-explain">A classic triphasic rsR' ("rabbit ears") in V1 with the second R' taller than the first r, plus a wide S wave in leads I and V6. This pattern reflects normal septal depolarization (r) followed by delayed right ventricular activation (R'). When a wide complex tachycardia perfectly matches this pattern, it suggests the impulse traveled through the AV node normally but encountered a refractory right bundle branch.
+          <svg class="ekg-diagram" viewBox="0 0 360 65" width="360" height="65">
+            <!-- V1: rsR' -->
+            <text x="10" y="12" class="ekg-label-bold">V1:</text>
+            <line x1="25" y1="40" x2="130" y2="40" class="ekg-grid"/>
+            <polyline class="ekg-trace-normal" points="30,40 42,40 44,36 46,40 48,45 50,40 52,36 55,24 58,18 61,24 65,40 68,42 72,48 75,40 95,40"/>
+            <text x="43" y="52" class="ekg-label" style="font-size:7px">r</text>
+            <text x="48" y="52" class="ekg-label" style="font-size:7px">s</text>
+            <text x="56" y="14" class="ekg-label" style="font-size:7px">R'</text>
+            <text x="100" y="35" class="ekg-label" style="fill:#1a7f37">R' taller than r</text>
+            <!-- V6: wide S -->
+            <text x="185" y="12" class="ekg-label-bold">V6:</text>
+            <line x1="200" y1="40" x2="320" y2="40" class="ekg-grid"/>
+            <polyline class="ekg-trace-normal" points="210,40 220,40 222,36 225,24 228,40 230,44 234,56 238,40 260,40"/>
+            <text x="222" y="18" class="ekg-label" style="font-size:7px">R</text>
+            <text x="232" y="62" class="ekg-label" style="font-size:7px">wide S</text>
+          </svg>
+        </div>
       </details>
 
       <details class="ref-item">
         <summary>Typical LBBB pattern (narrow r, swift S descent in V1)</summary>
-        <div class="ref-explain">In V1: a narrow initial r wave (&lt;30ms) followed by a sharp, smooth, swift descent into a deep S wave with no notching. In V6: a tall, broad R wave. The key is the "clean" morphology. VT with LBBB-type morphology typically shows a wider initial r wave (&gt;30ms), slurred or notched S-wave descent, and may have a q wave in V6. When the LBBB pattern is textbook-clean, aberrancy is more likely.</div>
+        <div class="ref-explain">In V1: a narrow initial r wave (&lt;30ms) followed by a sharp, smooth, swift descent into a deep S wave with no notching. In V6: a tall, broad R wave. The key is the "clean" morphology. VT with LBBB-type morphology typically shows a wider initial r wave (&gt;30ms), slurred or notched S-wave descent, and may have a q wave in V6. When the LBBB pattern is textbook-clean, aberrancy is more likely.
+          <svg class="ekg-diagram" viewBox="0 0 360 65" width="360" height="65">
+            <!-- V1: narrow r, swift S -->
+            <text x="10" y="12" class="ekg-label-bold">V1:</text>
+            <line x1="25" y1="35" x2="150" y2="35" class="ekg-grid"/>
+            <polyline class="ekg-trace-normal" points="30,35 45,35 47,32 48,35 50,40 54,55 56,35 75,35"/>
+            <text x="46" y="26" class="ekg-label" style="font-size:7px">narrow r</text>
+            <text x="56" y="58" class="ekg-label" style="font-size:7px">swift, clean S</text>
+            <text x="100" y="40" class="ekg-label" style="fill:#1a7f37">no notching</text>
+            <!-- V6: broad R -->
+            <text x="195" y="12" class="ekg-label-bold">V6:</text>
+            <line x1="210" y1="45" x2="320" y2="45" class="ekg-grid"/>
+            <polyline class="ekg-trace-normal" points="215,45 228,45 230,42 234,30 238,20 242,30 246,42 248,45 270,45"/>
+            <text x="234" y="14" class="ekg-label" style="font-size:7px">broad R</text>
+          </svg>
+        </div>
       </details>
 
       <details class="ref-item">
@@ -197,7 +566,24 @@
 
       <details class="ref-item">
         <summary>Irregular rhythm (favors AFib with aberrancy over VT)</summary>
-        <div class="ref-explain">Monomorphic VT is almost always regular. If a wide complex tachycardia is irregularly irregular, atrial fibrillation with aberrant conduction (baseline BBB or rate-related BBB) is much more likely. The exception: pre-excited AFib (WPW + AFib) also produces an irregular wide complex tachycardia, but with varying QRS morphology from beat to beat reflecting different degrees of pre-excitation.</div>
+        <div class="ref-explain">Monomorphic VT is almost always regular. If a wide complex tachycardia is irregularly irregular, atrial fibrillation with aberrant conduction (baseline BBB or rate-related BBB) is much more likely. The exception: pre-excited AFib (WPW + AFib) also produces an irregular wide complex tachycardia, but with varying QRS morphology from beat to beat reflecting different degrees of pre-excitation.
+          <svg class="ekg-diagram" viewBox="0 0 360 80" width="360" height="80">
+            <!-- Regular VT -->
+            <text x="5" y="12" class="ekg-label-bold">Regular (VT):</text>
+            <line x1="5" y1="30" x2="355" y2="30" class="ekg-grid"/>
+            <polyline class="ekg-trace-vt" points="10,30 25,30 28,34 31,12 37,50 43,10 49,45 52,28 55,30 80,30 83,34 86,12 92,50 98,10 104,45 107,28 110,30 135,30 138,34 141,12 147,50 153,10 159,45 162,28 165,30 190,30"/>
+            <!-- Equal RR markers -->
+            <line x1="31" y1="42" x2="86" y2="42" class="ekg-annotation" stroke-dasharray="2,2"/>
+            <line x1="86" y1="42" x2="141" y2="42" class="ekg-annotation" stroke-dasharray="2,2"/>
+            <text x="200" y="30" class="ekg-label" style="fill:#b91c1c">equal RR intervals</text>
+            <!-- Irregular AFib -->
+            <text x="5" y="55" class="ekg-label-bold" style="fill:#1a7f37">Irregular (AFib + aberrancy):</text>
+            <line x1="5" y1="68" x2="355" y2="68" class="ekg-grid"/>
+            <polyline class="ekg-trace-normal" points="10,68 20,68 23,72 26,50 32,78 38,48 44,75 47,66 50,68 62,68 65,72 68,50 74,78 80,48 86,75 89,66 92,68 120,68 123,72 126,50 132,78 138,48 144,75 147,66 150,68 158,68 161,72 164,50 170,78 176,48 182,75 185,66 188,68"/>
+            <!-- Unequal RR markers -->
+            <text x="200" y="72" class="ekg-label" style="fill:#1a7f37">varying RR = irregularly irregular</text>
+          </svg>
+        </div>
       </details>
     </div>
   </div>

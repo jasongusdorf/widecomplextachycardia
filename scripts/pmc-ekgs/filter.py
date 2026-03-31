@@ -130,6 +130,10 @@ def main():
             if not img_file:
                 continue
 
+            # Skip small images (likely thumbnails or icons)
+            if img_file.stat().st_size < 50_000:  # 50KB minimum
+                continue
+
             fig_id = Path(href).stem.split(".")[-1] if "." in href else Path(href).stem
             ext = img_file.suffix.lower()
             dest_name = f"{pmcid}_{fig_id}{ext}"

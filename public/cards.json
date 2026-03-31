@@ -1,0 +1,5808 @@
+[
+  {
+    "id": "mmvt-001",
+    "image": "images/mmvt-001.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "12-lead ECG with uniform wide QRS complexes across all leads",
+      "Every QRS complex shares the same morphology and axis",
+      "Regular R-R intervals throughout the tracing",
+      "Positive concordance visible in precordial leads (all QRS deflections in the same direction)"
+    ]
+  },
+  {
+    "id": "mmvt-002",
+    "image": "images/mmvt-002.jpg",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Wide complex tachycardia with fusion beats visible (narrower complexes mixed in)",
+      "Fusion beats occur when a sinus impulse partially captures the ventricle during VT",
+      "The predominant QRS morphology is uniform: identical shape beat to beat",
+      "Fusion and capture beats confirm ventricular origin (not SVT with aberrancy)"
+    ]
+  },
+  {
+    "id": "mmvt-003",
+    "image": "images/mmvt-003.jpg",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Precordial leads (V1 through V6) showing monomorphic VT",
+      "Each lead shows a consistent, repeating QRS morphology",
+      "Wide QRS complexes with no beat-to-beat variation in shape or axis",
+      "AV dissociation may be present but QRS shape remains uniform"
+    ]
+  },
+  {
+    "id": "mmvt-005",
+    "image": "images/mmvt-005.jpg",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Lead II rhythm strip showing monomorphic VT at a rate of 192 bpm",
+      "Uniform QRS morphology: every complex is identical",
+      "Regular R-R intervals with no variation in amplitude",
+      "Wide QRS complexes with a single consistent waveform pattern"
+    ]
+  },
+  {
+    "id": "mmvt-006",
+    "image": "images/mmvt-006.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "12-lead ECG showing monomorphic VT during hemodynamic compromise",
+      "All QRS complexes share the same morphology across every lead",
+      "Regular rate with uniform, wide QRS complexes",
+      "Consistent axis and amplitude throughout the tracing"
+    ]
+  },
+  {
+    "id": "mmvt-009",
+    "image": "images/mmvt-009.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Lead II showing wide complex tachycardia with uniform QRS morphology",
+      "Each beat has the same shape: tall upright deflection with consistent width",
+      "Regular R-R intervals throughout",
+      "No variation in QRS axis or amplitude from beat to beat"
+    ]
+  },
+  {
+    "id": "pmvt-001",
+    "image": "images/pmvt-001.png",
+    "answer": "pmvt",
+    "explanationBullets": [
+      "Shows the classic \"short-long-short\" initiating sequence for Torsades de Pointes",
+      "After initiation, QRS morphology varies continuously from beat to beat",
+      "Progressively changing QRS axis and amplitude as the arrhythmia develops",
+      "No two consecutive complexes share the same morphology"
+    ]
+  },
+  {
+    "id": "pmvt-002",
+    "image": "images/pmvt-002.png",
+    "answer": "pmvt",
+    "explanationBullets": [
+      "Torsades de Pointes with prolonged QT interval visible before onset",
+      "QRS complexes continuously change in morphology, axis, and amplitude",
+      "Classic \"twisting of the points\" pattern around the isoelectric line",
+      "Wide, chaotic complexes with no consistent bundle branch block pattern"
+    ]
+  },
+  {
+    "id": "pmvt-003",
+    "image": "images/pmvt-003.jpg",
+    "answer": "pmvt",
+    "explanationBullets": [
+      "Lead II strip showing polymorphic VT with beat-to-beat QRS variation",
+      "QRS axis and morphology change continuously across the tracing",
+      "Irregular R-R intervals with no repeating pattern",
+      "Complexes vary in both direction and amplitude, unlike monomorphic VT"
+    ]
+  },
+  {
+    "id": "pmvt-004",
+    "image": "images/pmvt-004.jpg",
+    "answer": "pmvt",
+    "explanationBullets": [
+      "Torsades de Pointes recorded by an implantable defibrillator (AICD)",
+      "Sinusoidal variation in QRS amplitude: waxing and waning pattern",
+      "QRS morphology changes continuously, no two beats are identical",
+      "Straight line near the end represents the device shock converting the rhythm"
+    ]
+  },
+  {
+    "id": "pmvt-005",
+    "image": "images/pmvt-005.jpg",
+    "answer": "pmvt",
+    "explanationBullets": [
+      "12-lead ECG showing Torsades de Pointes with onset from sinus rhythm",
+      "Precordial leads show continuously varying QRS morphology and axis",
+      "Sinusoidal amplitude modulation visible across multiple leads",
+      "Rhythm strip at bottom confirms the polymorphic, twisting pattern"
+    ]
+  },
+  {
+    "id": "pmvt-006",
+    "image": "images/pmvt-006.png",
+    "answer": "pmvt",
+    "explanationBullets": [
+      "Classic Torsades de Pointes with sinusoidal waxing and waning of QRS amplitude",
+      "QRS complexes appear to rotate around the baseline",
+      "Amplitude increases then decreases in a smooth envelope pattern",
+      "No consistent QRS morphology from beat to beat"
+    ]
+  },
+  {
+    "id": "pmvt-007",
+    "image": "images/pmvt-007.jpg",
+    "answer": "pmvt",
+    "explanationBullets": [
+      "Torsades de Pointes with dramatic variation in QRS amplitude and axis",
+      "QRS complexes twist above and below the baseline in a spinning pattern",
+      "Amplitude modulation creates the characteristic spindle-shaped envelope",
+      "Completely irregular rhythm with no repeating QRS morphology"
+    ]
+  },
+  {
+    "id": "pmvt-008",
+    "image": "images/pmvt-008.png",
+    "answer": "pmvt",
+    "explanationBullets": [
+      "Polymorphic VT with continuously varying QRS morphology",
+      "Each complex differs from its neighbors in shape, width, and amplitude",
+      "No consistent axis: complexes shift between upright and inverted",
+      "Labeled \"polymorphic ventricular tachycardia\" by ECGpedia"
+    ]
+  },
+  {
+    "id": "mmvt-010",
+    "image": "images/mmvt-010.jpg",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "12-lead ECG with fast, uniform, wide QRS complexes across all leads",
+      "Sinusoidal-appearing waveform with identical morphology beat to beat",
+      "Regular R-R intervals at a very rapid rate",
+      "Consistent QRS axis and amplitude throughout the tracing"
+    ]
+  },
+  {
+    "id": "mmvt-011",
+    "image": "images/mmvt-011.gif",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Rhythm strip showing wide complex tachycardia with uniform QRS morphology",
+      "Every beat is identical in shape: deep downward deflection with consistent width",
+      "Regular R-R intervals with no variation",
+      "No beat-to-beat change in axis or amplitude"
+    ]
+  },
+  {
+    "id": "mmvt-012",
+    "image": "images/mmvt-012.gif",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Lead II showing monomorphic VT with labeled fusion (F) and capture (C) beats",
+      "Fusion beats are narrower complexes where sinus and VT impulses merge",
+      "Capture beats are narrow QRS complexes from a conducted sinus beat during VT",
+      "Fusion and capture beats confirm ventricular origin and AV dissociation"
+    ]
+  },
+  {
+    "id": "mmvt-013",
+    "image": "images/mmvt-013.gif",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "12-lead ECG from a 75-year-old showing monomorphic VT",
+      "Wide QRS complexes with uniform morphology across all leads",
+      "LBBB-type morphology suggesting right ventricular origin",
+      "Regular rate with no beat-to-beat variation in QRS shape"
+    ]
+  },
+  {
+    "id": "mmvt-014",
+    "image": "images/mmvt-014.jpg",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "12-lead ECG showing left ventricular tachycardia",
+      "RBBB morphology in V1 (tall R wave) indicates LV origin",
+      "Uniform QRS complexes with identical shape in each lead",
+      "Wide QRS with consistent axis throughout the tracing"
+    ]
+  },
+  {
+    "id": "mmvt-015",
+    "image": "images/mmvt-015.jpg",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "12-lead ECG showing right ventricular tachycardia",
+      "LBBB morphology in V1 (deep S wave) indicates RV origin",
+      "All QRS complexes share the same monomorphic pattern",
+      "Regular rate with no variation in QRS morphology between beats"
+    ]
+  },
+  {
+    "id": "mmvt-016",
+    "image": "images/mmvt-016.jpg",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "V1 lead showing monomorphic VT with annotated fusion (F) and capture (C) beats",
+      "The predominant wide QRS complexes all share the same morphology",
+      "Narrower fusion beats and a capture beat prove AV dissociation",
+      "Uniform QRS shape between the fusion/capture beats confirms monomorphic VT"
+    ]
+  },
+  {
+    "id": "mmvt-017",
+    "image": "images/mmvt-017.gif",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Lead V1 showing VT with retrograde Wenckebach conduction (ladder diagram below)",
+      "Uniform wide QRS complexes with identical morphology throughout",
+      "Red arrows mark retrograde P waves conducted back to the atria",
+      "Despite retrograde conduction, QRS morphology remains monomorphic"
+    ]
+  },
+  {
+    "id": "mmvt-018",
+    "image": "images/mmvt-018.gif",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Rhythm strip showing wide complex tachycardia with uniform QRS morphology",
+      "Each complex has an identical shape and width",
+      "Regular R-R intervals throughout the strip",
+      "Consistent upright-then-downward deflection pattern in every beat"
+    ]
+  },
+  {
+    "id": "mmvt-019",
+    "image": "images/mmvt-019.jpg",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Lead II rhythm strip showing monomorphic VT with sinusoidal-appearing uniform QRS",
+      "Wide, smooth, rounded complexes with identical shape beat to beat",
+      "Regular rate with no variation in amplitude or axis",
+      "No P waves visible: the ventricles drive the rhythm independently"
+    ]
+  },
+  {
+    "id": "pmvt-009",
+    "image": "images/pmvt-009.jpg",
+    "answer": "pmvt",
+    "explanationBullets": [
+      "12-lead ECG showing onset of Torsades de Pointes from sinus rhythm with prolonged QT",
+      "Initial sinus beats show markedly prolonged QT interval",
+      "VT onset shows continuously changing QRS morphology and axis",
+      "Precordial leads demonstrate the polymorphic, twisting pattern of TdP"
+    ]
+  },
+  {
+    "id": "pmvt-010",
+    "image": "images/pmvt-010.gif",
+    "answer": "pmvt",
+    "explanationBullets": [
+      "Rhythm strip showing polymorphic VT with continuously varying QRS morphology",
+      "QRS amplitude waxes and wanes across the tracing",
+      "No two consecutive complexes share the same shape or axis",
+      "Irregular R-R intervals with no repeating pattern"
+    ]
+  },
+  {
+    "id": "pmvt-011",
+    "image": "images/pmvt-011.jpg",
+    "answer": "pmvt",
+    "explanationBullets": [
+      "Torsades de Pointes with clear transition from sinus rhythm",
+      "Initial beats show a triggering PVC, then polymorphic VT develops",
+      "QRS complexes vary dramatically in amplitude and direction",
+      "Classic waxing-waning spindle pattern characteristic of TdP"
+    ]
+  },
+  {
+    "id": "mmvt-020",
+    "image": "images/mmvt-020.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "WaveMaven Case #112: 12-lead ECG showing fast monomorphic VT",
+      "Wide QRS complexes with uniform LBBB-type morphology across all leads",
+      "Very rapid rate with regular R-R intervals",
+      "Identical QRS shape beat to beat with no variation in axis or amplitude"
+    ]
+  },
+  {
+    "id": "mmvt-021",
+    "image": "images/mmvt-021.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "WaveMaven Case #143: 12-lead ECG showing monomorphic VT",
+      "Wide QRS complexes with consistent morphology in each lead",
+      "Uniform QRS axis and shape throughout the tracing",
+      "No beat-to-beat variation in QRS width, amplitude, or direction"
+    ]
+  },
+  {
+    "id": "mmvt-022",
+    "image": "images/mmvt-022.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "WaveMaven Case #259: 12-lead showing monomorphic VT",
+      "Wide QRS complexes with a single repeating morphology",
+      "Uniform axis across limb and precordial leads",
+      "Regular rate with identical QRS shape in every beat"
+    ]
+  },
+  {
+    "id": "mmvt-023",
+    "image": "images/mmvt-023.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "WaveMaven Case #274: 12-lead ECG with classic fast monomorphic VT",
+      "Rapid, wide QRS complexes with identical morphology beat to beat",
+      "Regular R-R intervals at a high rate",
+      "Negative concordance in precordial leads (all QRS deflections downward in V1-V6)"
+    ]
+  },
+  {
+    "id": "mmvt-024",
+    "image": "images/mmvt-024.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "WaveMaven Case #290: Monomorphic VT in the setting of acute STEMI",
+      "Wide, uniform QRS complexes with consistent morphology",
+      "All beats share the same shape despite underlying ischemia",
+      "Regular rate with no beat-to-beat variation in QRS axis"
+    ]
+  },
+  {
+    "id": "mmvt-025",
+    "image": "images/mmvt-025.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "WaveMaven Case #343: 12-lead ECG showing ventricular tachycardia",
+      "Wide QRS complexes with uniform morphology across all leads",
+      "Consistent QRS shape and axis throughout the tracing",
+      "AV dissociation likely present with independent atrial activity"
+    ]
+  },
+  {
+    "id": "mmvt-026",
+    "image": "images/mmvt-026.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "WaveMaven Case #395: 12-lead ECG showing monomorphic VT",
+      "Uniform wide QRS complexes with identical beat-to-beat morphology",
+      "Consistent axis and amplitude in each lead",
+      "Regular rhythm with no variation in QRS shape"
+    ]
+  },
+  {
+    "id": "mmvt-027",
+    "image": "images/mmvt-027.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "WaveMaven Case #403: 12-lead ECG with fast monomorphic VT",
+      "Sinusoidal-appearing wide QRS complexes at a very rapid rate",
+      "Every complex is identical in morphology across all leads",
+      "Regular R-R intervals with uniform amplitude and axis"
+    ]
+  },
+  {
+    "id": "mmvt-028",
+    "image": "images/mmvt-028.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "WaveMaven Case #502: 12-lead ECG showing wide complex tachycardia",
+      "Uniform QRS morphology with the same shape in every beat",
+      "Wide QRS complexes consistent with ventricular origin",
+      "No variation in axis or amplitude from beat to beat"
+    ]
+  },
+  {
+    "id": "pmvt-012",
+    "image": "images/pmvt-012.png",
+    "answer": "pmvt",
+    "explanationBullets": [
+      "WaveMaven Case #314: 12-lead ECG showing polymorphic VT",
+      "QRS morphology varies between beats across multiple leads",
+      "Changing QRS axis and amplitude from complex to complex",
+      "No consistent bundle branch block pattern: complexes shift in shape and direction"
+    ]
+  },
+  {
+    "id": "notvt-001",
+    "image": "images/notvt-001.png",
+    "answer": "not-vt",
+    "explanationBullets": [
+      "Atrial fibrillation with LBBB: wide QRS mimics VT, but the rhythm is irregularly irregular",
+      "Irregular R-R intervals are the key clue: VT is almost always regular",
+      "LBBB morphology is consistent in every beat (rSR\\' pattern, not bizarre)",
+      "No AV dissociation, no fusion or capture beats"
+    ]
+  },
+  {
+    "id": "notvt-002",
+    "image": "images/notvt-002.jpg",
+    "answer": "not-vt",
+    "explanationBullets": [
+      "SVT with RBBB aberrancy in a 44-year-old male",
+      "Wide QRS with classic rsR\\' in V1 consistent with RBBB, not VT",
+      "Regular, narrow-appearing P waves may be visible before each QRS",
+      "Typical RBBB pattern (V1 rsR\\', V6 wide S) favors supraventricular origin"
+    ]
+  },
+  {
+    "id": "notvt-003",
+    "image": "images/notvt-003.gif",
+    "answer": "not-vt",
+    "explanationBullets": [
+      "Pre-excited atrial fibrillation (WPW + AFib) in a 29-year-old",
+      "Bizarre, wide QRS complexes that look like VT, but the rhythm is irregularly irregular",
+      "Varying QRS morphology from beat to beat due to different degrees of pre-excitation",
+      "Very fast rate with some extremely short R-R intervals (danger of VF if AV node blockers given)"
+    ]
+  },
+  {
+    "id": "notvt-004",
+    "image": "images/notvt-004.jpg",
+    "answer": "not-vt",
+    "explanationBullets": [
+      "Sinus tachycardia with wide QRS (bundle branch block)",
+      "P waves visible before each QRS complex, with a consistent PR interval",
+      "Wide QRS due to conduction delay, not ventricular origin",
+      "Rate is appropriate for sinus tachycardia; P-wave axis is normal"
+    ]
+  },
+  {
+    "id": "notvt-005",
+    "image": "images/notvt-005.png",
+    "answer": "not-vt",
+    "explanationBullets": [
+      "Atrial fibrillation with RVR and Ashman phenomenon (RBBB aberrancy)",
+      "Irregularly irregular baseline rhythm confirms AFib, not VT",
+      "Wide beats follow short-long-short R-R cycle (Ashman phenomenon)",
+      "Aberrant beats have RBBB morphology, not the bizarre shapes typical of VT"
+    ]
+  },
+  {
+    "id": "notvt-006",
+    "image": "images/notvt-006.jpg",
+    "answer": "not-vt",
+    "explanationBullets": [
+      "Supraventricular tachycardia (SVT) with narrow-to-borderline QRS",
+      "Regular rhythm at a very fast rate, but QRS complexes are not truly wide",
+      "No AV dissociation; the atria and ventricles are linked 1:1",
+      "Absence of wide, bizarre QRS morphology argues against VT"
+    ]
+  },
+  {
+    "id": "notvt-007",
+    "image": "images/notvt-007.jpg",
+    "answer": "not-vt",
+    "explanationBullets": [
+      "Atrial fibrillation with rapid ventricular response",
+      "Irregularly irregular rhythm is the hallmark of AFib, not VT",
+      "QRS complexes vary in timing but not in fundamental morphology",
+      "No fusion beats, no capture beats, no AV dissociation"
+    ]
+  },
+  {
+    "id": "notvt-008",
+    "image": "images/notvt-008.jpg",
+    "answer": "not-vt",
+    "explanationBullets": [
+      "Wolff-Parkinson-White (WPW) pattern with sinus rhythm and delta waves",
+      "Short PR interval (<120ms) with slurred upstroke (delta wave) on QRS",
+      "Wide QRS is due to ventricular pre-excitation via accessory pathway, not VT",
+      "During tachycardia, this pattern produces wide complexes that closely mimic VT"
+    ]
+  },
+  {
+    "id": "notvt-009",
+    "image": "images/notvt-009.jpg",
+    "answer": "not-vt",
+    "explanationBullets": [
+      "Atrial flutter with 2:1 conduction",
+      "Regular rhythm that can mimic VT, but flutter waves (sawtooth) visible in inferior leads",
+      "QRS complexes are conducted from the atria, not generated in the ventricles",
+      "Carotid sinus massage or adenosine would unmask the flutter waves"
+    ]
+  },
+  {
+    "id": "notvt-010",
+    "image": "images/notvt-010.jpg",
+    "answer": "not-vt",
+    "explanationBullets": [
+      "Antidromic AVRT (WPW) in a 15-year-old: regular broad complex tachycardia at ~200 bpm",
+      "Wide, bizarre QRS with LBBB morphology from anterograde conduction via accessory pathway",
+      "Looks identical to VT, but the patient is young with no structural heart disease",
+      "Previous ECG in sinus rhythm showed delta waves and short PR confirming WPW"
+    ]
+  },
+  {
+    "id": "notvt-011",
+    "image": "images/notvt-011.jpg",
+    "answer": "not-vt",
+    "explanationBullets": [
+      "Pre-excited atrial fibrillation (WPW + AFib): wide, irregular, and dangerous",
+      "Irregularly irregular rhythm with bizarre wide QRS complexes at very fast rates",
+      "Varying QRS width reflects different degrees of pre-excitation per beat",
+      "AV node blockers (adenosine, verapamil, digoxin) are contraindicated: may cause VF"
+    ]
+  },
+  {
+    "id": "notvt-012",
+    "image": "images/notvt-012.jpg",
+    "answer": "not-vt",
+    "explanationBullets": [
+      "Supraventricular tachycardia (SVT) with narrow QRS complexes",
+      "Regular rhythm at a fast rate, but QRS is narrow (<120ms)",
+      "Narrow QRS confirms supraventricular origin with normal ventricular conduction",
+      "VT produces wide QRS (>120ms); narrow complex rules it out immediately"
+    ]
+  },
+  {
+    "id": "notvt-013",
+    "image": "images/notvt-013.png",
+    "answer": "not-vt",
+    "explanationBullets": [
+      "WaveMaven #15: Pre-excited AFib (WPW + atrial fibrillation)",
+      "Irregularly irregular rhythm with wide, bizarre QRS complexes",
+      "Irregular R-R intervals distinguish this from monomorphic VT",
+      "Accessory pathway conducts AF directly to ventricles, bypassing AV node"
+    ]
+  },
+  {
+    "id": "notvt-014",
+    "image": "images/notvt-014.png",
+    "answer": "not-vt",
+    "explanationBullets": [
+      "WaveMaven #64: Atrial flutter with LBBB",
+      "Regular wide complex tachycardia that mimics VT",
+      "Sawtooth flutter waves may be visible in inferior leads or V1",
+      "LBBB pattern (rS in V1, broad R in V6) is consistent across all beats"
+    ]
+  },
+  {
+    "id": "notvt-015",
+    "image": "images/notvt-015.png",
+    "answer": "not-vt",
+    "explanationBullets": [
+      "WaveMaven #88: AFib with transient RBBB aberrancy",
+      "Irregularly irregular baseline confirms atrial fibrillation, not VT",
+      "Some beats conducted with RBBB aberrancy (wider QRS after longer pauses)",
+      "Ashman phenomenon: aberrant conduction follows a long-short R-R sequence"
+    ]
+  },
+  {
+    "id": "notvt-016",
+    "image": "images/notvt-016.png",
+    "answer": "not-vt",
+    "explanationBullets": [
+      "WaveMaven #111: AFib with RVR in a patient on flecainide",
+      "The clinical question asks: \"Is this VT?\" The answer is no.",
+      "Flecainide widens QRS by slowing sodium channel conduction",
+      "Irregularly irregular rhythm confirms AFib despite the very wide QRS"
+    ]
+  },
+  {
+    "id": "notvt-017",
+    "image": "images/notvt-017.png",
+    "answer": "not-vt",
+    "explanationBullets": [
+      "WaveMaven #170: Atrial fibrillation with LBBB",
+      "Wide QRS complexes from LBBB can mimic VT morphology",
+      "Irregular R-R intervals confirm AFib as the underlying rhythm",
+      "Consistent LBBB morphology in every beat (not bizarre, not varying)"
+    ]
+  },
+  {
+    "id": "notvt-018",
+    "image": "images/notvt-018.png",
+    "answer": "not-vt",
+    "explanationBullets": [
+      "WaveMaven #177: SVT (PSVT) with RBBB aberrancy",
+      "Regular wide complex tachycardia from supraventricular origin",
+      "Typical RBBB pattern: rsR\\' in V1 with wide S wave in lateral leads",
+      "RBBB morphology with normal axis favors SVT over VT"
+    ]
+  },
+  {
+    "id": "notvt-019",
+    "image": "images/notvt-019.png",
+    "answer": "not-vt",
+    "explanationBullets": [
+      "WaveMaven #197: Atrial tachycardia with 2:1 block and LBBB",
+      "Wide QRS from LBBB with a rapid atrial rate conducted 2:1",
+      "P waves may be visible at twice the ventricular rate",
+      "LBBB morphology is consistent and typical, not bizarre"
+    ]
+  },
+  {
+    "id": "notvt-020",
+    "image": "images/notvt-020.png",
+    "answer": "not-vt",
+    "explanationBullets": [
+      "WaveMaven #258: Atrial flutter with bifascicular block (RBBB + LAFB)",
+      "Wide QRS from bifascicular block, not ventricular origin",
+      "Flutter waves may be visible at 300/min with variable conduction",
+      "RBBB + left axis deviation pattern is consistent with conduction disease"
+    ]
+  },
+  {
+    "id": "notvt-021",
+    "image": "images/notvt-021.jpg",
+    "answer": "not-vt",
+    "explanationBullets": [
+      "WaveMaven #512: Pre-excited AFib (WPW), presented as a \"stat\" wide complex tachycardia",
+      "Irregular wide complexes with varying QRS width from beat to beat",
+      "Irregularity rules out monomorphic VT; varying pre-excitation rules out PMVT",
+      "Extremely rapid rate via accessory pathway; AV node blockers contraindicated"
+    ]
+  },
+  {
+    "id": "notvt-022",
+    "image": "images/notvt-022.jpg",
+    "answer": "not-vt",
+    "explanationBullets": [
+      "WaveMaven #523: Atrial flutter with LBBB, asked as \"What is this wide complex tachycardia?\"",
+      "Regular wide complex tachycardia at ~150 bpm (classic flutter rate with 2:1 block)",
+      "LBBB morphology is typical and consistent, not bizarre",
+      "Rate of ~150 bpm should always prompt a search for atrial flutter"
+    ]
+  },
+  {
+    "id": "mmvt-029",
+    "image": "images/mmvt-029.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "Leftward axis",
+      "Left bundle branch block",
+      "QRS 172ms, HR ~135 bpm, Axis -28 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-030",
+    "image": "images/mmvt-030.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "Left axis deviation",
+      "RBBB with left anterior fascicular block",
+      "Inferior infarct - age undetermined",
+      "Marked precordial ST depression, CONSIDER ACUTE INFARCT",
+      "Lateral ST-T changes suggest myocardial injury/ischemia",
+      "QRS 142ms, HR ~143 bpm, Axis -68 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-031",
+    "image": "images/mmvt-031.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "Left bundle branch block",
+      "Marked ST depression in V lead, consider recent infarction",
+      "QRS 140ms, HR ~122 bpm, Axis 31 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-032",
+    "image": "images/mmvt-032.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "Left axis deviation",
+      "IV conduction defect",
+      "Possible anterior infarct - age undetermined",
+      "Inferior ST elevation, CONSIDER ACUTE INFARCT",
+      "Anteroseptal ST depression is probably reciprocal to inferior infarct",
+      "QRS 162ms, HR ~129 bpm, Axis -59 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-033",
+    "image": "images/mmvt-033.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "Left axis deviation",
+      "IV conduction defect",
+      "Inferior infarct - age undetermined",
+      "Anterior infarct - age undetermined",
+      "Lateral ST-T changes may be due to myocardial ischemia",
+      "QRS 156ms, HR ~138 bpm, Axis -50 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-034",
+    "image": "images/mmvt-034.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "Left axis deviation",
+      "Extensive IVCD",
+      "Inferior infarct - age undetermined",
+      "Lateral ST-T changes may be due to myocardial ischemia",
+      "QRS 182ms, HR ~141 bpm, Axis -72 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-035",
+    "image": "images/mmvt-035.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "Leftward axis",
+      "IV conduction defect",
+      "BVH with secondary repolarization abnormality",
+      "Extensive ST-T changes are probably due to ventricular hypertrophy",
+      "QRS 188ms, HR ~132 bpm, Axis -21 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-036",
+    "image": "images/mmvt-036.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "Left axis deviation",
+      "Extensive IVCD",
+      "Inferior infarct - age undetermined",
+      "Lateral ST-T changes may be due to myocardial ischemia",
+      "QRS 152ms, HR ~131 bpm, Axis -60 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-037",
+    "image": "images/mmvt-037.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "Leftward axis",
+      "Left bundle branch block",
+      "Possible inferior infarct - age undetermined",
+      "QRS 142ms, HR ~141 bpm, Axis -24 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-038",
+    "image": "images/mmvt-038.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "IV conduction defect",
+      "Possible septal infarct - age undetermined",
+      "QRS 178ms, HR ~151 bpm, Axis 82 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-039",
+    "image": "images/mmvt-039.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "Left axis deviation",
+      "RBBB with left anterior fascicular block",
+      "QRS 142ms, HR ~134 bpm, Axis -85 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-040",
+    "image": "images/mmvt-040.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "Left axis deviation",
+      "RBBB with left anterior fascicular block",
+      "Left ventricular hypertrophy",
+      "Lateral ST-T changes may be due to hypertrophy and/or ischemia",
+      "QRS 160ms, HR ~145 bpm, Axis -56 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-041",
+    "image": "images/mmvt-041.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "IV conduction defect",
+      "Extensive ST-T changes may be due to myocardial ischemia",
+      "QRS 142ms, HR ~138 bpm, Axis 24 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-042",
+    "image": "images/mmvt-042.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "Left bundle branch block",
+      "QRS 140ms, HR ~132 bpm, Axis -15 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-043",
+    "image": "images/mmvt-043.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "Lead(s) unsuitable for analysis: V2",
+      "Left axis deviation",
+      "RBBB with left anterior fascicular block",
+      "Inferior ST elevation suggests early repolarization",
+      "Lateral T wave changes are nonspecific",
+      "QRS 160ms, HR ~134 bpm, Axis -73 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-044",
+    "image": "images/mmvt-044.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "Marked left axis deviation",
+      "Conduction defect of LBBB type",
+      "QRS 148ms, HR ~167 bpm, Axis -49 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-045",
+    "image": "images/mmvt-045.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "Left bundle branch block",
+      "Low QRS voltages in limb leads",
+      "QRS 170ms, HR ~152 bpm, Axis 72 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-046",
+    "image": "images/mmvt-046.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "Left bundle branch block",
+      "Possible inferior infarct - age undetermined",
+      "QRS 190ms, HR ~120 bpm, Axis 20 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-047",
+    "image": "images/mmvt-047.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "Left axis deviation",
+      "Left bundle branch block",
+      "QRS 172ms, HR ~134 bpm, Axis -34 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-048",
+    "image": "images/mmvt-048.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "Left axis deviation",
+      "RBBB with left anterior fascicular block",
+      "QRS 140ms, HR ~130 bpm, Axis -74 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-049",
+    "image": "images/mmvt-049.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "Left axis deviation",
+      "Left bundle branch block",
+      "Possible inferior infarct - age undetermined",
+      "QRS 140ms, HR ~129 bpm, Axis -36 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-050",
+    "image": "images/mmvt-050.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "Left axis deviation",
+      "RBBB with left anterior fascicular block",
+      "Possible septal infarct - age undetermined",
+      "Low QRS voltages in precordial leads",
+      "QRS 142ms, HR ~125 bpm, Axis -74 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-051",
+    "image": "images/mmvt-051.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "Left bundle branch block",
+      "QRS 152ms, HR ~133 bpm, Axis -13 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-052",
+    "image": "images/mmvt-052.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "Left axis deviation",
+      "Left bundle branch block",
+      "Lateral infarct - age undetermined",
+      "Possible inferior infarct - age undetermined",
+      "Anteroseptal ST depression is probably reciprocal to inferior infarct",
+      "QRS 192ms, HR ~163 bpm, Axis -52 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-053",
+    "image": "images/mmvt-053.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "Left axis deviation",
+      "RBBB with left anterior fascicular block",
+      "Marked precordial ST depression, CONSIDER ACUTE INFARCT",
+      "QRS 152ms, HR ~136 bpm, Axis -70 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-054",
+    "image": "images/mmvt-054.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "Lead(s) unsuitable for analysis: aVR V3 V4",
+      "Left axis deviation",
+      "IV conduction defect",
+      "Inferior infarct - age undetermined",
+      "Lateral ST-T changes may be due to myocardial ischemia",
+      "Low QRS voltages in limb leads",
+      "QRS 178ms, HR ~122 bpm, Axis -59 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-055",
+    "image": "images/mmvt-055.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "Left axis deviation",
+      "Extensive IVCD",
+      "Anterior infarct - age undetermined",
+      "Inferior infarct - age undetermined",
+      "Lateral ST-T changes suggest myocardial injury/ischemia",
+      "QRS 172ms, HR ~157 bpm, Axis -63 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-056",
+    "image": "images/mmvt-056.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "Left bundle branch block",
+      "QRS 170ms, HR ~127 bpm, Axis 56 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-057",
+    "image": "images/mmvt-057.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "Left axis deviation",
+      "Left bundle branch block",
+      "Possible inferior infarct - age undetermined",
+      "QRS 160ms, HR ~127 bpm, Axis -48 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-058",
+    "image": "images/mmvt-058.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "Lead(s) unsuitable for analysis: V1",
+      "Left axis deviation",
+      "RBBB with left anterior fascicular block",
+      "QRS changes V3/V4 may be due to LVH but cannot rule out anterior infarct",
+      "Possible left ventricular hypertrophy",
+      "Inferior/lateral ST-T changes are probably due to ventricular hypertrophy",
+      "QRS 156ms, HR ~126 bpm, Axis -75 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-059",
+    "image": "images/mmvt-059.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "Lead(s) unsuitable for analysis: V2",
+      "Left axis deviation",
+      "RBBB with left anterior fascicular block",
+      "LVH with secondary repolarization abnormality",
+      "Lateral ST-T changes are probably due to ventricular hypertrophy",
+      "QRS 158ms, HR ~126 bpm, Axis -48 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-060",
+    "image": "images/mmvt-060.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "Left axis deviation",
+      "IV conduction defect",
+      "Extensive infarct - age undetermined",
+      "QRS 182ms, HR ~127 bpm, Axis -66 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-061",
+    "image": "images/mmvt-061.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "Left axis deviation",
+      "Conduction defect of LBBB type",
+      "Possible inferior infarct - age undetermined",
+      "QRS 176ms, HR ~189 bpm, Axis -37 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-062",
+    "image": "images/mmvt-062.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "Lead(s) unsuitable for analysis: I II III aVR aVL V1 V3",
+      "--- Possible measurement error ---",
+      "--- Suspect arm lead reversal - only aVF, V1-V6 analyzed ---",
+      "IV conduction defect",
+      "Possible anteroseptal infarct - age undetermined",
+      "Lateral ST-T changes may be due to myocardial ischemia",
+      "QRS 178ms, HR ~204 bpm, Axis 106 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-063",
+    "image": "images/mmvt-063.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "Left axis deviation",
+      "IV conduction defect",
+      "Possible left ventricular hypertrophy",
+      "Septal and lateral ST-T changes are probably due to ventricular hypertrophy",
+      "QRS 150ms, HR ~125 bpm, Axis -56 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-064",
+    "image": "images/mmvt-064.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "Left axis deviation",
+      "IV conduction defect",
+      "Inferior infarct - age undetermined",
+      "Ant/septal and lateral ST-T changes may be due to myocardial ischemia",
+      "QRS 154ms, HR ~173 bpm, Axis -30 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-065",
+    "image": "images/mmvt-065.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "Left axis deviation",
+      "Left bundle branch block",
+      "Low QRS voltages in precordial leads",
+      "QRS 168ms, HR ~153 bpm, Axis -60 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-066",
+    "image": "images/mmvt-066.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "Leftward axis",
+      "Left bundle branch block",
+      "QRS 180ms, HR ~122 bpm, Axis -24 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-067",
+    "image": "images/mmvt-067.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "Left axis deviation",
+      "Left bundle branch block",
+      "QRS 140ms, HR ~147 bpm, Axis -41 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-068",
+    "image": "images/mmvt-068.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "Left bundle branch block",
+      "QRS 148ms, HR ~126 bpm, Axis -12 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-069",
+    "image": "images/mmvt-069.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "Left bundle branch block",
+      "Low QRS voltages in precordial leads",
+      "QRS 144ms, HR ~152 bpm, Axis 12 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-070",
+    "image": "images/mmvt-070.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "Left axis deviation",
+      "Left bundle branch block",
+      "Possible lateral infarct - age undetermined",
+      "Possible inferior infarct - age undetermined",
+      "QRS 140ms, HR ~143 bpm, Axis -50 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-071",
+    "image": "images/mmvt-071.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "Left axis deviation",
+      "Left bundle branch block",
+      "Tall T waves - consider acute ischemia or hyperkalemia",
+      "QRS 152ms, HR ~132 bpm, Axis -34 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-072",
+    "image": "images/mmvt-072.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "Left axis deviation",
+      "Left bundle branch block",
+      "Anteroseptal ST changes suggest myocardial injury/ischemia",
+      "QRS 172ms, HR ~125 bpm, Axis -42 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-073",
+    "image": "images/mmvt-073.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "Intraventricular conduction defect",
+      "Probable acute anteroseptal infarct",
+      "Lateral ST elevation - probable lateral extension of infarct",
+      "Low QRS voltages in limb leads",
+      "QRS 162ms, HR ~152 bpm, Axis 41 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-074",
+    "image": "images/mmvt-074.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "Left axis deviation",
+      "IV conduction defect",
+      "Inferior infarct - age undetermined",
+      "Lateral infarct - age undetermined",
+      "Tall R V1/V2 probably reflect the infarct",
+      "Anteroseptal ST-T changes suggest myocardial injury/ischemia",
+      "QRS 150ms, HR ~196 bpm, Axis -60 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-075",
+    "image": "images/mmvt-075.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "Left axis deviation",
+      "Left bundle branch block",
+      "Anteroseptal ST changes suggest myocardial injury/ischemia",
+      "QRS 170ms, HR ~122 bpm, Axis -52 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-076",
+    "image": "images/mmvt-076.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "Left axis deviation",
+      "RBBB with left anterior fascicular block",
+      "Inferior infarct - age undetermined",
+      "Marked precordial ST depression, CONSIDER ACUTE INFARCT",
+      "Lateral ST-T changes may be due to myocardial ischemia",
+      "QRS 170ms, HR ~145 bpm, Axis -76 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-077",
+    "image": "images/mmvt-077.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "Left bundle branch block",
+      "Lateral infarct - age undetermined",
+      "Possible inferior infarct - age undetermined",
+      "Anteroseptal ST depression is probably reciprocal to inferior infarct",
+      "QRS 162ms, HR ~129 bpm, Axis 0 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-078",
+    "image": "images/mmvt-078.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "Left axis deviation",
+      "Left bundle branch block",
+      "Possible inferior infarct - age undetermined",
+      "QRS 142ms, HR ~127 bpm, Axis -35 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-079",
+    "image": "images/mmvt-079.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "Left axis deviation",
+      "RBBB with left anterior fascicular block",
+      "Inferior infarct - age undetermined",
+      "Low QRS voltages in precordial leads",
+      "QRS 146ms, HR ~133 bpm, Axis -38 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-080",
+    "image": "images/mmvt-080.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "--- Possible measurement error ---",
+      "Rightward axis",
+      "Extensive IVCD",
+      "LVH with secondary repolarization abnormality",
+      "Marked precordial ST depression, CONSIDER ACUTE INFARCT",
+      "Inferior/lateral ST-T changes are probably due to ventricular hypertrophy",
+      "QRS 194ms, HR ~153 bpm, Axis 94 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-081",
+    "image": "images/mmvt-081.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "Leftward axis",
+      "Left bundle branch block",
+      "QRS 144ms, HR ~127 bpm, Axis -24 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-082",
+    "image": "images/mmvt-082.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "Left axis deviation",
+      "IV conduction defect",
+      "Possible left ventricular hypertrophy",
+      "Lateral ST-T changes may be due to hypertrophy and/or ischemia",
+      "QRS 146ms, HR ~136 bpm, Axis -34 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-083",
+    "image": "images/mmvt-083.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "Left bundle branch block",
+      "Possible inferior infarct - age undetermined",
+      "Septal ST elevation, CONSIDER ACUTE INFARCT",
+      "Marked precordial ST depression, CONSIDER ACUTE INFARCT",
+      "QRS 150ms, HR ~145 bpm, Axis -17 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-084",
+    "image": "images/mmvt-084.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "Left axis deviation",
+      "IV conduction defect",
+      "Extensive infarct - age undetermined",
+      "QRS 144ms, HR ~159 bpm, Axis -49 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-085",
+    "image": "images/mmvt-085.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "Right bundle branch block",
+      "Inferior infarct - age undetermined",
+      "Possible anteroseptal infarct - age undetermined",
+      "Lateral ST-T changes may be due to myocardial ischemia",
+      "QRS 142ms, HR ~139 bpm, Axis -16 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-086",
+    "image": "images/mmvt-086.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "Left bundle branch block",
+      "Possible inferior infarct - age undetermined",
+      "QRS 144ms, HR ~137 bpm, Axis -17 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-087",
+    "image": "images/mmvt-087.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "Leftward axis",
+      "IV conduction defect",
+      "Inferior infarct - age undetermined",
+      "LVH with secondary repolarization abnormality",
+      "Ant/septal and lateral ST-T changes are probably due to ventricular hypertrophy",
+      "Low QRS voltages in precordial leads",
+      "QRS 172ms, HR ~138 bpm, Axis -20 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-088",
+    "image": "images/mmvt-088.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "IV conduction defect",
+      "Inferior infarct - age undetermined",
+      "Tall R V1/V2 probably reflect the infarct",
+      "LVH with secondary repolarization abnormality",
+      "Ant/septal and lateral ST-T changes may be due to hypertrophy and/or ischemia",
+      "QRS 172ms, HR ~142 bpm, Axis -17 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-089",
+    "image": "images/mmvt-089.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "Lead(s) unsuitable for analysis: V3",
+      "Left axis deviation",
+      "Left bundle branch block",
+      "QRS 176ms, HR ~134 bpm, Axis -33 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-090",
+    "image": "images/mmvt-090.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "Left axis deviation",
+      "RBBB with left anterior fascicular block",
+      "Possible inferior infarct - age undetermined",
+      "Lateral ST-T changes may be due to myocardial ischemia",
+      "QRS 142ms, HR ~184 bpm, Axis -74 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-091",
+    "image": "images/mmvt-091.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "Left axis deviation",
+      "RBBB with left anterior fascicular block",
+      "Lateral ST elevation, CONSIDER ACUTE INFARCT",
+      "Marked precordial ST depression, CONSIDER ACUTE INFARCT",
+      "QRS 168ms, HR ~138 bpm, Axis -58 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-092",
+    "image": "images/mmvt-092.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "Leftward axis",
+      "Left bundle branch block",
+      "Low QRS voltages in precordial leads",
+      "QRS 164ms, HR ~155 bpm, Axis -20 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-093",
+    "image": "images/mmvt-093.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "Left axis deviation",
+      "Left bundle branch block",
+      "QRS 152ms, HR ~121 bpm, Axis -30 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-094",
+    "image": "images/mmvt-094.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "Left axis deviation",
+      "Left bundle branch block",
+      "QRS 148ms, HR ~122 bpm, Axis -39 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-095",
+    "image": "images/mmvt-095.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "Left axis deviation",
+      "Conduction defect of LBBB type",
+      "Possible inferior infarct - age undetermined",
+      "Lateral ST elevation, consider recent infarction",
+      "QRS 180ms, HR ~186 bpm, Axis -32 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-096",
+    "image": "images/mmvt-096.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "Left axis deviation",
+      "RBBB with left anterior fascicular block",
+      "Inferior ST elevation - possible early repolarization",
+      "Marked precordial ST depression, CONSIDER ACUTE INFARCT",
+      "Lateral ST-T changes may be due to myocardial ischemia",
+      "QRS 140ms, HR ~145 bpm, Axis -75 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-097",
+    "image": "images/mmvt-097.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "IV conduction defect",
+      "Possible anterior infarct - age undetermined",
+      "Inferior/lateral ST-T changes may be due to myocardial ischemia",
+      "QRS 150ms, HR ~149 bpm, Axis 78 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-098",
+    "image": "images/mmvt-098.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "Rightward axis",
+      "Right bundle branch block",
+      "Inferior/lateral ST-T changes suggest myocardial injury/ischemia",
+      "Low QRS voltages in precordial leads",
+      "QRS 144ms, HR ~124 bpm, Axis 103 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-099",
+    "image": "images/mmvt-099.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "--- Possible measurement error ---",
+      "Left bundle branch block",
+      "QRS 174ms, HR ~185 bpm, Axis 78 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-100",
+    "image": "images/mmvt-100.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "Lead(s) unsuitable for analysis: V2 V5",
+      "Leftward axis",
+      "Left bundle branch block",
+      "QRS 144ms, HR ~141 bpm, Axis -24 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-101",
+    "image": "images/mmvt-101.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "Lead(s) unsuitable for analysis: V2 V6",
+      "Left axis deviation",
+      "IV conduction defect",
+      "Possible anterior infarct - age undetermined",
+      "Inferior/lateral ST-T changes suggest myocardial injury/ischemia",
+      "QRS 152ms, HR ~167 bpm, Axis -72 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-102",
+    "image": "images/mmvt-102.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "Left axis deviation",
+      "RBBB with left anterior fascicular block",
+      "Possible old inferior infarct",
+      "Marked ST depression in V lead, consider recent infarction",
+      "QRS 140ms, HR ~141 bpm, Axis -40 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-103",
+    "image": "images/mmvt-103.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "Left bundle branch block",
+      "QRS 150ms, HR ~143 bpm, Axis -1 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-104",
+    "image": "images/mmvt-104.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "Leftward axis",
+      "Left bundle branch block",
+      "Possible inferior infarct - age undetermined",
+      "Lateral ST elevation, CONSIDER ACUTE INFARCT",
+      "QRS 168ms, HR ~120 bpm, Axis -24 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-105",
+    "image": "images/mmvt-105.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "IV conduction defect",
+      "RVH with secondary repolarization abnormality",
+      "Marked precordial ST depression, CONSIDER ACUTE INFARCT",
+      "Extensive ST-T changes may be due to hypertrophy and/or ischemia",
+      "QRS 156ms, HR ~197 bpm, Axis 45 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-106",
+    "image": "images/mmvt-106.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "Left axis deviation",
+      "IV conduction defect",
+      "Extensive infarct - age undetermined",
+      "QRS 156ms, HR ~122 bpm, Axis -37 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-107",
+    "image": "images/mmvt-107.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "WIDE COMPLEX TACHYCARDIA - POSSIBLE VENTRICULAR TACHYCARDIA",
+      "IF RHYTHM IS CONFIRMED, THE FOLLOWING REPORT MAY NOT BE VALID",
+      "Low terminal QRS spatial velocity",
+      "Broad R or R' in V1 or V2",
+      "RIGHT BUNDLE BRANCH BLOCK",
+      "Poor R wave progression V2-V4",
+      "T wave inversion also present",
+      "POSSIBLE ANTERIOR INFARCTION - AGE UNDETERMINED",
+      "LOW QRS VOLTAGES IN PRECORDIAL LEADS",
+      "Summary: ABNORMAL ECG",
+      "QRS 126ms, HR ~124 bpm, Axis 0 degrees"
+    ]
+  },
+  {
+    "id": "notvt-033",
+    "image": "images/notvt-033.png",
+    "answer": "not-vt",
+    "explanationBullets": [
+      "Atrial fibrillation with rapid ventricular response with PVCs",
+      "Left bundle branch block",
+      "Low QRS voltages in limb leads",
+      "QRS 140ms, HR ~105 bpm, Axis 54 degrees"
+    ]
+  },
+  {
+    "id": "notvt-034",
+    "image": "images/notvt-034.png",
+    "answer": "not-vt",
+    "explanationBullets": [
+      "Atrial fibrillation with rapid ventricular response",
+      "Left axis deviation",
+      "IV conduction defect",
+      "Cannot rule out anterior infarct - age undetermined",
+      "Left ventricular hypertrophy",
+      "Lateral ST-T changes are probably due to ventricular hypertrophy",
+      "Low QRS voltages in limb leads",
+      "QRS 160ms, HR ~123 bpm, Axis -75 degrees"
+    ]
+  },
+  {
+    "id": "notvt-036",
+    "image": "images/notvt-036.png",
+    "answer": "not-vt",
+    "explanationBullets": [
+      "Sinus tachycardia",
+      "Nonspecific intraventricular conduction delay",
+      "Inferior infarct, recent",
+      "QRS 141ms, HR ~131 bpm, Axis -30 degrees"
+    ]
+  },
+  {
+    "id": "notvt-044",
+    "image": "images/notvt-044.png",
+    "answer": "not-vt",
+    "explanationBullets": [
+      "Atrial fibrillation",
+      "RBBB and LAFB",
+      "Consider left ventricular hypertrophy",
+      "QRS 145ms, HR ~122 bpm, Axis -80 degrees"
+    ]
+  },
+  {
+    "id": "notvt-045",
+    "image": "images/notvt-045.png",
+    "answer": "not-vt",
+    "explanationBullets": [
+      "Extreme tachycardia with wide complex, no further rhythm analysis attempted",
+      "QRS 156ms, HR ~163 bpm, Axis -68 degrees"
+    ]
+  },
+  {
+    "id": "notvt-049",
+    "image": "images/notvt-049.png",
+    "answer": "not-vt",
+    "explanationBullets": [
+      "Probable sinus tachycardia",
+      "Left axis deviation",
+      "IV conduction defect",
+      "Anteroseptal infarct - age undetermined",
+      "Lateral ST-T changes suggest myocardial injury/ischemia",
+      "QRS 172ms, HR ~159 bpm, Axis -75 degrees"
+    ]
+  },
+  {
+    "id": "notvt-051",
+    "image": "images/notvt-051.png",
+    "answer": "not-vt",
+    "explanationBullets": [
+      "Possible atrial flutter with rapid ventricular response with PVCs or aberrant ventricular conduction",
+      "Right axis deviation",
+      "IV conduction defect",
+      "Anterolateral ST elevation, CONSIDER ACUTE INFARCT",
+      "Inferior ST-T changes may be due to myocardial ischemia",
+      "QRS 164ms, HR ~111 bpm, Axis 132 degrees"
+    ]
+  },
+  {
+    "id": "notvt-053",
+    "image": "images/notvt-053.png",
+    "answer": "not-vt",
+    "explanationBullets": [
+      "Atrial flutter with uncontrolled ventricular response with 2:1 A-V block",
+      "Right bundle branch block",
+      "Possible septal infarct - age undetermined",
+      "Inferior/lateral ST-T changes are nonspecific",
+      "QRS 144ms, HR ~154 bpm, Axis 73 degrees"
+    ]
+  },
+  {
+    "id": "notvt-055",
+    "image": "images/notvt-055.png",
+    "answer": "not-vt",
+    "explanationBullets": [
+      "Probable atrial tachycardia",
+      "Left axis deviation",
+      "RBBB with left anterior fascicular block",
+      "Possible septal infarct - age undetermined",
+      "QRS 144ms, HR ~125 bpm, Axis -84 degrees"
+    ]
+  },
+  {
+    "id": "notvt-059",
+    "image": "images/notvt-059.png",
+    "answer": "not-vt",
+    "explanationBullets": [
+      "Sinus tachycardia",
+      "Left bundle branch block",
+      "QRS 188ms, HR ~127 bpm, Axis -26 degrees"
+    ]
+  },
+  {
+    "id": "notvt-060",
+    "image": "images/notvt-060.png",
+    "answer": "not-vt",
+    "explanationBullets": [
+      "Atrial fibrillation with rapid ventricular response with PVC(s) or aberrant ventricular conduction",
+      "Left axis deviation",
+      "IV conduction defect",
+      "Left ventricular hypertrophy",
+      "Lateral ST-T changes may be due to hypertrophy and/or ischemia",
+      "QRS 126ms, HR ~143 bpm, Axis -32 degrees"
+    ]
+  },
+  {
+    "id": "notvt-065",
+    "image": "images/notvt-065.png",
+    "answer": "not-vt",
+    "explanationBullets": [
+      "Sinus tachycardia with PAC(s)",
+      "Right bundle branch block",
+      "QRS 128ms, HR ~122 bpm, Axis 12 degrees"
+    ]
+  },
+  {
+    "id": "notvt-074",
+    "image": "images/notvt-074.png",
+    "answer": "not-vt",
+    "explanationBullets": [
+      "Atrial fibrillation with rapid ventricular response",
+      "RBBB with left anterior fascicular block",
+      "Possible extensive infarct - age undetermined",
+      "Possible left ventricular hypertrophy",
+      "Inferior ST elevation, CONSIDER ACUTE INFARCT",
+      "QRS 154ms, HR ~142 bpm, Axis -100 degrees"
+    ]
+  },
+  {
+    "id": "notvt-079",
+    "image": "images/notvt-079.png",
+    "answer": "not-vt",
+    "explanationBullets": [
+      "Probable sinus tachycardia",
+      "Right bundle branch block",
+      "Inferior infarct - age undetermined",
+      "Lateral ST-T changes may be due to myocardial ischemia",
+      "Low QRS voltages in precordial leads",
+      "QRS 144ms, HR ~156 bpm, Axis 5 degrees"
+    ]
+  },
+  {
+    "id": "notvt-087",
+    "image": "images/notvt-087.png",
+    "answer": "not-vt",
+    "explanationBullets": [
+      "Possible atrial flutter with rapid ventricular response with PVC(s) or aberrant ventricular conduction",
+      "IV conduction defect",
+      "Lateral T wave changes are nonspecific",
+      "QRS 128ms, HR ~118 bpm, Axis -16 degrees"
+    ]
+  },
+  {
+    "id": "notvt-088",
+    "image": "images/notvt-088.png",
+    "answer": "not-vt",
+    "explanationBullets": [
+      "Atrial fibrillation with uncontrolled ventricular response",
+      "Left axis deviation",
+      "RBBB with left anterior fascicular block",
+      "Inferior infarct - age undetermined",
+      "QRS 144ms, HR ~164 bpm, Axis -109 degrees"
+    ]
+  },
+  {
+    "id": "notvt-091",
+    "image": "images/notvt-091.png",
+    "answer": "not-vt",
+    "explanationBullets": [
+      "Atrial flutter with rapid ventricular response with 2:1 A-V block",
+      "Right bundle branch block",
+      "Inferior/lateral ST-T changes may be due to myocardial ischemia",
+      "QRS 128ms, HR ~150 bpm, Axis -3 degrees"
+    ]
+  },
+  {
+    "id": "notvt-110",
+    "image": "images/notvt-110.png",
+    "answer": "not-vt",
+    "explanationBullets": [
+      "Atrial fibrillation with rapid ventricular response with PVC(s) or aberrant ventricular conduction",
+      "Left axis deviation",
+      "IV conduction defect",
+      "Left ventricular hypertrophy",
+      "Lateral ST-T changes may be due to hypertrophy and/or ischemia",
+      "QRS 124ms, HR ~107 bpm, Axis -44 degrees"
+    ]
+  },
+  {
+    "id": "notvt-113",
+    "image": "images/notvt-113.png",
+    "answer": "not-vt",
+    "explanationBullets": [
+      "Probable atrial tachycardia",
+      "Left axis deviation",
+      "RBBB with left anterior fascicular block",
+      "Inferior infarct - age undetermined",
+      "Anteroseptal infarct - age undetermined",
+      "Lateral ST-T changes may be due to myocardial ischemia",
+      "QRS 160ms, HR ~121 bpm, Axis -75 degrees"
+    ]
+  },
+  {
+    "id": "notvt-120",
+    "image": "images/notvt-120.png",
+    "answer": "not-vt",
+    "explanationBullets": [
+      "Atrial fibrillation with rapid ventricular response",
+      "Left axis deviation",
+      "RBBB with left anterior fascicular block",
+      "QRS 146ms, HR ~126 bpm, Axis -81 degrees"
+    ]
+  },
+  {
+    "id": "notvt-121",
+    "image": "images/notvt-121.png",
+    "answer": "not-vt",
+    "explanationBullets": [
+      "Sinus tachycardia",
+      "Atrial premature complex",
+      "LVH with secondary repolarization abnormality",
+      "Prolonged QT interval",
+      "QRS 142ms, HR ~139 bpm, Axis 1 degrees"
+    ]
+  },
+  {
+    "id": "notvt-128",
+    "image": "images/notvt-128.png",
+    "answer": "not-vt",
+    "explanationBullets": [
+      "Sinus tachycardia",
+      "Possible left atrial abnormality",
+      "Severe right axis deviation",
+      "Right bundle branch block",
+      "Inferior infarct - age undetermined",
+      "Anterolateral infarct - age undetermined",
+      "Septal ST elevation, CONSIDER ACUTE INFARCT",
+      "QRS 150ms, HR ~145 bpm, Axis -162 degrees"
+    ]
+  },
+  {
+    "id": "notvt-132",
+    "image": "images/notvt-132.png",
+    "answer": "not-vt",
+    "explanationBullets": [
+      "Atrial fibrillation with rapid ventricular response",
+      "IV conduction defect",
+      "Cannot rule out anterior infarct - age undetermined",
+      "Possible left ventricular hypertrophy",
+      "Inferior/lateral ST-T changes may be due to hypertrophy and/or ischemia",
+      "QRS 150ms, HR ~134 bpm, Axis 24 degrees"
+    ]
+  },
+  {
+    "id": "notvt-133",
+    "image": "images/notvt-133.png",
+    "answer": "not-vt",
+    "explanationBullets": [
+      "Atrial fibrillation with rapid ventricular response",
+      "Demand pacing",
+      "Left axis deviation",
+      "Left bundle branch block",
+      "Possible inferior infarct - age undetermined",
+      "Possible lateral infarct - age undetermined",
+      "Anteroseptal ST depression is probably reciprocal to inferior infarct",
+      "QRS 134ms, HR ~109 bpm, Axis -46 degrees"
+    ]
+  },
+  {
+    "id": "notvt-136",
+    "image": "images/notvt-136.png",
+    "answer": "not-vt",
+    "explanationBullets": [
+      "SINUS TACHYCARDIA",
+      "RIGHT BUNDLE BRANCH BLOCK",
+      "Summary: ABNORMAL",
+      "QRS 142ms, HR ~130 bpm, Axis -8 degrees"
+    ]
+  },
+  {
+    "id": "notvt-140",
+    "image": "images/notvt-140.png",
+    "answer": "not-vt",
+    "explanationBullets": [
+      "Atrial fibrillation with uncontrolled ventricular response",
+      "Rightward axis",
+      "Right bundle branch block",
+      "Inferior/lateral ST-T changes may be due to myocardial ischemia",
+      "QRS 146ms, HR ~156 bpm, Axis 107 degrees"
+    ]
+  },
+  {
+    "id": "notvt-144",
+    "image": "images/notvt-144.png",
+    "answer": "not-vt",
+    "explanationBullets": [
+      "Atrial fibrillation with rapid ventricular response with multifocal PVCs",
+      "Left bundle branch block",
+      "QRS 134ms, HR ~114 bpm, Axis 13 degrees"
+    ]
+  },
+  {
+    "id": "notvt-149",
+    "image": "images/notvt-149.png",
+    "answer": "not-vt",
+    "explanationBullets": [
+      "Atrial fibrillation with rapid ventricular response with PVCs",
+      "Left bundle branch block",
+      "QRS 132ms, HR ~111 bpm, Axis 35 degrees"
+    ]
+  },
+  {
+    "id": "notvt-153",
+    "image": "images/notvt-153.png",
+    "answer": "not-vt",
+    "explanationBullets": [
+      "Atrial fibrillation",
+      "Ventricular tachycardia, unsustained",
+      "RBBB and LAFB",
+      "QRS 167ms, HR ~125 bpm, Axis -61 degrees"
+    ]
+  },
+  {
+    "id": "notvt-157",
+    "image": "images/notvt-157.png",
+    "answer": "not-vt",
+    "explanationBullets": [
+      "Possible atrial flutter with rapid ventricular response",
+      "Leftward axis",
+      "Left bundle branch block",
+      "QRS 142ms, HR ~145 bpm, Axis -26 degrees"
+    ]
+  },
+  {
+    "id": "notvt-160",
+    "image": "images/notvt-160.png",
+    "answer": "not-vt",
+    "explanationBullets": [
+      "Atrial fibrillation",
+      "Ventricular tachycardia, unsustained",
+      "Right bundle branch block",
+      "QRS 178ms, HR ~121 bpm, Axis 98 degrees"
+    ]
+  },
+  {
+    "id": "notvt-164",
+    "image": "images/notvt-164.png",
+    "answer": "not-vt",
+    "explanationBullets": [
+      "Atrial flutter with predominant 2:1 AV block",
+      "Right bundle branch block",
+      "Inferior infarct, acute",
+      "Lateral leads are also involved",
+      "QRS 225ms, HR ~111 bpm, Axis -85 degrees"
+    ]
+  },
+  {
+    "id": "notvt-178",
+    "image": "images/notvt-178.png",
+    "answer": "not-vt",
+    "explanationBullets": [
+      "Atrial fibrillation with rapid ventricular response",
+      "Left bundle branch block",
+      "QRS 142ms, HR ~106 bpm, Axis -6 degrees"
+    ]
+  },
+  {
+    "id": "notvt-180",
+    "image": "images/notvt-180.png",
+    "answer": "not-vt",
+    "explanationBullets": [
+      "Possible atrial flutter with rapid ventricular response",
+      "Right bundle branch block",
+      "Inferior infarct - age undetermined",
+      "Lateral ST-T changes may be due to myocardial ischemia",
+      "QRS 146ms, HR ~118 bpm, Axis 42 degrees"
+    ]
+  },
+  {
+    "id": "notvt-181",
+    "image": "images/notvt-181.png",
+    "answer": "not-vt",
+    "explanationBullets": [
+      "Atrial flutter with predominant 2:1 AV block",
+      "Right bundle branch block",
+      "QRS 237ms, HR ~107 bpm, Axis -80 degrees"
+    ]
+  },
+  {
+    "id": "notvt-187",
+    "image": "images/notvt-187.png",
+    "answer": "not-vt",
+    "explanationBullets": [
+      "Ectopic atrial rhythm",
+      "- demand ventricular pacing",
+      "Intraventricular conduction defect",
+      "Lateral ST elevation - repeat if myocardial injury is suspected",
+      "Extensive ST-T changes may be related to electronic pacemaker",
+      "Repolarization changes may be partly due to rate",
+      "Low QRS voltages in precordial leads",
+      "QRS 178ms, HR ~140 bpm, Axis 88 degrees"
+    ]
+  },
+  {
+    "id": "notvt-191",
+    "image": "images/notvt-191.png",
+    "answer": "not-vt",
+    "explanationBullets": [
+      "Sinus tachycardia",
+      "Possible right atrial abnormality",
+      "Left axis deviation",
+      "Left bundle branch block",
+      "Possible inferior infarct - age undetermined",
+      "QRS 180ms, HR ~128 bpm, Axis -42 degrees"
+    ]
+  },
+  {
+    "id": "notvt-194",
+    "image": "images/notvt-194.png",
+    "answer": "not-vt",
+    "explanationBullets": [
+      "Atrial fibrillation",
+      "Left bundle branch block",
+      "QRS 150ms, HR ~129 bpm, Axis -5 degrees"
+    ]
+  },
+  {
+    "id": "notvt-200",
+    "image": "images/notvt-200.png",
+    "answer": "not-vt",
+    "explanationBullets": [
+      "Atrial fibrillation with rapid ventricular response",
+      "Left axis deviation",
+      "Left bundle branch block",
+      "Possible inferior infarct - age undetermined",
+      "QRS 174ms, HR ~135 bpm, Axis -45 degrees"
+    ]
+  },
+  {
+    "id": "notvt-204",
+    "image": "images/notvt-204.png",
+    "answer": "not-vt",
+    "explanationBullets": [
+      "Probable sinus tachycardia",
+      "Left axis deviation",
+      "RBBB with left anterior fascicular block",
+      "Possible anterolateral infarct - age undetermined",
+      "Low QRS voltages in precordial leads",
+      "QRS 160ms, HR ~140 bpm, Axis -73 degrees"
+    ]
+  },
+  {
+    "id": "notvt-218",
+    "image": "images/notvt-218.png",
+    "answer": "not-vt",
+    "explanationBullets": [
+      "Sinus tachycardia with PAC(s)",
+      "Left axis deviation",
+      "RBBB with left anterior fascicular block",
+      "Inferior infarct - age undetermined",
+      "QRS 142ms, HR ~167 bpm, Axis -81 degrees"
+    ]
+  },
+  {
+    "id": "notvt-222",
+    "image": "images/notvt-222.png",
+    "answer": "not-vt",
+    "explanationBullets": [
+      "Atrial fibrillation with rapid ventricular response",
+      "Indeterminate axis",
+      "Right bundle branch block",
+      "Low QRS voltages in limb leads",
+      "QRS 142ms, HR ~126 bpm, Axis 0 degrees"
+    ]
+  },
+  {
+    "id": "notvt-225",
+    "image": "images/notvt-225.png",
+    "answer": "not-vt",
+    "explanationBullets": [
+      "Sinus tachycardia with PACs",
+      "Right bundle branch block",
+      "Inferior ST elevation - cannot rule out myocardial injury",
+      "QRS 134ms, HR ~120 bpm, Axis 68 degrees"
+    ]
+  },
+  {
+    "id": "notvt-227",
+    "image": "images/notvt-227.png",
+    "answer": "not-vt",
+    "explanationBullets": [
+      "Atrial fibrillation with rapid ventricular response",
+      "Lead(s) unsuitable for analysis: V2",
+      "Left axis deviation",
+      "Left bundle branch block",
+      "QRS 150ms, HR ~137 bpm, Axis -37 degrees"
+    ]
+  },
+  {
+    "id": "notvt-232",
+    "image": "images/notvt-232.png",
+    "answer": "not-vt",
+    "explanationBullets": [
+      "Possible atrial flutter with rapid ventricular response with PVC(s) or aberrant ventricular conduction",
+      "Left axis deviation",
+      "Extensive IVCD",
+      "Inferior infarct - age undetermined",
+      "Possible anterior infarct - age undetermined",
+      "Lateral ST-T changes may be due to myocardial ischemia",
+      "QRS 128ms, HR ~107 bpm, Axis -52 degrees"
+    ]
+  },
+  {
+    "id": "notvt-233",
+    "image": "images/notvt-233.png",
+    "answer": "not-vt",
+    "explanationBullets": [
+      "Sinus tachycardia",
+      "Possible left atrial abnormality",
+      "Left axis deviation",
+      "RBBB with left anterior fascicular block",
+      "QRS 142ms, HR ~132 bpm, Axis -75 degrees"
+    ]
+  },
+  {
+    "id": "notvt-237",
+    "image": "images/notvt-237.png",
+    "answer": "not-vt",
+    "explanationBullets": [
+      "Atrial fibrillation with rapid ventricular response",
+      "Left bundle branch block",
+      "Lateral ST elevation, CONSIDER ACUTE INFARCT",
+      "Anteroseptal ST changes may be due to myocardial ischemia",
+      "QRS 130ms, HR ~108 bpm, Axis 28 degrees"
+    ]
+  },
+  {
+    "id": "notvt-239",
+    "image": "images/notvt-239.png",
+    "answer": "not-vt",
+    "explanationBullets": [
+      "Atrial fibrillation with rapid ventricular response with multifocal PVCs or aberrant ventricular conduction",
+      "Left axis deviation",
+      "RBBB with left anterior fascicular block",
+      "Extensive infarct - age undetermined",
+      "Marked precordial ST depression, CONSIDER ACUTE INFARCT",
+      "QRS 146ms, HR ~110 bpm, Axis -117 degrees"
+    ]
+  },
+  {
+    "id": "notvt-245",
+    "image": "images/notvt-245.png",
+    "answer": "not-vt",
+    "explanationBullets": [
+      "Possible atrial flutter with rapid ventricular response with PVC(s) or aberrant ventricular conduction",
+      "Right bundle branch block",
+      "Possible inferior infarct - age undetermined",
+      "Possible anterior infarct - age undetermined",
+      "Lateral T wave changes may be due to myocardial ischemia",
+      "QRS 128ms, HR ~106 bpm, Axis 13 degrees"
+    ]
+  },
+  {
+    "id": "notvt-247",
+    "image": "images/notvt-247.png",
+    "answer": "not-vt",
+    "explanationBullets": [
+      "Age not entered, assumed to be  50 years old for purpose of ECG interpretation",
+      "Sinus tachycardia",
+      "Atrial premature complex",
+      "Right bundle branch block",
+      "Lateral infarct, age indeterminate",
+      "QRS 151ms, HR ~131 bpm, Axis 169 degrees"
+    ]
+  },
+  {
+    "id": "notvt-252",
+    "image": "images/notvt-252.png",
+    "answer": "not-vt",
+    "explanationBullets": [
+      "Atrial fibrillation with rapid ventricular response",
+      "Left bundle branch block",
+      "QRS 126ms, HR ~120 bpm, Axis 13 degrees"
+    ]
+  },
+  {
+    "id": "notvt-254",
+    "image": "images/notvt-254.png",
+    "answer": "not-vt",
+    "explanationBullets": [
+      "Atrial fibrillation with uncontrolled ventricular response with PVC(s)",
+      "Right bundle branch block",
+      "Inferior infarct - age undetermined",
+      "Lateral ST-T changes may be due to myocardial ischemia",
+      "QRS 178ms, HR ~165 bpm, Axis 70 degrees"
+    ]
+  },
+  {
+    "id": "notvt-262",
+    "image": "images/notvt-262.png",
+    "answer": "not-vt",
+    "explanationBullets": [
+      "Possible ectopic atrial tachycardia with PACs",
+      "Left axis deviation",
+      "RBBB with left anterior fascicular block",
+      "Inferior infarct - age undetermined",
+      "QRS 148ms, HR ~123 bpm, Axis -44 degrees"
+    ]
+  },
+  {
+    "id": "notvt-266",
+    "image": "images/notvt-266.png",
+    "answer": "not-vt",
+    "explanationBullets": [
+      "Atrial fibrillation with rapid ventricular response",
+      "Left axis deviation",
+      "RBBB with left anterior fascicular block",
+      "Possible left ventricular hypertrophy",
+      "Lateral ST-T changes are probably due to ventricular hypertrophy",
+      "QRS 142ms, HR ~121 bpm, Axis -34 degrees"
+    ]
+  },
+  {
+    "id": "notvt-276",
+    "image": "images/notvt-276.png",
+    "answer": "not-vt",
+    "explanationBullets": [
+      "Probable sinus (? atrial) tachycardia",
+      "- non-sustained ventricular tachycardia",
+      "Marked left axis deviation",
+      "RBBB with left anterior fascicular block",
+      "Old inferior infarct",
+      "Lateral ST-T changes may be due to myocardial ischemia",
+      "Repolarization changes may be partly due to rate",
+      "QRS 150ms, HR ~136 bpm, Axis -88 degrees"
+    ]
+  },
+  {
+    "id": "notvt-278",
+    "image": "images/notvt-278.png",
+    "answer": "not-vt",
+    "explanationBullets": [
+      "Atrial fibrillation with rapid ventricular response",
+      "Right bundle branch block",
+      "Possible anterior infarct - age undetermined",
+      "Inferior/lateral ST-T changes may be due to myocardial ischemia",
+      "QRS 122ms, HR ~133 bpm, Axis 27 degrees"
+    ]
+  },
+  {
+    "id": "notvt-279",
+    "image": "images/notvt-279.png",
+    "answer": "not-vt",
+    "explanationBullets": [
+      "Atrial fibrillation with rapid ventricular response",
+      "Marked left axis deviation",
+      "Right bundle branch block",
+      "Probable extensive infarct with acute inferior + lateral changes",
+      "Low QRS voltages in precordial leads",
+      "QRS 156ms, HR ~120 bpm, Axis -83 degrees"
+    ]
+  },
+  {
+    "id": "notvt-280",
+    "image": "images/notvt-280.png",
+    "answer": "not-vt",
+    "explanationBullets": [
+      "Sinus rhythm with bigeminal PVCs",
+      "Left axis deviation",
+      "IV conduction defect",
+      "Extensive infarct - age undetermined",
+      "QRS 166ms, HR ~138 bpm, Axis -66 degrees"
+    ]
+  },
+  {
+    "id": "notvt-281",
+    "image": "images/notvt-281.png",
+    "answer": "not-vt",
+    "explanationBullets": [
+      "Atrial flutter with rapid ventricular response with 2:1 A-V block",
+      "Right axis deviation",
+      "Right bundle branch block",
+      "Lateral infarct - age undetermined",
+      "Inferior ST-T changes may be due to myocardial ischemia",
+      "QRS 154ms, HR ~116 bpm, Axis 131 degrees"
+    ]
+  },
+  {
+    "id": "notvt-283",
+    "image": "images/notvt-283.png",
+    "answer": "not-vt",
+    "explanationBullets": [
+      "Possible atrial flutter with rapid ventricular response",
+      "Right bundle branch block",
+      "Possible inferior infarct - age undetermined",
+      "Lateral ST-T changes may be due to myocardial ischemia",
+      "QRS 154ms, HR ~127 bpm, Axis 69 degrees"
+    ]
+  },
+  {
+    "id": "notvt-299",
+    "image": "images/notvt-299.png",
+    "answer": "not-vt",
+    "explanationBullets": [
+      "Sinus tachycardia",
+      "Possible right atrial abnormality",
+      "Left bundle branch block",
+      "QRS 156ms, HR ~127 bpm, Axis -1 degrees"
+    ]
+  },
+  {
+    "id": "notvt-300",
+    "image": "images/notvt-300.png",
+    "answer": "not-vt",
+    "explanationBullets": [
+      "Atrial flutter with predominant 2:1 AV block",
+      "Right bundle branch block",
+      "Abnrm T, probable ischemia, anterolateral lds",
+      "QRS 242ms, HR ~112 bpm, Axis -85 degrees"
+    ]
+  },
+  {
+    "id": "notvt-302",
+    "image": "images/notvt-302.png",
+    "answer": "not-vt",
+    "explanationBullets": [
+      "Atrial fibrillation",
+      "Paired ventricular premature complexes",
+      "Right bundle branch block",
+      "QRS 181ms, HR ~133 bpm, Axis 252 degrees"
+    ]
+  },
+  {
+    "id": "notvt-306",
+    "image": "images/notvt-306.png",
+    "answer": "not-vt",
+    "explanationBullets": [
+      "Atrial fibrillation with rapid ventricular response",
+      "Lead(s) unsuitable for analysis: V2",
+      "Left axis deviation",
+      "Left bundle branch block",
+      "QRS 166ms, HR ~147 bpm, Axis -48 degrees"
+    ]
+  },
+  {
+    "id": "notvt-317",
+    "image": "images/notvt-317.png",
+    "answer": "not-vt",
+    "explanationBullets": [
+      "Sinus tachycardia",
+      "Nonspecific intraventricular conduction delay",
+      "Inferior infarct, recent",
+      "QRS 141ms, HR ~131 bpm, Axis -30 degrees"
+    ]
+  },
+  {
+    "id": "notvt-328",
+    "image": "images/notvt-328.png",
+    "answer": "not-vt",
+    "explanationBullets": [
+      "Probable atrial fibrillation with uncontrolled ventricular response",
+      "Left axis deviation",
+      "Left bundle branch block",
+      "Possible inferior infarct - age undetermined",
+      "QRS 176ms, HR ~154 bpm, Axis -54 degrees"
+    ]
+  },
+  {
+    "id": "notvt-333",
+    "image": "images/notvt-333.png",
+    "answer": "not-vt",
+    "explanationBullets": [
+      "Atrial fibrillation with rapid ventricular response",
+      "Left bundle branch block",
+      "QRS 148ms, HR ~121 bpm, Axis 62 degrees"
+    ]
+  },
+  {
+    "id": "notvt-334",
+    "image": "images/notvt-334.png",
+    "answer": "not-vt",
+    "explanationBullets": [
+      "Sinus tachycardia",
+      "Right bundle branch block",
+      "LVH with secondary repolarization abnormality",
+      "QRS 162ms, HR ~143 bpm, Axis 38 degrees"
+    ]
+  },
+  {
+    "id": "notvt-335",
+    "image": "images/notvt-335.png",
+    "answer": "not-vt",
+    "explanationBullets": [
+      "Sinus tachycardia",
+      "Severe right axis deviation",
+      "Right bundle branch block",
+      "Inferior infarct - age undetermined",
+      "Possible anteroseptal infarct - age undetermined",
+      "QRS 178ms, HR ~103 bpm, Axis -129 degrees"
+    ]
+  },
+  {
+    "id": "notvt-338",
+    "image": "images/notvt-338.png",
+    "answer": "not-vt",
+    "explanationBullets": [
+      "Atrial fibrillation with rapid ventricular response",
+      "Left axis deviation",
+      "RBBB with left anterior fascicular block",
+      "Inferior infarct - age undetermined",
+      "Lateral ST-T changes may be due to myocardial ischemia",
+      "QRS 142ms, HR ~141 bpm, Axis -57 degrees"
+    ]
+  },
+  {
+    "id": "notvt-340",
+    "image": "images/notvt-340.png",
+    "answer": "not-vt",
+    "explanationBullets": [
+      "Possible atrial flutter with rapid ventricular response",
+      "Left axis deviation",
+      "RBBB with left anterior fascicular block",
+      "Left ventricular hypertrophy",
+      "Anteroseptal ST elevation, CONSIDER ACUTE INFARCT",
+      "Lateral ST-T changes may be due to hypertrophy and/or ischemia",
+      "QRS 180ms, HR ~132 bpm, Axis -49 degrees"
+    ]
+  },
+  {
+    "id": "notvt-344",
+    "image": "images/notvt-344.png",
+    "answer": "not-vt",
+    "explanationBullets": [
+      "Atrial flutter with rapid ventricular response with 2:1 A-V block",
+      "Left bundle branch block",
+      "Lateral ST elevation, CONSIDER ACUTE INFARCT",
+      "QRS 194ms, HR ~132 bpm, Axis 50 degrees"
+    ]
+  },
+  {
+    "id": "notvt-355",
+    "image": "images/notvt-355.png",
+    "answer": "not-vt",
+    "explanationBullets": [
+      "Atrial flutter",
+      "Left bundle branch block",
+      "QRS 138ms, HR ~111 bpm, Axis -36 degrees"
+    ]
+  },
+  {
+    "id": "notvt-363",
+    "image": "images/notvt-363.png",
+    "answer": "not-vt",
+    "explanationBullets": [
+      "Sinus tachycardia",
+      "Ventricular premature complex",
+      "Right bundle branch block",
+      "QRS 167ms, HR ~145 bpm, Axis 268 degrees"
+    ]
+  },
+  {
+    "id": "notvt-370",
+    "image": "images/notvt-370.png",
+    "answer": "not-vt",
+    "explanationBullets": [
+      "Sinus tachycardia",
+      "Right bundle branch block",
+      "Lateral infarct, recent",
+      "QRS 145ms, HR ~133 bpm, Axis 140 degrees"
+    ]
+  },
+  {
+    "id": "notvt-374",
+    "image": "images/notvt-374.png",
+    "answer": "not-vt",
+    "explanationBullets": [
+      "Probable supraventricular tachycardia",
+      "Right bundle branch block",
+      "Inferior/lateral ST-T changes are nonspecific",
+      "QRS 152ms, HR ~164 bpm, Axis 53 degrees"
+    ]
+  },
+  {
+    "id": "notvt-382",
+    "image": "images/notvt-382.png",
+    "answer": "not-vt",
+    "explanationBullets": [
+      "Sinus tachycardia with PVC(s)",
+      "Right axis deviation",
+      "Possible WPW pattern",
+      "QRS 122ms, HR ~103 bpm, Axis 130 degrees"
+    ]
+  },
+  {
+    "id": "notvt-393",
+    "image": "images/notvt-393.png",
+    "answer": "not-vt",
+    "explanationBullets": [
+      "Atrial fibrillation",
+      "Right bundle branch block",
+      "LVH with secondary repolarization abnormality",
+      "QRS 149ms, HR ~131 bpm, Axis -36 degrees"
+    ]
+  },
+  {
+    "id": "notvt-400",
+    "image": "images/notvt-400.png",
+    "answer": "not-vt",
+    "explanationBullets": [
+      "Atrial flutter with rapid ventricular response",
+      "Lead(s) unsuitable for analysis: V3",
+      "Right bundle branch block",
+      "Inferior infarct - age undetermined",
+      "Possible left ventricular hypertrophy",
+      "Lateral ST-T changes are probably due to ventricular hypertrophy",
+      "QRS 166ms, HR ~124 bpm, Axis 57 degrees"
+    ]
+  },
+  {
+    "id": "notvt-406",
+    "image": "images/notvt-406.png",
+    "answer": "not-vt",
+    "explanationBullets": [
+      "Sinus or ectopic atrial tachycardia",
+      "Atrial premature complex",
+      "RBBB and LPFB",
+      "Borderline ST depression, lateral leads",
+      "QRS 196ms, HR ~126 bpm, Axis 192 degrees"
+    ]
+  },
+  {
+    "id": "notvt-407",
+    "image": "images/notvt-407.png",
+    "answer": "not-vt",
+    "explanationBullets": [
+      "Sinus tachycardia",
+      "Right bundle branch block",
+      "Inferior ST-T changes are nonspecific",
+      "QRS 126ms, HR ~102 bpm, Axis 21 degrees"
+    ]
+  },
+  {
+    "id": "notvt-408",
+    "image": "images/notvt-408.png",
+    "answer": "not-vt",
+    "explanationBullets": [
+      "Atrial fibrillation with rapid ventricular response",
+      "IV conduction defect",
+      "Possible anterior infarct - age undetermined",
+      "Possible left ventricular hypertrophy",
+      "Inferior/lateral ST-T changes are probably due to ventricular hypertrophy",
+      "QRS 152ms, HR ~124 bpm, Axis 6 degrees"
+    ]
+  },
+  {
+    "id": "notvt-410",
+    "image": "images/notvt-410.png",
+    "answer": "not-vt",
+    "explanationBullets": [
+      "Atrial fibrillation with rapid ventricular response with PVC(s)",
+      "Left bundle branch block",
+      "Low QRS voltages in limb leads",
+      "QRS 128ms, HR ~124 bpm, Axis 65 degrees"
+    ]
+  },
+  {
+    "id": "notvt-419",
+    "image": "images/notvt-419.png",
+    "answer": "not-vt",
+    "explanationBullets": [
+      "Probable sinus tachycardia",
+      "Right bundle branch block",
+      "QRS 144ms, HR ~150 bpm, Axis 73 degrees"
+    ]
+  },
+  {
+    "id": "notvt-423",
+    "image": "images/notvt-423.png",
+    "answer": "not-vt",
+    "explanationBullets": [
+      "Demand pacing",
+      "Pacemaker rhythm - no further analysis",
+      "QRS 152ms, HR ~130 bpm, Axis -70 degrees"
+    ]
+  },
+  {
+    "id": "notvt-428",
+    "image": "images/notvt-428.png",
+    "answer": "not-vt",
+    "explanationBullets": [
+      "Atrial fibrillation with rapid ventricular response",
+      "Left axis deviation",
+      "RBBB with left anterior fascicular block",
+      "QRS 146ms, HR ~133 bpm, Axis -80 degrees"
+    ]
+  },
+  {
+    "id": "notvt-430",
+    "image": "images/notvt-430.png",
+    "answer": "not-vt",
+    "explanationBullets": [
+      "Sinus tachycardia",
+      "WPW pattern",
+      "QRS 122ms, HR ~115 bpm, Axis 10 degrees"
+    ]
+  },
+  {
+    "id": "notvt-436",
+    "image": "images/notvt-436.png",
+    "answer": "not-vt",
+    "explanationBullets": [
+      "Atrial fibrillation",
+      "Left bundle branch block",
+      "QRS 142ms, HR ~119 bpm, Axis 42 degrees"
+    ]
+  },
+  {
+    "id": "notvt-437",
+    "image": "images/notvt-437.png",
+    "answer": "not-vt",
+    "explanationBullets": [
+      "Atrial fibrillation with rapid ventricular response",
+      "Left axis deviation",
+      "Left bundle branch block",
+      "QRS 126ms, HR ~119 bpm, Axis -39 degrees"
+    ]
+  },
+  {
+    "id": "notvt-438",
+    "image": "images/notvt-438.png",
+    "answer": "not-vt",
+    "explanationBullets": [
+      "Probable atrial tachycardia",
+      "Left axis deviation",
+      "RBBB with left anterior fascicular block",
+      "Inferior infarct - age undetermined",
+      "Anterior infarct - age undetermined",
+      "Lateral ST elevation, CONSIDER ACUTE INFARCT",
+      "Low QRS voltages in precordial leads",
+      "QRS 172ms, HR ~134 bpm, Axis -50 degrees"
+    ]
+  },
+  {
+    "id": "notvt-443",
+    "image": "images/notvt-443.png",
+    "answer": "not-vt",
+    "explanationBullets": [
+      "Possible atrial flutter with rapid ventricular response",
+      "Right bundle branch block",
+      "Inferior T wave changes are nonspecific",
+      "QRS 120ms, HR ~112 bpm, Axis 6 degrees"
+    ]
+  },
+  {
+    "id": "notvt-444",
+    "image": "images/notvt-444.png",
+    "answer": "not-vt",
+    "explanationBullets": [
+      "Probable supraventricular tachycardia",
+      "--- Possible measurement error ---",
+      "Right axis deviation",
+      "Right bundle branch block",
+      "Inferior and septal ST elevation, CONSIDER ACUTE INFARCT",
+      "Lateral ST-T changes may be due to myocardial infarct or CVA",
+      "QRS 146ms, HR ~179 bpm, Axis 135 degrees"
+    ]
+  },
+  {
+    "id": "notvt-446",
+    "image": "images/notvt-446.png",
+    "answer": "not-vt",
+    "explanationBullets": [
+      "Atrial fibrillation with rapid ventricular response with PVC(s) or aberrant ventricular conduction",
+      "IV conduction defect",
+      "Possible anterior infarct - age undetermined",
+      "Possible left ventricular hypertrophy",
+      "Inferior/lateral ST-T changes may be due to hypertrophy and/or ischemia",
+      "QRS 148ms, HR ~134 bpm, Axis 5 degrees"
+    ]
+  },
+  {
+    "id": "notvt-448",
+    "image": "images/notvt-448.png",
+    "answer": "not-vt",
+    "explanationBullets": [
+      "Undetermined rhythm",
+      "Left axis deviation",
+      "Left bundle branch block",
+      "Lateral infarct - age undetermined",
+      "Possible inferior infarct - age undetermined",
+      "Anteroseptal ST depression is probably reciprocal to inferior infarct",
+      "QRS 174ms, HR ~150 bpm, Axis -43 degrees"
+    ]
+  },
+  {
+    "id": "notvt-450",
+    "image": "images/notvt-450.png",
+    "answer": "not-vt",
+    "explanationBullets": [
+      "Possible atrial flutter with rapid ventricular response",
+      "Right bundle branch block",
+      "Inferior infarct - age undetermined",
+      "QRS 146ms, HR ~102 bpm, Axis 21 degrees"
+    ]
+  },
+  {
+    "id": "notvt-451",
+    "image": "images/notvt-451.png",
+    "answer": "not-vt",
+    "explanationBullets": [
+      "Probable sinus tachycardia",
+      "Right axis deviation",
+      "Right bundle branch block",
+      "Lateral infarct - age undetermined",
+      "Inferior ST-T changes suggest myocardial infarct",
+      "QRS 190ms, HR ~158 bpm, Axis 126 degrees"
+    ]
+  },
+  {
+    "id": "notvt-453",
+    "image": "images/notvt-453.png",
+    "answer": "not-vt",
+    "explanationBullets": [
+      "Sinus tachycardia with PACs",
+      "Right bundle branch block",
+      "Inferior infarct - age undetermined",
+      "QRS 142ms, HR ~140 bpm, Axis -13 degrees"
+    ]
+  },
+  {
+    "id": "notvt-455",
+    "image": "images/notvt-455.png",
+    "answer": "not-vt",
+    "explanationBullets": [
+      "Atrial fibrillation with rapid ventricular response",
+      "IV conduction defect",
+      "Possible lateral infarct - age undetermined",
+      "Possible anterior infarct - age undetermined",
+      "Inferior ST-T changes are nonspecific",
+      "Low QRS voltages in limb leads",
+      "QRS 150ms, HR ~132 bpm, Axis 81 degrees"
+    ]
+  },
+  {
+    "id": "notvt-456",
+    "image": "images/notvt-456.png",
+    "answer": "not-vt",
+    "explanationBullets": [
+      "Atrial fibrillation",
+      "RBBB and LAFB",
+      "QRS 172ms, HR ~129 bpm, Axis -50 degrees"
+    ]
+  },
+  {
+    "id": "notvt-457",
+    "image": "images/notvt-457.png",
+    "answer": "not-vt",
+    "explanationBullets": [
+      "Possible atrial flutter with rapid ventricular response",
+      "Rightward axis",
+      "Right bundle branch block",
+      "Possible inferior infarct - age undetermined",
+      "QRS 132ms, HR ~101 bpm, Axis 106 degrees"
+    ]
+  },
+  {
+    "id": "notvt-460",
+    "image": "images/notvt-460.png",
+    "answer": "not-vt",
+    "explanationBullets": [
+      "Sinus tachycardia",
+      "Paired ventricular premature complexes",
+      "Sinus pause",
+      "Right bundle branch block",
+      "Inferior infarct, old",
+      "QRS 147ms, HR ~109 bpm, Axis -35 degrees"
+    ]
+  },
+  {
+    "id": "notvt-461",
+    "image": "images/notvt-461.png",
+    "answer": "not-vt",
+    "explanationBullets": [
+      "Atrial fibrillation with rapid ventricular response with PVCs",
+      "Right bundle branch block",
+      "Left ventricular hypertrophy",
+      "Inferior/lateral ST-T changes are probably due to ventricular hypertrophy",
+      "QRS 122ms, HR ~131 bpm, Axis 14 degrees"
+    ]
+  },
+  {
+    "id": "notvt-465",
+    "image": "images/notvt-465.png",
+    "answer": "not-vt",
+    "explanationBullets": [
+      "Atrial flutter with rapid ventricular response with 2:1 A-V block",
+      "Left axis deviation",
+      "Left bundle branch block",
+      "QRS 176ms, HR ~117 bpm, Axis -30 degrees"
+    ]
+  },
+  {
+    "id": "notvt-467",
+    "image": "images/notvt-467.png",
+    "answer": "not-vt",
+    "explanationBullets": [
+      "Extreme tachycardia with wide complex, no further rhythm analysis attempted",
+      "QRS 189ms, HR ~163 bpm, Axis 256 degrees"
+    ]
+  },
+  {
+    "id": "notvt-468",
+    "image": "images/notvt-468.png",
+    "answer": "not-vt",
+    "explanationBullets": [
+      "Atrial fibrillation with rapid ventricular response",
+      "Lead(s) unsuitable for analysis: V2",
+      "Leftward axis",
+      "Left bundle branch block",
+      "QRS 146ms, HR ~135 bpm, Axis -23 degrees"
+    ]
+  },
+  {
+    "id": "notvt-473",
+    "image": "images/notvt-473.png",
+    "answer": "not-vt",
+    "explanationBullets": [
+      "Sinus tachycardia",
+      "RBBB and LAFB",
+      "QRS 147ms, HR ~157 bpm, Axis -82 degrees"
+    ]
+  },
+  {
+    "id": "notvt-474",
+    "image": "images/notvt-474.png",
+    "answer": "not-vt",
+    "explanationBullets": [
+      "Extreme tachycardia with wide complex, no further rhythm analysis attempted",
+      "QRS 194ms, HR ~164 bpm, Axis 255 degrees"
+    ]
+  },
+  {
+    "id": "notvt-478",
+    "image": "images/notvt-478.png",
+    "answer": "not-vt",
+    "explanationBullets": [
+      "Probable atrial fibrillation with uncontrolled ventricular response",
+      "Left axis deviation",
+      "RBBB with left anterior fascicular block",
+      "Inferior infarct - age undetermined",
+      "Possible lateral infarct - age undetermined",
+      "Low QRS voltages in precordial leads",
+      "QRS 168ms, HR ~152 bpm, Axis -103 degrees"
+    ]
+  },
+  {
+    "id": "notvt-481",
+    "image": "images/notvt-481.png",
+    "answer": "not-vt",
+    "explanationBullets": [
+      "Atrial flutter with rapid ventricular response with 2:1 A-V block",
+      "Leftward axis",
+      "Right bundle branch block",
+      "Left ventricular hypertrophy",
+      "Inferior/lateral ST-T changes may be due to hypertrophy and/or ischemia",
+      "QRS 128ms, HR ~144 bpm, Axis -22 degrees"
+    ]
+  },
+  {
+    "id": "notvt-482",
+    "image": "images/notvt-482.png",
+    "answer": "not-vt",
+    "explanationBullets": [
+      "Atrial fibrillation with rapid ventricular response",
+      "Left bundle branch block",
+      "QRS 138ms, HR ~120 bpm, Axis -9 degrees"
+    ]
+  },
+  {
+    "id": "notvt-485",
+    "image": "images/notvt-485.png",
+    "answer": "not-vt",
+    "explanationBullets": [
+      "Possible atrial flutter with rapid ventricular response with PVC(s) or aberrant ventricular conduction",
+      "Leftward axis",
+      "Right bundle branch block",
+      "Left ventricular hypertrophy",
+      "Lateral ST-T changes may be due to hypertrophy and/or ischemia",
+      "QRS 126ms, HR ~100 bpm, Axis -21 degrees"
+    ]
+  },
+  {
+    "id": "notvt-486",
+    "image": "images/notvt-486.png",
+    "answer": "not-vt",
+    "explanationBullets": [
+      "Sinus tachycardia with sinus arrhythmia",
+      "Possible left atrial abnormality",
+      "Left axis deviation",
+      "RBBB with left anterior fascicular block",
+      "Inferior infarct - age undetermined",
+      "Lateral T wave changes may be due to myocardial ischemia",
+      "QRS 150ms, HR ~141 bpm, Axis -51 degrees"
+    ]
+  },
+  {
+    "id": "notvt-497",
+    "image": "images/notvt-497.png",
+    "answer": "not-vt",
+    "explanationBullets": [
+      "Atrial fibrillation with uncontrolled ventricular response",
+      "Left axis deviation",
+      "Left bundle branch block",
+      "Possible inferior infarct - age undetermined",
+      "QRS 188ms, HR ~155 bpm, Axis -58 degrees"
+    ]
+  },
+  {
+    "id": "notvt-499",
+    "image": "images/notvt-499.png",
+    "answer": "not-vt",
+    "explanationBullets": [
+      "Atrial flutter with uncontrolled ventricular response",
+      "- 2:1 A-V block",
+      "Conduction defect of RBBB type",
+      "Consider acute anteroseptal infarct",
+      "Lateral ST elevation, consider recent infarction",
+      "Inferior T wave changes may be due to myocardial ischemia",
+      "Repolarization changes may be partly due to rate/rhythm",
+      "QRS 152ms, HR ~161 bpm, Axis 59 degrees"
+    ]
+  },
+  {
+    "id": "notvt-501",
+    "image": "images/notvt-501.png",
+    "answer": "not-vt",
+    "explanationBullets": [
+      "Atrial fibrillation with rapid ventricular response with paroxysmal idioventricular rhythm",
+      "Left axis deviation",
+      "RBBB with left anterior fascicular block",
+      "POSSIBLE ACUTE LATERAL INFARCT",
+      "Anterior ST elevation, CONSIDER ACUTE INFARCT",
+      "Marked precordial ST depression, CONSIDER ACUTE INFARCT",
+      "QRS 206ms, HR ~129 bpm, Axis -81 degrees"
+    ]
+  },
+  {
+    "id": "notvt-509",
+    "image": "images/notvt-509.png",
+    "answer": "not-vt",
+    "explanationBullets": [
+      "Atrial flutter with rapid ventricular response with 2:1 A-V block",
+      "Right bundle branch block",
+      "Possible inferior infarct - age undetermined",
+      "Lateral ST-T changes may be due to myocardial ischemia",
+      "QRS 154ms, HR ~126 bpm, Axis 52 degrees"
+    ]
+  },
+  {
+    "id": "notvt-512",
+    "image": "images/notvt-512.png",
+    "answer": "not-vt",
+    "explanationBullets": [
+      "Atrial fibrillation with rapid ventricular response",
+      "Left axis deviation",
+      "Left bundle branch block",
+      "Possible inferior infarct - age undetermined",
+      "QRS 180ms, HR ~132 bpm, Axis -45 degrees"
+    ]
+  },
+  {
+    "id": "notvt-513",
+    "image": "images/notvt-513.png",
+    "answer": "not-vt",
+    "explanationBullets": [
+      "Probable sinus tachycardia",
+      "Left axis deviation",
+      "RBBB with left anterior fascicular block",
+      "Possible septal infarct - age undetermined",
+      "Inferior/lateral T wave changes may be due to myocardial ischemia",
+      "QRS 150ms, HR ~149 bpm, Axis -58 degrees"
+    ]
+  },
+  {
+    "id": "notvt-515",
+    "image": "images/notvt-515.png",
+    "answer": "not-vt",
+    "explanationBullets": [
+      "Probable sinus tachycardia",
+      "Left axis deviation",
+      "RBBB with left anterior fascicular block",
+      "Lateral ST elevation, CONSIDER ACUTE INFARCT",
+      "Marked precordial ST depression, CONSIDER ACUTE INFARCT",
+      "QRS 156ms, HR ~143 bpm, Axis -72 degrees"
+    ]
+  },
+  {
+    "id": "notvt-517",
+    "image": "images/notvt-517.png",
+    "answer": "not-vt",
+    "explanationBullets": [
+      "Sinus or ectopic atrial tachycardia",
+      "Right bundle branch block",
+      "Consider inferior infarct",
+      "QRS 150ms, HR ~123 bpm, Axis 14 degrees"
+    ]
+  },
+  {
+    "id": "notvt-522",
+    "image": "images/notvt-522.png",
+    "answer": "not-vt",
+    "explanationBullets": [
+      "Atrial fibrillation with rapid ventricular response",
+      "Left axis deviation",
+      "IV conduction defect",
+      "Left ventricular hypertrophy",
+      "Lateral ST-T changes may be due to hypertrophy and/or ischemia",
+      "Tall T waves - consider acute ischemia or hyperkalemia",
+      "QRS 142ms, HR ~133 bpm, Axis -64 degrees"
+    ]
+  },
+  {
+    "id": "notvt-525",
+    "image": "images/notvt-525.png",
+    "answer": "not-vt",
+    "explanationBullets": [
+      "Atrial fibrillation",
+      "Paired ventricular premature complexes",
+      "IVCD, consider atypical RBBB",
+      "QRS 207ms, HR ~143 bpm, Axis 24 degrees"
+    ]
+  },
+  {
+    "id": "notvt-535",
+    "image": "images/notvt-535.png",
+    "answer": "not-vt",
+    "explanationBullets": [
+      "Atrial fibrillation with rapid ventricular response",
+      "Right bundle branch block",
+      "Inferior infarct - age undetermined",
+      "Lateral ST elevation, CONSIDER ACUTE INFARCT",
+      "QRS 126ms, HR ~143 bpm, Axis 33 degrees"
+    ]
+  },
+  {
+    "id": "notvt-536",
+    "image": "images/notvt-536.png",
+    "answer": "not-vt",
+    "explanationBullets": [
+      "Atrial fibrillation",
+      "Ventricular tachycardia, unsustained",
+      "Nonspecific intraventricular conduction delay",
+      "Borderline ST depression, inferior leads",
+      "QRS 148ms, HR ~133 bpm, Axis 19 degrees"
+    ]
+  },
+  {
+    "id": "notvt-537",
+    "image": "images/notvt-537.png",
+    "answer": "not-vt",
+    "explanationBullets": [
+      "Sinus tachycardia",
+      "Left bundle branch block",
+      "QRS 144ms, HR ~134 bpm, Axis 8 degrees"
+    ]
+  },
+  {
+    "id": "notvt-538",
+    "image": "images/notvt-538.png",
+    "answer": "not-vt",
+    "explanationBullets": [
+      "Atrial fibrillation with rapid ventricular response",
+      "Left axis deviation",
+      "Left bundle branch block",
+      "QRS 146ms, HR ~129 bpm, Axis -30 degrees"
+    ]
+  },
+  {
+    "id": "notvt-539",
+    "image": "images/notvt-539.png",
+    "answer": "not-vt",
+    "explanationBullets": [
+      "Sinus tachycardia with PAC(s)",
+      "Left axis deviation",
+      "RBBB with left anterior fascicular block",
+      "Lateral ST-T changes may be due to myocardial ischemia",
+      "QRS 166ms, HR ~122 bpm, Axis -81 degrees"
+    ]
+  },
+  {
+    "id": "notvt-544",
+    "image": "images/notvt-544.png",
+    "answer": "not-vt",
+    "explanationBullets": [
+      "Atrial fibrillation with rapid ventricular response",
+      "Indeterminate axis",
+      "Right bundle branch block",
+      "Possible inferior infarct - age undetermined",
+      "Possible anterior infarct - age undetermined",
+      "Low QRS voltages in precordial leads",
+      "QRS 134ms, HR ~140 bpm, Axis 0 degrees"
+    ]
+  },
+  {
+    "id": "notvt-559",
+    "image": "images/notvt-559.png",
+    "answer": "not-vt",
+    "explanationBullets": [
+      "Atrial fibrillation with rapid ventricular response",
+      "Left axis deviation",
+      "Left bundle branch block",
+      "Possible inferior infarct - age undetermined",
+      "Low QRS voltages in limb leads",
+      "QRS 160ms, HR ~124 bpm, Axis -51 degrees"
+    ]
+  },
+  {
+    "id": "notvt-560",
+    "image": "images/notvt-560.png",
+    "answer": "not-vt",
+    "explanationBullets": [
+      "Atrial fibrillation with rapid ventricular response with multifocal PVCs or aberrant ventricular conduction",
+      "Lead(s) unsuitable for analysis: V6",
+      "Left axis deviation",
+      "RBBB with left anterior fascicular block",
+      "Inferior ST elevation, CONSIDER ACUTE INFARCT",
+      "Marked precordial ST depression, CONSIDER ACUTE INFARCT",
+      "Lateral ST-T changes may be due to myocardial ischemia",
+      "QRS 138ms, HR ~117 bpm, Axis -100 degrees"
+    ]
+  },
+  {
+    "id": "notvt-562",
+    "image": "images/notvt-562.png",
+    "answer": "not-vt",
+    "explanationBullets": [
+      "Sinus tachycardia",
+      "Multiple premature complexes, vent & supraven",
+      "Biatrial enlargement",
+      "Right bundle branch block",
+      "LVH with secondary repolarization abnormality",
+      "Prolonged QT interval",
+      "QRS 181ms, HR ~164 bpm, Axis 31 degrees"
+    ]
+  },
+  {
+    "id": "notvt-572",
+    "image": "images/notvt-572.png",
+    "answer": "not-vt",
+    "explanationBullets": [
+      "Atrial fibrillation with rapid ventricular response",
+      "Indeterminate axis",
+      "Right bundle branch block",
+      "Inferior T wave changes are nonspecific",
+      "Low QRS voltages in limb leads",
+      "QRS 156ms, HR ~105 bpm, Axis 0 degrees"
+    ]
+  },
+  {
+    "id": "notvt-576",
+    "image": "images/notvt-576.png",
+    "answer": "not-vt",
+    "explanationBullets": [
+      "Atrial fibrillation with rapid ventricular response",
+      "Left axis deviation",
+      "Left bundle branch block",
+      "QRS 168ms, HR ~133 bpm, Axis -56 degrees"
+    ]
+  },
+  {
+    "id": "notvt-579",
+    "image": "images/notvt-579.png",
+    "answer": "not-vt",
+    "explanationBullets": [
+      "Sinus tachycardia",
+      "Possible right atrial abnormality",
+      "Rightward axis",
+      "IV conduction defect",
+      "Possible anterior infarct - age undetermined",
+      "Inferior/lateral ST-T changes may be due to myocardial ischemia",
+      "QRS 152ms, HR ~122 bpm, Axis 90 degrees"
+    ]
+  },
+  {
+    "id": "notvt-580",
+    "image": "images/notvt-580.png",
+    "answer": "not-vt",
+    "explanationBullets": [
+      "ATRIAL FIBRILLATION WITH RAPID VENTRICULAR RESPONSE",
+      "INDETERMINATE FRONTAL QRS AXIS",
+      "Low terminal QRS spatial velocity",
+      "Broad R or R' in V1 or V2",
+      "RIGHT BUNDLE BRANCH BLOCK",
+      "T wave changes in inferior leads",
+      "THESE MINOR CHANGES ARE OF EQUIVOCAL SIGNIFICANCE ONLY",
+      "CHANGES MAY ALSO PARTLY BE DUE TO RHYTHM",
+      "Summary: ABNORMAL ECG",
+      "QRS 128ms, HR ~110 bpm, Axis 0 degrees"
+    ]
+  },
+  {
+    "id": "notvt-581",
+    "image": "images/notvt-581.png",
+    "answer": "not-vt",
+    "explanationBullets": [
+      "Atrial fibrillation with rapid ventricular response",
+      "Left bundle branch block",
+      "QRS 170ms, HR ~135 bpm, Axis 28 degrees"
+    ]
+  },
+  {
+    "id": "notvt-582",
+    "image": "images/notvt-582.png",
+    "answer": "not-vt",
+    "explanationBullets": [
+      "Probable atrial tachycardia",
+      "Right axis deviation",
+      "Right bundle branch block",
+      "Lateral infarct - age undetermined",
+      "Inferior ST-T changes may be due to myocardial ischemia",
+      "QRS 150ms, HR ~129 bpm, Axis 116 degrees"
+    ]
+  },
+  {
+    "id": "notvt-583",
+    "image": "images/notvt-583.png",
+    "answer": "not-vt",
+    "explanationBullets": [
+      "Possible atrial flutter with rapid ventricular response",
+      "Left axis deviation",
+      "RBBB with left anterior fascicular block",
+      "Inferior infarct - age undetermined",
+      "Lateral ST-T changes may be due to myocardial ischemia",
+      "QRS 144ms, HR ~121 bpm, Axis -36 degrees"
+    ]
+  },
+  {
+    "id": "notvt-585",
+    "image": "images/notvt-585.png",
+    "answer": "not-vt",
+    "explanationBullets": [
+      "Atrial fibrillation with rapid ventricular response",
+      "Right bundle branch block",
+      "Inferior infarct - age undetermined",
+      "Possible anterior infarct - age undetermined",
+      "QRS 142ms, HR ~131 bpm, Axis -17 degrees"
+    ]
+  },
+  {
+    "id": "notvt-587",
+    "image": "images/notvt-587.png",
+    "answer": "not-vt",
+    "explanationBullets": [
+      "Probable supraventricular tachycardia",
+      "Right bundle branch block",
+      "Inferior/lateral ST-T changes are nonspecific",
+      "QRS 136ms, HR ~176 bpm, Axis 31 degrees"
+    ]
+  },
+  {
+    "id": "notvt-594",
+    "image": "images/notvt-594.png",
+    "answer": "not-vt",
+    "explanationBullets": [
+      "Age not entered, assumed to be  50 years old for purpose of ECG interpretation",
+      "Sinus tachycardia",
+      "Nonspecific intraventricular conduction delay",
+      "ST depr, consider ischemia, inferior leads",
+      "QRS 144ms, HR ~127 bpm, Axis 112 degrees"
+    ]
+  },
+  {
+    "id": "notvt-598",
+    "image": "images/notvt-598.png",
+    "answer": "not-vt",
+    "explanationBullets": [
+      "Sinus tachycardia",
+      "Possible right atrial abnormality",
+      "Left axis deviation",
+      "Left bundle branch block",
+      "QRS 150ms, HR ~123 bpm, Axis -45 degrees"
+    ]
+  },
+  {
+    "id": "notvt-599",
+    "image": "images/notvt-599.png",
+    "answer": "not-vt",
+    "explanationBullets": [
+      "Atrial fibrillation with rapid ventricular response",
+      "Right bundle branch block",
+      "Inferior T wave changes are nonspecific",
+      "QRS 130ms, HR ~120 bpm, Axis 54 degrees"
+    ]
+  },
+  {
+    "id": "notvt-602",
+    "image": "images/notvt-602.png",
+    "answer": "not-vt",
+    "explanationBullets": [
+      "Sinus tachycardia with irregular rate",
+      "Left bundle branch block",
+      "QRS 127ms, HR ~122 bpm, Axis -49 degrees"
+    ]
+  },
+  {
+    "id": "notvt-605",
+    "image": "images/notvt-605.png",
+    "answer": "not-vt",
+    "explanationBullets": [
+      "Atrial fibrillation with rapid ventricular response",
+      "Leftward axis",
+      "Left bundle branch block",
+      "Septal ST elevation, CONSIDER ACUTE INFARCT",
+      "Anteroseptal ST changes may be due to myocardial infarct or CVA",
+      "QRS 170ms, HR ~140 bpm, Axis -21 degrees"
+    ]
+  },
+  {
+    "id": "notvt-613",
+    "image": "images/notvt-613.png",
+    "answer": "not-vt",
+    "explanationBullets": [
+      "Atrial fibrillation with rapid ventricular response",
+      "Right bundle branch block",
+      "Inferior/lateral ST-T changes may be due to myocardial ischemia",
+      "QRS 126ms, HR ~113 bpm, Axis 68 degrees"
+    ]
+  },
+  {
+    "id": "notvt-615",
+    "image": "images/notvt-615.png",
+    "answer": "not-vt",
+    "explanationBullets": [
+      "Atrial flutter with rapid ventricular response with PVC(s)",
+      "Lead(s) unsuitable for analysis: V3 V5",
+      "Right bundle branch block",
+      "Possible inferior infarct - age undetermined",
+      "Lateral ST-T changes may be due to myocardial ischemia",
+      "QRS 136ms, HR ~110 bpm, Axis 67 degrees"
+    ]
+  },
+  {
+    "id": "notvt-616",
+    "image": "images/notvt-616.png",
+    "answer": "not-vt",
+    "explanationBullets": [
+      "Atrial flutter with rapid ventricular response with PVC(s) or aberrant ventricular conduction",
+      "Lead(s) unsuitable for analysis: I II III aVR aVL V4",
+      "--- Suspect arm lead reversal - only aVF, V1-V6 analyzed ---",
+      "Possible inferior infarct - age undetermined",
+      "Lateral ST-T changes may be due to myocardial ischemia",
+      "QRS 124ms, HR ~131 bpm, Axis 102 degrees"
+    ]
+  },
+  {
+    "id": "notvt-617",
+    "image": "images/notvt-617.png",
+    "answer": "not-vt",
+    "explanationBullets": [
+      "Atrial fibrillation with rapid ventricular response",
+      "Right bundle branch block",
+      "Inferior T wave changes are nonspecific",
+      "QRS 122ms, HR ~114 bpm, Axis 47 degrees"
+    ]
+  },
+  {
+    "id": "notvt-621",
+    "image": "images/notvt-621.png",
+    "answer": "not-vt",
+    "explanationBullets": [
+      "Age not entered, assumed to be  50 years old for purpose of ECG interpretation",
+      "Pacemaker spikes or artifacts",
+      "Atrial fibrillation",
+      "Nonspecific intraventricular conduction delay",
+      "QRS 146ms, HR ~139 bpm, Axis 28 degrees"
+    ]
+  },
+  {
+    "id": "notvt-648",
+    "image": "images/notvt-648.png",
+    "answer": "not-vt",
+    "explanationBullets": [
+      "Ventricular pacing",
+      "Pacemaker rhythm - no further analysis",
+      "QRS 124ms, HR ~101 bpm, Axis -76 degrees"
+    ]
+  },
+  {
+    "id": "notvt-749",
+    "image": "images/notvt-749.png",
+    "answer": "not-vt",
+    "explanationBullets": [
+      "Accelerated idioventricular rhythm",
+      "Left axis deviation",
+      "Left bundle branch block",
+      "Possible inferior infarct - age undetermined",
+      "QRS 134ms, HR ~106 bpm, Axis -70 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-108",
+    "image": "images/mmvt-108.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "Marked right axis deviation",
+      "Conduction defect of RBBB type",
+      "Probable extensive infarct - age undetermined",
+      "QRS 226ms, HR ~231 bpm, Axis 165 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-110",
+    "image": "images/mmvt-110.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "Left axis deviation",
+      "RBBB with left anterior fascicular block",
+      "Inferior infarct - age undetermined",
+      "Marked precordial ST depression, CONSIDER ACUTE INFARCT",
+      "Lateral ST-T changes may be due to myocardial ischemia",
+      "QRS 180ms, HR ~147 bpm, Axis -68 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-111",
+    "image": "images/mmvt-111.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "Marked left axis deviation",
+      "RBBB with left anterior fascicular block",
+      "Old inferior infarct",
+      "Low R(V2-V4) probably due to right ventricular hypertrophy",
+      "Generalized low QRS voltages",
+      "QRS 144ms, HR ~149 bpm, Axis -91 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-112",
+    "image": "images/mmvt-112.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "Lead(s) unsuitable for analysis: V6",
+      "Left axis deviation",
+      "Left bundle branch block",
+      "QRS 154ms, HR ~148 bpm, Axis -39 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-113",
+    "image": "images/mmvt-113.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "Right bundle branch block",
+      "Inferior/lateral ST-T changes suggest myocardial injury/ischemia",
+      "QRS 142ms, HR ~161 bpm, Axis 86 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-115",
+    "image": "images/mmvt-115.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "Lead(s) unsuitable for analysis: II III aVF V1 V2 V3 V4 V5 V6",
+      "IV conduction defect",
+      "Lateral ST-T changes may be due to myocardial ischemia",
+      "QRS 154ms, HR ~190 bpm"
+    ]
+  },
+  {
+    "id": "mmvt-116",
+    "image": "images/mmvt-116.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "Leftward axis",
+      "Left bundle branch block",
+      "QRS 172ms, HR ~135 bpm, Axis -28 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-117",
+    "image": "images/mmvt-117.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "Left axis deviation",
+      "RBBB with left anterior fascicular block",
+      "Inferior infarct - age undetermined",
+      "Marked precordial ST depression, CONSIDER ACUTE INFARCT",
+      "Lateral ST-T changes suggest myocardial injury/ischemia",
+      "QRS 142ms, HR ~143 bpm, Axis -68 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-118",
+    "image": "images/mmvt-118.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Extreme tachycardia with wide complex, no further rhythm analysis attempted",
+      "QRS 156ms, HR ~163 bpm, Axis -68 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-120",
+    "image": "images/mmvt-120.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "Leftward axis",
+      "Left bundle branch block",
+      "QRS 140ms, HR ~167 bpm, Axis -25 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-121",
+    "image": "images/mmvt-121.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "Left bundle branch block",
+      "Marked ST depression in V lead, consider recent infarction",
+      "QRS 140ms, HR ~122 bpm, Axis 31 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-122",
+    "image": "images/mmvt-122.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable atrial tachycardia",
+      "Left axis deviation",
+      "RBBB with left anterior fascicular block",
+      "Possible septal infarct - age undetermined",
+      "QRS 144ms, HR ~125 bpm, Axis -84 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-123",
+    "image": "images/mmvt-123.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "Left axis deviation",
+      "IV conduction defect",
+      "Possible anterior infarct - age undetermined",
+      "Inferior ST elevation, CONSIDER ACUTE INFARCT",
+      "Anteroseptal ST depression is probably reciprocal to inferior infarct",
+      "QRS 162ms, HR ~129 bpm, Axis -59 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-124",
+    "image": "images/mmvt-124.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "Left axis deviation",
+      "IV conduction defect",
+      "Inferior infarct - age undetermined",
+      "Anterior infarct - age undetermined",
+      "Lateral ST-T changes may be due to myocardial ischemia",
+      "QRS 156ms, HR ~138 bpm, Axis -50 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-125",
+    "image": "images/mmvt-125.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "Lead(s) unsuitable for analysis: II III aVF V1 V2 V3 V4",
+      "IV conduction defect",
+      "Inferior ST elevation, CONSIDER ACUTE INFARCT",
+      "QRS 148ms, HR ~167 bpm"
+    ]
+  },
+  {
+    "id": "mmvt-126",
+    "image": "images/mmvt-126.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "Left axis deviation",
+      "IV conduction defect",
+      "Inferior ST elevation, CONSIDER ACUTE INFARCT",
+      "Tall T waves - consider acute ischemia or hyperkalemia",
+      "QRS 158ms, HR ~120 bpm, Axis -72 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-127",
+    "image": "images/mmvt-127.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "Left axis deviation",
+      "Extensive IVCD",
+      "Inferior infarct - age undetermined",
+      "Lateral ST-T changes may be due to myocardial ischemia",
+      "QRS 182ms, HR ~141 bpm, Axis -72 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-128",
+    "image": "images/mmvt-128.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "Leftward axis",
+      "IV conduction defect",
+      "BVH with secondary repolarization abnormality",
+      "Extensive ST-T changes are probably due to ventricular hypertrophy",
+      "QRS 188ms, HR ~132 bpm, Axis -21 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-129",
+    "image": "images/mmvt-129.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "Left axis deviation",
+      "Extensive IVCD",
+      "Inferior infarct - age undetermined",
+      "Lateral ST-T changes may be due to myocardial ischemia",
+      "QRS 152ms, HR ~131 bpm, Axis -60 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-130",
+    "image": "images/mmvt-130.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "Leftward axis",
+      "Left bundle branch block",
+      "Possible inferior infarct - age undetermined",
+      "QRS 142ms, HR ~141 bpm, Axis -24 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-131",
+    "image": "images/mmvt-131.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "Possible sequence error: V4,V5 omitted",
+      "Left bundle branch block",
+      "QRS 182ms, HR ~174 bpm, Axis 54 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-133",
+    "image": "images/mmvt-133.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "IV conduction defect",
+      "Possible septal infarct - age undetermined",
+      "QRS 178ms, HR ~151 bpm, Axis 82 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-134",
+    "image": "images/mmvt-134.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "Left axis deviation",
+      "RBBB with left anterior fascicular block",
+      "QRS 142ms, HR ~134 bpm, Axis -85 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-135",
+    "image": "images/mmvt-135.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "Left axis deviation",
+      "IV conduction defect",
+      "Possible left ventricular hypertrophy",
+      "Lateral ST-T changes may be due to hypertrophy and/or ischemia",
+      "QRS 142ms, HR ~142 bpm, Axis -42 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-136",
+    "image": "images/mmvt-136.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "Left axis deviation",
+      "RBBB with left anterior fascicular block",
+      "Inferior ST elevation, CONSIDER ACUTE INFARCT",
+      "QRS 142ms, HR ~153 bpm, Axis -110 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-137",
+    "image": "images/mmvt-137.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "Left axis deviation",
+      "RBBB with left anterior fascicular block",
+      "Left ventricular hypertrophy",
+      "Lateral ST-T changes may be due to hypertrophy and/or ischemia",
+      "QRS 160ms, HR ~145 bpm, Axis -56 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-138",
+    "image": "images/mmvt-138.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "IV conduction defect",
+      "Extensive ST-T changes may be due to myocardial ischemia",
+      "QRS 142ms, HR ~138 bpm, Axis 24 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-139",
+    "image": "images/mmvt-139.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable atrial tachycardia",
+      "Left axis deviation",
+      "RBBB with left anterior fascicular block",
+      "Inferior infarct - age undetermined",
+      "Anteroseptal infarct - age undetermined",
+      "Lateral ST-T changes may be due to myocardial ischemia",
+      "QRS 160ms, HR ~121 bpm, Axis -75 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-140",
+    "image": "images/mmvt-140.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "Left bundle branch block",
+      "QRS 140ms, HR ~132 bpm, Axis -15 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-141",
+    "image": "images/mmvt-141.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "Left axis deviation",
+      "IV conduction defect",
+      "Extensive infarct - age undetermined",
+      "Tall T waves - consider acute ischemia or hyperkalemia",
+      "QRS 154ms, HR ~125 bpm, Axis -53 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-142",
+    "image": "images/mmvt-142.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "Lead(s) unsuitable for analysis: V2",
+      "Left axis deviation",
+      "RBBB with left anterior fascicular block",
+      "Inferior ST elevation suggests early repolarization",
+      "Lateral T wave changes are nonspecific",
+      "QRS 160ms, HR ~134 bpm, Axis -73 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-143",
+    "image": "images/mmvt-143.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "Left axis deviation",
+      "Left bundle branch block",
+      "QRS 174ms, HR ~148 bpm, Axis -39 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-144",
+    "image": "images/mmvt-144.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "Marked left axis deviation",
+      "Conduction defect of LBBB type",
+      "QRS 148ms, HR ~167 bpm, Axis -49 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-145",
+    "image": "images/mmvt-145.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "Left bundle branch block",
+      "Low QRS voltages in limb leads",
+      "QRS 170ms, HR ~152 bpm, Axis 72 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-146",
+    "image": "images/mmvt-146.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "Left bundle branch block",
+      "Possible inferior infarct - age undetermined",
+      "QRS 190ms, HR ~120 bpm, Axis 20 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-147",
+    "image": "images/mmvt-147.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "Lead(s) unsuitable for analysis: II aVF",
+      "Left bundle branch block",
+      "Possible inferior infarct - age undetermined",
+      "Anteroseptal ST changes suggest myocardial injury/ischemia",
+      "QRS 190ms, HR ~131 bpm"
+    ]
+  },
+  {
+    "id": "mmvt-148",
+    "image": "images/mmvt-148.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "Left axis deviation",
+      "Left bundle branch block",
+      "QRS 172ms, HR ~134 bpm, Axis -34 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-149",
+    "image": "images/mmvt-149.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "Left bundle branch block",
+      "QRS 166ms, HR ~131 bpm, Axis 21 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-150",
+    "image": "images/mmvt-150.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "Left axis deviation",
+      "RBBB with left anterior fascicular block",
+      "QRS 140ms, HR ~130 bpm, Axis -74 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-152",
+    "image": "images/mmvt-152.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "Left bundle branch block",
+      "QRS 144ms, HR ~140 bpm, Axis -19 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-153",
+    "image": "images/mmvt-153.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "Extensive IVCD",
+      "Inferior/lateral ST-T changes suggest myocardial injury/ischemia",
+      "QRS 182ms, HR ~137 bpm, Axis 8 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-154",
+    "image": "images/mmvt-154.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "Marked left axis deviation",
+      "Intraventricular conduction defect",
+      "Lateral T wave changes may be due to myocardial ischemia",
+      "Repolarization changes may be partly due to rate",
+      "QRS 156ms, HR ~135 bpm, Axis -62 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-155",
+    "image": "images/mmvt-155.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "Left axis deviation",
+      "Left bundle branch block",
+      "Possible inferior infarct - age undetermined",
+      "QRS 140ms, HR ~129 bpm, Axis -36 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-156",
+    "image": "images/mmvt-156.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "Right axis deviation",
+      "IV conduction defect",
+      "Lateral infarct - age undetermined",
+      "Marked precordial ST depression, CONSIDER ACUTE INFARCT",
+      "Inferior and ant/septal ST-T changes suggest myocardial infarct",
+      "QRS 176ms, HR ~156 bpm, Axis 113 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-157",
+    "image": "images/mmvt-157.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "Left axis deviation",
+      "RBBB with left anterior fascicular block",
+      "Possible septal infarct - age undetermined",
+      "Low QRS voltages in precordial leads",
+      "QRS 142ms, HR ~125 bpm, Axis -74 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-159",
+    "image": "images/mmvt-159.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "Severe right axis deviation",
+      "IV conduction defect",
+      "Lateral infarct - age undetermined",
+      "Possible right ventricular hypertrophy",
+      "Septal ST changes may be due to hypertrophy and/or ischemia",
+      "QRS 152ms, HR ~131 bpm, Axis -143 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-160",
+    "image": "images/mmvt-160.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "Leftward axis",
+      "Right bundle branch block",
+      "Low QRS voltages in precordial leads",
+      "QRS 144ms, HR ~122 bpm, Axis -26 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-161",
+    "image": "images/mmvt-161.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "Left bundle branch block",
+      "QRS 152ms, HR ~133 bpm, Axis -13 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-162",
+    "image": "images/mmvt-162.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "Left bundle branch block",
+      "Low QRS voltages in limb leads",
+      "QRS 144ms, HR ~140 bpm, Axis 61 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-163",
+    "image": "images/mmvt-163.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "Left axis deviation",
+      "Left bundle branch block",
+      "Lateral infarct - age undetermined",
+      "Possible inferior infarct - age undetermined",
+      "Anteroseptal ST depression is probably reciprocal to inferior infarct",
+      "QRS 192ms, HR ~163 bpm, Axis -52 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-164",
+    "image": "images/mmvt-164.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "Left axis deviation",
+      "RBBB with left anterior fascicular block",
+      "Marked precordial ST depression, CONSIDER ACUTE INFARCT",
+      "QRS 152ms, HR ~136 bpm, Axis -70 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-165",
+    "image": "images/mmvt-165.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable atrial tachycardia",
+      "Right bundle branch block",
+      "Inferior/lateral ST-T changes may be due to myocardial ischemia",
+      "QRS 158ms, HR ~132 bpm, Axis 42 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-166",
+    "image": "images/mmvt-166.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "Lead(s) unsuitable for analysis: aVR V3 V4",
+      "Left axis deviation",
+      "IV conduction defect",
+      "Inferior infarct - age undetermined",
+      "Lateral ST-T changes may be due to myocardial ischemia",
+      "Low QRS voltages in limb leads",
+      "QRS 178ms, HR ~122 bpm, Axis -59 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-167",
+    "image": "images/mmvt-167.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "IV conduction defect",
+      "Possible septal infarct - age undetermined",
+      "Left ventricular hypertrophy",
+      "Lateral ST elevation, CONSIDER ACUTE INFARCT",
+      "Inferior ST-T changes are probably due to ventricular hypertrophy",
+      "QRS 156ms, HR ~133 bpm, Axis 26 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-168",
+    "image": "images/mmvt-168.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "Left axis deviation",
+      "RBBB with left anterior fascicular block",
+      "Inferior infarct - age undetermined",
+      "Marked precordial ST depression, CONSIDER ACUTE INFARCT",
+      "QRS 140ms, HR ~163 bpm, Axis -81 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-170",
+    "image": "images/mmvt-170.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "Left bundle branch block",
+      "QRS 150ms, HR ~182 bpm, Axis 61 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-171",
+    "image": "images/mmvt-171.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "Left axis deviation",
+      "Extensive IVCD",
+      "Anterior infarct - age undetermined",
+      "Inferior infarct - age undetermined",
+      "Lateral ST-T changes suggest myocardial injury/ischemia",
+      "QRS 172ms, HR ~157 bpm, Axis -63 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-172",
+    "image": "images/mmvt-172.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "Left bundle branch block",
+      "QRS 170ms, HR ~127 bpm, Axis 56 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-174",
+    "image": "images/mmvt-174.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Extreme tachycardia with wide complex, no further rhythm analysis attempted",
+      "QRS 162ms, HR ~164 bpm, Axis -41 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-175",
+    "image": "images/mmvt-175.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "Left axis deviation",
+      "Left bundle branch block",
+      "Possible inferior infarct - age undetermined",
+      "QRS 160ms, HR ~127 bpm, Axis -48 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-176",
+    "image": "images/mmvt-176.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "Lead(s) unsuitable for analysis: V5 V6",
+      "Rightward axis",
+      "IV conduction defect",
+      "Possible anteroseptal infarct - age undetermined",
+      "Inferior ST-T changes suggest myocardial injury/ischemia",
+      "QRS 162ms, HR ~162 bpm, Axis 95 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-177",
+    "image": "images/mmvt-177.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "Lead(s) unsuitable for analysis: V1",
+      "Left axis deviation",
+      "RBBB with left anterior fascicular block",
+      "QRS changes V3/V4 may be due to LVH but cannot rule out anterior infarct",
+      "Possible left ventricular hypertrophy",
+      "Inferior/lateral ST-T changes are probably due to ventricular hypertrophy",
+      "QRS 156ms, HR ~126 bpm, Axis -75 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-179",
+    "image": "images/mmvt-179.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "Left bundle branch block",
+      "Low QRS voltages in precordial leads",
+      "QRS 142ms, HR ~136 bpm, Axis -13 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-180",
+    "image": "images/mmvt-180.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "Left bundle branch block",
+      "QRS 156ms, HR ~139 bpm, Axis -18 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-181",
+    "image": "images/mmvt-181.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "Left axis deviation",
+      "Right bundle branch block",
+      "Extensive infarct - age undetermined",
+      "Low QRS voltages in precordial leads",
+      "QRS 140ms, HR ~148 bpm, Axis -38 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-182",
+    "image": "images/mmvt-182.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "Severe right axis deviation",
+      "IV conduction defect",
+      "Possible anterior infarct - age undetermined",
+      "Inferior/lateral ST-T changes may be due to myocardial ischemia",
+      "QRS 192ms, HR ~122 bpm, Axis -123 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-183",
+    "image": "images/mmvt-183.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "Left bundle branch block",
+      "Possible inferior infarct - age undetermined",
+      "QRS 140ms, HR ~135 bpm, Axis -14 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-184",
+    "image": "images/mmvt-184.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "Left bundle branch block",
+      "Possible inferior infarct - age undetermined",
+      "QRS 142ms, HR ~153 bpm, Axis 27 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-185",
+    "image": "images/mmvt-185.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "Left axis deviation",
+      "Intraventricular conduction defect",
+      "Inferior infarct - age undetermined",
+      "Anteroseptal infarct - age undetermined",
+      "Lateral ST-T changes offer additional evidence of ischemia",
+      "Repolarization changes may be partly due to rate",
+      "QRS 154ms, HR ~133 bpm, Axis -35 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-186",
+    "image": "images/mmvt-186.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "Lead(s) unsuitable for analysis: V2",
+      "Left axis deviation",
+      "RBBB with left anterior fascicular block",
+      "LVH with secondary repolarization abnormality",
+      "Lateral ST-T changes are probably due to ventricular hypertrophy",
+      "QRS 158ms, HR ~126 bpm, Axis -48 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-188",
+    "image": "images/mmvt-188.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "Left axis deviation",
+      "IV conduction defect",
+      "Extensive infarct - age undetermined",
+      "QRS 182ms, HR ~127 bpm, Axis -66 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-189",
+    "image": "images/mmvt-189.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "Left axis deviation",
+      "Conduction defect of LBBB type",
+      "Possible inferior infarct - age undetermined",
+      "QRS 176ms, HR ~189 bpm, Axis -37 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-190",
+    "image": "images/mmvt-190.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "Left axis deviation",
+      "Right bundle branch block",
+      "Inferior infarct - age undetermined",
+      "Possible anterior infarct - age undetermined",
+      "QRS 152ms, HR ~128 bpm, Axis -91 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-191",
+    "image": "images/mmvt-191.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "Leftward axis",
+      "Left bundle branch block",
+      "Inferior ST elevation, CONSIDER ACUTE INFARCT",
+      "Anteroseptal ST depression is probably reciprocal to inferior infarct",
+      "QRS 180ms, HR ~130 bpm, Axis -26 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-192",
+    "image": "images/mmvt-192.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "Left axis deviation",
+      "Left bundle branch block",
+      "Possible lateral infarct - age undetermined",
+      "Possible inferior infarct - age undetermined",
+      "QRS 142ms, HR ~146 bpm, Axis -49 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-193",
+    "image": "images/mmvt-193.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Possible ectopic atrial tachycardia with PACs",
+      "Left axis deviation",
+      "RBBB with left anterior fascicular block",
+      "Inferior infarct - age undetermined",
+      "QRS 148ms, HR ~123 bpm, Axis -44 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-194",
+    "image": "images/mmvt-194.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "Lead(s) unsuitable for analysis: I II III aVR aVL V1 V3",
+      "--- Possible measurement error ---",
+      "--- Suspect arm lead reversal - only aVF, V1-V6 analyzed ---",
+      "IV conduction defect",
+      "Possible anteroseptal infarct - age undetermined",
+      "Lateral ST-T changes may be due to myocardial ischemia",
+      "QRS 178ms, HR ~204 bpm, Axis 106 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-195",
+    "image": "images/mmvt-195.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "Left axis deviation",
+      "Left bundle branch block",
+      "QRS 158ms, HR ~156 bpm, Axis -47 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-197",
+    "image": "images/mmvt-197.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "Left axis deviation",
+      "IV conduction defect",
+      "Possible left ventricular hypertrophy",
+      "Septal and lateral ST-T changes are probably due to ventricular hypertrophy",
+      "QRS 150ms, HR ~125 bpm, Axis -56 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-198",
+    "image": "images/mmvt-198.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "--- Possible measurement error ---",
+      "IV conduction defect",
+      "Extensive ST elevation suggests pericarditis",
+      "Extensive ST-T changes suggest myocardial injury/ischemia",
+      "QRS 186ms, HR ~176 bpm, Axis 50 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-199",
+    "image": "images/mmvt-199.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "Left axis deviation",
+      "Left bundle branch block",
+      "QRS 162ms, HR ~128 bpm, Axis -65 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-200",
+    "image": "images/mmvt-200.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "Left axis deviation",
+      "IV conduction defect",
+      "Inferior infarct - age undetermined",
+      "Ant/septal and lateral ST-T changes may be due to myocardial ischemia",
+      "QRS 154ms, HR ~173 bpm, Axis -30 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-201",
+    "image": "images/mmvt-201.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "Left axis deviation",
+      "Left bundle branch block",
+      "Low QRS voltages in precordial leads",
+      "QRS 168ms, HR ~153 bpm, Axis -60 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-202",
+    "image": "images/mmvt-202.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "Leftward axis",
+      "Left bundle branch block",
+      "QRS 180ms, HR ~122 bpm, Axis -24 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-204",
+    "image": "images/mmvt-204.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "Left bundle branch block",
+      "QRS 176ms, HR ~123 bpm, Axis -18 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-205",
+    "image": "images/mmvt-205.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "Right bundle branch block",
+      "Inferior T wave changes are nonspecific",
+      "QRS 142ms, HR ~152 bpm, Axis 28 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-206",
+    "image": "images/mmvt-206.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "Lead(s) unsuitable for analysis: V6",
+      "Left axis deviation",
+      "Extensive IVCD",
+      "Inferior infarct - age undetermined",
+      "Lateral ST-T changes may be due to myocardial ischemia",
+      "QRS 162ms, HR ~134 bpm, Axis -51 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-207",
+    "image": "images/mmvt-207.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Undetermined rhythm",
+      "Incomplete LBBB",
+      "Poor R wave progression - probable normal variant",
+      "Inferior ST elevation - cannot rule out myocardial injury",
+      "Septal T wave changes are nonspecific",
+      "Generalized low QRS voltages",
+      "QRS 146ms, HR ~136 bpm, Axis 70 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-208",
+    "image": "images/mmvt-208.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Wide-QRS tachycardia",
+      "Nonspecific intraventricular conduction delay",
+      "QRS 142ms, HR ~129 bpm, Axis -27 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-209",
+    "image": "images/mmvt-209.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "Left axis deviation",
+      "RBBB with left anterior fascicular block",
+      "POSSIBLE ACUTE ANTEROSEPTAL INFARCT",
+      "Lateral ST elevation, CONSIDER ACUTE INFARCT",
+      "QRS 216ms, HR ~128 bpm, Axis -83 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-210",
+    "image": "images/mmvt-210.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "Incomplete LBBB",
+      "Extensive ST-T changes may be due to myocardial ischemia",
+      "QRS 146ms, HR ~124 bpm, Axis 60 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-211",
+    "image": "images/mmvt-211.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable atrial tachycardia",
+      "Right bundle branch block",
+      "Lateral ST elevation, CONSIDER ACUTE INFARCT",
+      "Inferior T wave changes are nonspecific",
+      "QRS 142ms, HR ~129 bpm, Axis 50 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-212",
+    "image": "images/mmvt-212.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "Left axis deviation",
+      "Left bundle branch block",
+      "QRS 140ms, HR ~147 bpm, Axis -41 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-213",
+    "image": "images/mmvt-213.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "Left bundle branch block",
+      "QRS 148ms, HR ~126 bpm, Axis -12 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-215",
+    "image": "images/mmvt-215.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "Left axis deviation",
+      "RBBB with left anterior fascicular block",
+      "POSSIBLE ACUTE INFERIOR INFARCT",
+      "Possible anterior infarct - age undetermined",
+      "QRS 148ms, HR ~140 bpm, Axis -85 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-216",
+    "image": "images/mmvt-216.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "Left bundle branch block",
+      "Low QRS voltages in precordial leads",
+      "QRS 144ms, HR ~152 bpm, Axis 12 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-218",
+    "image": "images/mmvt-218.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "Left axis deviation",
+      "Left bundle branch block",
+      "Possible lateral infarct - age undetermined",
+      "Possible inferior infarct - age undetermined",
+      "QRS 140ms, HR ~143 bpm, Axis -50 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-219",
+    "image": "images/mmvt-219.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "Left axis deviation",
+      "Left bundle branch block",
+      "Tall T waves - consider acute ischemia or hyperkalemia",
+      "QRS 152ms, HR ~132 bpm, Axis -34 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-220",
+    "image": "images/mmvt-220.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "Left axis deviation",
+      "Left bundle branch block",
+      "Lateral ST elevation, CONSIDER ACUTE INFARCT",
+      "Anteroseptal ST changes suggest myocardial injury/ischemia",
+      "QRS 170ms, HR ~122 bpm, Axis -42 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-221",
+    "image": "images/mmvt-221.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "Left axis deviation",
+      "Left bundle branch block",
+      "Anteroseptal ST changes suggest myocardial injury/ischemia",
+      "QRS 172ms, HR ~125 bpm, Axis -42 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-222",
+    "image": "images/mmvt-222.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "Right bundle branch block",
+      "Inferior/lateral ST-T changes may be due to myocardial ischemia",
+      "QRS 140ms, HR ~144 bpm, Axis -1 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-223",
+    "image": "images/mmvt-223.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "Intraventricular conduction defect",
+      "Probable acute anteroseptal infarct",
+      "Lateral ST elevation - probable lateral extension of infarct",
+      "Low QRS voltages in limb leads",
+      "QRS 162ms, HR ~152 bpm, Axis 41 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-225",
+    "image": "images/mmvt-225.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "Left axis deviation",
+      "Left bundle branch block",
+      "QRS 168ms, HR ~122 bpm, Axis -52 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-226",
+    "image": "images/mmvt-226.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "Left axis deviation",
+      "IV conduction defect",
+      "Inferior infarct - age undetermined",
+      "Lateral infarct - age undetermined",
+      "Tall R V1/V2 probably reflect the infarct",
+      "Anteroseptal ST-T changes suggest myocardial injury/ischemia",
+      "QRS 150ms, HR ~196 bpm, Axis -60 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-227",
+    "image": "images/mmvt-227.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "Left bundle branch block",
+      "QRS 140ms, HR ~127 bpm, Axis -20 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-228",
+    "image": "images/mmvt-228.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "Left axis deviation",
+      "Left bundle branch block",
+      "Anteroseptal ST changes suggest myocardial injury/ischemia",
+      "QRS 170ms, HR ~122 bpm, Axis -52 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-229",
+    "image": "images/mmvt-229.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "Left axis deviation",
+      "RBBB with left anterior fascicular block",
+      "Inferior infarct - age undetermined",
+      "Marked precordial ST depression, CONSIDER ACUTE INFARCT",
+      "Lateral ST-T changes may be due to myocardial ischemia",
+      "QRS 170ms, HR ~145 bpm, Axis -76 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-230",
+    "image": "images/mmvt-230.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "Left bundle branch block",
+      "Lateral infarct - age undetermined",
+      "Possible inferior infarct - age undetermined",
+      "Anteroseptal ST depression is probably reciprocal to inferior infarct",
+      "QRS 162ms, HR ~129 bpm, Axis 0 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-231",
+    "image": "images/mmvt-231.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "Left axis deviation",
+      "Left bundle branch block",
+      "Possible inferior infarct - age undetermined",
+      "QRS 142ms, HR ~127 bpm, Axis -35 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-232",
+    "image": "images/mmvt-232.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "Left axis deviation",
+      "RBBB with left anterior fascicular block",
+      "Inferior infarct - age undetermined",
+      "Low QRS voltages in precordial leads",
+      "QRS 146ms, HR ~133 bpm, Axis -38 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-233",
+    "image": "images/mmvt-233.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "--- Possible measurement error ---",
+      "Rightward axis",
+      "Extensive IVCD",
+      "LVH with secondary repolarization abnormality",
+      "Marked precordial ST depression, CONSIDER ACUTE INFARCT",
+      "Inferior/lateral ST-T changes are probably due to ventricular hypertrophy",
+      "QRS 194ms, HR ~153 bpm, Axis 94 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-234",
+    "image": "images/mmvt-234.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "Leftward axis",
+      "Left bundle branch block",
+      "QRS 144ms, HR ~127 bpm, Axis -24 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-235",
+    "image": "images/mmvt-235.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "Left axis deviation",
+      "Left bundle branch block",
+      "QRS 154ms, HR ~126 bpm, Axis -54 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-236",
+    "image": "images/mmvt-236.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "Left axis deviation",
+      "Left bundle branch block",
+      "Lateral infarct - age undetermined",
+      "Possible inferior infarct - age undetermined",
+      "QRS 156ms, HR ~128 bpm, Axis -45 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-237",
+    "image": "images/mmvt-237.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "Right axis deviation",
+      "Right bundle branch block",
+      "Inferior ST elevation - possible early repolarization",
+      "Inferior/lateral ST-T changes suggest myocardial injury/ischemia",
+      "QRS 180ms, HR ~162 bpm, Axis 128 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-238",
+    "image": "images/mmvt-238.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "Left axis deviation",
+      "IV conduction defect",
+      "Possible left ventricular hypertrophy",
+      "Lateral ST-T changes may be due to hypertrophy and/or ischemia",
+      "QRS 146ms, HR ~136 bpm, Axis -34 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-239",
+    "image": "images/mmvt-239.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "Left axis deviation",
+      "Left bundle branch block",
+      "QRS 146ms, HR ~149 bpm, Axis -48 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-240",
+    "image": "images/mmvt-240.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "Left bundle branch block",
+      "Possible inferior infarct - age undetermined",
+      "Septal ST elevation, CONSIDER ACUTE INFARCT",
+      "Marked precordial ST depression, CONSIDER ACUTE INFARCT",
+      "QRS 150ms, HR ~145 bpm, Axis -17 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-241",
+    "image": "images/mmvt-241.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "Left axis deviation",
+      "IV conduction defect",
+      "Extensive infarct - age undetermined",
+      "QRS 144ms, HR ~159 bpm, Axis -49 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-242",
+    "image": "images/mmvt-242.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "Left axis deviation",
+      "Left bundle branch block",
+      "QRS 168ms, HR ~138 bpm, Axis -32 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-243",
+    "image": "images/mmvt-243.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "Right bundle branch block",
+      "Inferior infarct - age undetermined",
+      "Possible anteroseptal infarct - age undetermined",
+      "Lateral ST-T changes may be due to myocardial ischemia",
+      "QRS 142ms, HR ~139 bpm, Axis -16 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-244",
+    "image": "images/mmvt-244.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "Lead(s) unsuitable for analysis: II V6",
+      "Left bundle branch block",
+      "Possible inferior infarct - age undetermined",
+      "Anteroseptal ST changes suggest myocardial injury/ischemia",
+      "QRS 194ms, HR ~129 bpm"
+    ]
+  },
+  {
+    "id": "mmvt-246",
+    "image": "images/mmvt-246.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "Right bundle branch block",
+      "Inferior/lateral ST-T changes suggest myocardial injury/ischemia",
+      "QRS 146ms, HR ~140 bpm, Axis 68 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-247",
+    "image": "images/mmvt-247.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "Left bundle branch block",
+      "QRS 168ms, HR ~132 bpm, Axis -7 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-248",
+    "image": "images/mmvt-248.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "Left bundle branch block",
+      "Possible inferior infarct - age undetermined",
+      "QRS 144ms, HR ~137 bpm, Axis -17 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-249",
+    "image": "images/mmvt-249.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable atrial tachycardia",
+      "Left axis deviation",
+      "RBBB with left anterior fascicular block",
+      "Inferior infarct - age undetermined",
+      "Anterior infarct - age undetermined",
+      "Lateral ST elevation, CONSIDER ACUTE INFARCT",
+      "Low QRS voltages in precordial leads",
+      "QRS 172ms, HR ~134 bpm, Axis -50 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-250",
+    "image": "images/mmvt-250.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "Leftward axis",
+      "IV conduction defect",
+      "Inferior infarct - age undetermined",
+      "LVH with secondary repolarization abnormality",
+      "Ant/septal and lateral ST-T changes are probably due to ventricular hypertrophy",
+      "Low QRS voltages in precordial leads",
+      "QRS 172ms, HR ~138 bpm, Axis -20 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-251",
+    "image": "images/mmvt-251.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "IV conduction defect",
+      "Inferior infarct - age undetermined",
+      "Tall R V1/V2 probably reflect the infarct",
+      "LVH with secondary repolarization abnormality",
+      "Ant/septal and lateral ST-T changes may be due to hypertrophy and/or ischemia",
+      "QRS 172ms, HR ~142 bpm, Axis -17 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-252",
+    "image": "images/mmvt-252.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "Left axis deviation",
+      "IV conduction defect",
+      "Possible anteroseptal infarct - age undetermined",
+      "Inferior/lateral ST-T changes suggest myocardial injury/ischemia",
+      "QRS 144ms, HR ~123 bpm, Axis -41 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-253",
+    "image": "images/mmvt-253.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Undetermined rhythm",
+      "Left axis deviation",
+      "Left bundle branch block",
+      "Lateral infarct - age undetermined",
+      "Possible inferior infarct - age undetermined",
+      "Anteroseptal ST depression is probably reciprocal to inferior infarct",
+      "QRS 174ms, HR ~150 bpm, Axis -43 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-254",
+    "image": "images/mmvt-254.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "--- Warning: Data quality may affect interpretation ---",
+      "Probable ventricular tachycardia",
+      "Left bundle branch block",
+      "Anterior ST elevation, CONSIDER ACUTE INFARCT",
+      "QRS 140ms, HR ~131 bpm, Axis 85 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-255",
+    "image": "images/mmvt-255.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "Lead(s) unsuitable for analysis: I aVR",
+      "Right bundle branch block",
+      "Inferior infarct - age undetermined",
+      "Lateral infarct - age undetermined",
+      "QRS 190ms, HR ~164 bpm"
+    ]
+  },
+  {
+    "id": "mmvt-256",
+    "image": "images/mmvt-256.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "Lead(s) unsuitable for analysis: V3",
+      "Left axis deviation",
+      "Left bundle branch block",
+      "QRS 176ms, HR ~134 bpm, Axis -33 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-257",
+    "image": "images/mmvt-257.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "Left axis deviation",
+      "RBBB with left anterior fascicular block",
+      "Possible inferior infarct - age undetermined",
+      "Lateral ST-T changes may be due to myocardial ischemia",
+      "QRS 142ms, HR ~184 bpm, Axis -74 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-258",
+    "image": "images/mmvt-258.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "Left axis deviation",
+      "Left bundle branch block",
+      "QRS 140ms, HR ~146 bpm, Axis -63 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-259",
+    "image": "images/mmvt-259.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable atrial tachycardia",
+      "Right bundle branch block",
+      "Possible inferior infarct - age undetermined",
+      "Lateral ST-T changes may be due to myocardial ischemia",
+      "QRS 180ms, HR ~137 bpm, Axis -13 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-260",
+    "image": "images/mmvt-260.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "Left axis deviation",
+      "RBBB with left anterior fascicular block",
+      "Lateral ST elevation, CONSIDER ACUTE INFARCT",
+      "Marked precordial ST depression, CONSIDER ACUTE INFARCT",
+      "QRS 168ms, HR ~138 bpm, Axis -58 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-261",
+    "image": "images/mmvt-261.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Extreme tachycardia with wide complex, no further rhythm analysis attempted",
+      "QRS 189ms, HR ~163 bpm, Axis 256 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-262",
+    "image": "images/mmvt-262.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "Marked left axis deviation",
+      "Intraventricular conduction defect",
+      "Possible old inferior infarct",
+      "Lateral ST-T changes may be due to myocardial ischemia",
+      "Repolarization changes may be partly due to rate",
+      "QRS 140ms, HR ~126 bpm, Axis -49 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-263",
+    "image": "images/mmvt-263.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "Leftward axis",
+      "Left bundle branch block",
+      "Low QRS voltages in precordial leads",
+      "QRS 164ms, HR ~155 bpm, Axis -20 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-264",
+    "image": "images/mmvt-264.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "Left axis deviation",
+      "Left bundle branch block",
+      "QRS 174ms, HR ~126 bpm, Axis -30 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-265",
+    "image": "images/mmvt-265.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "Left axis deviation",
+      "Left bundle branch block",
+      "QRS 152ms, HR ~121 bpm, Axis -30 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-266",
+    "image": "images/mmvt-266.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Extreme tachycardia with wide complex, no further rhythm analysis attempted",
+      "QRS 194ms, HR ~164 bpm, Axis 255 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-267",
+    "image": "images/mmvt-267.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "Left axis deviation",
+      "Left bundle branch block",
+      "QRS 148ms, HR ~122 bpm, Axis -39 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-268",
+    "image": "images/mmvt-268.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "Left axis deviation",
+      "Conduction defect of LBBB type",
+      "Possible inferior infarct - age undetermined",
+      "Lateral ST elevation, consider recent infarction",
+      "QRS 180ms, HR ~186 bpm, Axis -32 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-269",
+    "image": "images/mmvt-269.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "WIDE COMPLEX TACHYCARDIA - POSSIBLE VENTRICULAR TACHYCARDIA",
+      "IF RHYTHM INTERPRETATION IS CONFIRMED, THE FOLLOWING REPORT MAY NOT BE VALID",
+      "RIGHT BUNDLE BRANCH BLOCK",
+      "PROBABLE INFERIOR INFARCTION - AGE UNDETERMINED",
+      "ST-T changes in the lateral leads",
+      "ADDITIONAL EVIDENCE OF MYOCARDIAL ISCHEMIA",
+      "CHANGES MAY ALSO PARTLY BE DUE TO RATE",
+      "Summary: ABNORMAL",
+      "QRS 138ms, HR ~125 bpm, Axis 75 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-270",
+    "image": "images/mmvt-270.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "Left axis deviation",
+      "RBBB with left anterior fascicular block",
+      "Inferior ST elevation - possible early repolarization",
+      "Marked precordial ST depression, CONSIDER ACUTE INFARCT",
+      "Lateral ST-T changes may be due to myocardial ischemia",
+      "QRS 140ms, HR ~145 bpm, Axis -75 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-271",
+    "image": "images/mmvt-271.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "IV conduction defect",
+      "Possible anterior infarct - age undetermined",
+      "Inferior/lateral ST-T changes may be due to myocardial ischemia",
+      "QRS 150ms, HR ~149 bpm, Axis 78 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-272",
+    "image": "images/mmvt-272.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "Rightward axis",
+      "Right bundle branch block",
+      "Inferior/lateral ST-T changes suggest myocardial injury/ischemia",
+      "Low QRS voltages in precordial leads",
+      "QRS 144ms, HR ~124 bpm, Axis 103 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-273",
+    "image": "images/mmvt-273.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "IV conduction defect",
+      "Possible left ventricular hypertrophy",
+      "Lateral ST-T changes are probably due to ventricular hypertrophy",
+      "QRS 140ms, HR ~136 bpm, Axis 10 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-274",
+    "image": "images/mmvt-274.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "--- Possible measurement error ---",
+      "Left bundle branch block",
+      "QRS 174ms, HR ~185 bpm, Axis 78 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-275",
+    "image": "images/mmvt-275.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "Lead(s) unsuitable for analysis: V1",
+      "Severe right axis deviation",
+      "IV conduction defect",
+      "Anterolateral infarct - age undetermined",
+      "Inferior ST-T changes suggest myocardial injury/ischemia",
+      "QRS 161ms, HR ~202 bpm, Axis -170 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-276",
+    "image": "images/mmvt-276.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "Lead(s) unsuitable for analysis: V2 V5",
+      "Leftward axis",
+      "Left bundle branch block",
+      "QRS 144ms, HR ~141 bpm, Axis -24 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-277",
+    "image": "images/mmvt-277.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "Lead(s) unsuitable for analysis: V2 V6",
+      "Left axis deviation",
+      "IV conduction defect",
+      "Possible anterior infarct - age undetermined",
+      "Inferior/lateral ST-T changes suggest myocardial injury/ischemia",
+      "QRS 152ms, HR ~167 bpm, Axis -72 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-278",
+    "image": "images/mmvt-278.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "Left axis deviation",
+      "Left bundle branch block",
+      "Tall T waves - consider acute ischemia or hyperkalemia",
+      "QRS 152ms, HR ~121 bpm, Axis -34 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-279",
+    "image": "images/mmvt-279.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "Left axis deviation",
+      "RBBB with left anterior fascicular block",
+      "Possible old inferior infarct",
+      "Marked ST depression in V lead, consider recent infarction",
+      "QRS 140ms, HR ~141 bpm, Axis -40 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-280",
+    "image": "images/mmvt-280.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "Left axis deviation",
+      "Left bundle branch block",
+      "Possible inferior infarct - age undetermined",
+      "QRS 146ms, HR ~131 bpm, Axis -37 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-281",
+    "image": "images/mmvt-281.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "Left axis deviation",
+      "Left bundle branch block",
+      "Tall T waves - consider acute ischemia or hyperkalemia",
+      "QRS 156ms, HR ~145 bpm, Axis -42 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-282",
+    "image": "images/mmvt-282.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "Left axis deviation",
+      "Left bundle branch block",
+      "Possible inferior infarct - age undetermined",
+      "QRS 144ms, HR ~151 bpm, Axis -38 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-283",
+    "image": "images/mmvt-283.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "Left bundle branch block",
+      "Lateral infarct - age undetermined",
+      "QRS 322ms, HR ~175 bpm, Axis 108 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-284",
+    "image": "images/mmvt-284.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "Left axis deviation",
+      "Left bundle branch block",
+      "QRS 152ms, HR ~153 bpm, Axis -34 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-285",
+    "image": "images/mmvt-285.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "Left bundle branch block",
+      "QRS 150ms, HR ~143 bpm, Axis -1 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-286",
+    "image": "images/mmvt-286.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Extreme tachycardia with wide complex, no further rhythm analysis attempted",
+      "QRS 147ms, HR ~157 bpm, Axis 6 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-287",
+    "image": "images/mmvt-287.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "Severe right axis deviation",
+      "Right bundle branch block",
+      "Lateral infarct - age undetermined",
+      "Inferior ST-T changes suggest myocardial injury/ischemia",
+      "QRS 184ms, HR ~192 bpm, Axis -174 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-288",
+    "image": "images/mmvt-288.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "Incomplete LBBB",
+      "Possible anterior infarct - age undetermined",
+      "Inferior ST elevation, CONSIDER ACUTE INFARCT",
+      "Lateral ST-T changes may be due to myocardial ischemia",
+      "Low QRS voltages in limb leads",
+      "QRS 142ms, HR ~138 bpm, Axis 32 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-289",
+    "image": "images/mmvt-289.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "Left axis deviation",
+      "RBBB with left anterior fascicular block",
+      "Inferior infarct - age undetermined",
+      "Lateral ST-T changes may be due to myocardial ischemia",
+      "QRS 140ms, HR ~158 bpm, Axis -94 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-290",
+    "image": "images/mmvt-290.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "Right bundle branch block",
+      "Possible anterior infarct - age undetermined",
+      "Inferior/lateral ST-T changes are nonspecific",
+      "Low QRS voltages in precordial leads",
+      "QRS 154ms, HR ~121 bpm, Axis 34 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-291",
+    "image": "images/mmvt-291.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "Left axis deviation",
+      "RBBB with left anterior fascicular block",
+      "Extensive infarct - age undetermined",
+      "QRS 168ms, HR ~140 bpm, Axis -76 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-292",
+    "image": "images/mmvt-292.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "Left axis deviation",
+      "Left bundle branch block",
+      "QRS 170ms, HR ~125 bpm, Axis -47 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-293",
+    "image": "images/mmvt-293.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "Left bundle branch block",
+      "Anteroseptal ST changes suggest myocardial injury/ischemia",
+      "QRS 150ms, HR ~169 bpm, Axis -8 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-294",
+    "image": "images/mmvt-294.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "Leftward axis",
+      "Left bundle branch block",
+      "Possible inferior infarct - age undetermined",
+      "Lateral ST elevation, CONSIDER ACUTE INFARCT",
+      "QRS 168ms, HR ~120 bpm, Axis -24 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-295",
+    "image": "images/mmvt-295.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "Left bundle branch block",
+      "QRS 140ms, HR ~131 bpm, Axis 1 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-296",
+    "image": "images/mmvt-296.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "IV conduction defect",
+      "RVH with secondary repolarization abnormality",
+      "Marked precordial ST depression, CONSIDER ACUTE INFARCT",
+      "Extensive ST-T changes may be due to hypertrophy and/or ischemia",
+      "QRS 156ms, HR ~197 bpm, Axis 45 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-297",
+    "image": "images/mmvt-297.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "IV conduction defect",
+      "Inferior ST elevation, CONSIDER ACUTE INFARCT",
+      "Anteroseptal ST depression is probably reciprocal to inferior infarct",
+      "QRS 140ms, HR ~154 bpm, Axis 75 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-298",
+    "image": "images/mmvt-298.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "Possible WPW pattern",
+      "QRS 336ms, HR ~201 bpm, Axis -21 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-299",
+    "image": "images/mmvt-299.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable atrial tachycardia",
+      "Right axis deviation",
+      "Right bundle branch block",
+      "Lateral infarct - age undetermined",
+      "Inferior ST-T changes may be due to myocardial ischemia",
+      "QRS 150ms, HR ~129 bpm, Axis 116 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-301",
+    "image": "images/mmvt-301.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "--- Suggests dextrocardia ---",
+      "QRS 144ms, HR ~130 bpm, Axis -103 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-302",
+    "image": "images/mmvt-302.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "Right axis deviation",
+      "Right bundle branch block",
+      "Extensive infarct - age undetermined",
+      "QRS 164ms, HR ~222 bpm, Axis 180 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-304",
+    "image": "images/mmvt-304.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "Left axis deviation",
+      "IV conduction defect",
+      "Extensive infarct - age undetermined",
+      "QRS 156ms, HR ~122 bpm, Axis -37 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-305",
+    "image": "images/mmvt-305.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "WIDE COMPLEX TACHYCARDIA - POSSIBLE VENTRICULAR TACHYCARDIA",
+      "IF RHYTHM IS CONFIRMED, THE FOLLOWING REPORT MAY NOT BE VALID",
+      "Low terminal QRS spatial velocity",
+      "Broad R or R' in V1 or V2",
+      "RIGHT BUNDLE BRANCH BLOCK",
+      "Poor R wave progression V2-V4",
+      "T wave inversion also present",
+      "POSSIBLE ANTERIOR INFARCTION - AGE UNDETERMINED",
+      "LOW QRS VOLTAGES IN PRECORDIAL LEADS",
+      "Summary: ABNORMAL ECG",
+      "QRS 126ms, HR ~124 bpm, Axis 0 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-306",
+    "image": "images/mmvt-306.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "Right axis deviation",
+      "Right bundle branch block",
+      "Possible anterior infarct - age undetermined",
+      "QRS 188ms, HR ~127 bpm, Axis 143 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-307",
+    "image": "images/mmvt-307.png",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Probable ventricular tachycardia",
+      "IV conduction defect",
+      "Possible LVH with secondary repolarization abnormality",
+      "Extensive ST-T changes are probably due to ventricular hypertrophy",
+      "QRS 188ms, HR ~134 bpm, Axis 82 degrees"
+    ]
+  },
+  {
+    "id": "mmvt-308",
+    "image": "images/mmvt-308.jpg",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Atrioventricular dissociation during sinus rhythm with frequent premature contractions and ventricular tachycardias Sinus rhythm with frequent PVCs (A). AV dissociation was seen during VT (B). AV: atr",
+      "Source: PMC10885686 (CC BY)"
+    ]
+  },
+  {
+    "id": "mmvt-309",
+    "image": "images/mmvt-309.jpg",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "12-lead ECG immediately after termination of ventricular tachycardia The last cycle length of VT was slightly longer compared to the previous cycle length. VT: ventricular tachycardia",
+      "Source: PMC10885686 (CC BY)"
+    ]
+  },
+  {
+    "id": "mmvt-310",
+    "image": "images/mmvt-310.jpg",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Electrocardiogram demonstrating ventricular tachycardia",
+      "Source: PMC10985982 (CC BY)"
+    ]
+  },
+  {
+    "id": "pmvt-029",
+    "image": "images/pmvt-029.jpg",
+    "answer": "pmvt",
+    "explanationBullets": [
+      "A: Initial electrocardiogram showing a normal sinus rhythm with a prolonged corrected QT interval of 578 ms, diffuse ST-segment depression, and grossly abnormal T-waves in inferolateral leads. B: Spon",
+      "Source: PMC11129830 (CC BY)"
+    ]
+  },
+  {
+    "id": "mmvt-311",
+    "image": "images/mmvt-311.jpg",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "An electrocardiogram conducted 2 h after initiation, at the time syncope occurred, demonstrated a wide complex tachycardia with a rate of 210 beats per minute. Notably, two distinct QRS morphologies w",
+      "Source: PMC11315733 (CC BY-NC-ND)"
+    ]
+  },
+  {
+    "id": "pmvt-030",
+    "image": "images/pmvt-030.jpg",
+    "answer": "pmvt",
+    "explanationBullets": [
+      "Electrocardiogram on admission with J wave and normal QTc (A), episodes of torsades de point at another time (B), and final ECG after management via intracardiac pacing (C).",
+      "Source: PMC11335029 (CC BY-NC)"
+    ]
+  },
+  {
+    "id": "pmvt-031",
+    "image": "images/pmvt-031.jpg",
+    "answer": "pmvt",
+    "explanationBullets": [
+      "Clinical data of Case one : (A) ECG showed sinus bradycardia, prolonged Q-T interval (QTc = 589ms), inverted T waves in leadsII, III, aVF, and V4-V6. (B) Dynamic ECG showed Torsades de Pointes when on",
+      "Source: PMC11468024 (CC BY-NC-ND)"
+    ]
+  },
+  {
+    "id": "pmvt-032",
+    "image": "images/pmvt-032.jpg",
+    "answer": "pmvt",
+    "explanationBullets": [
+      "Electrocardiogram (EKG)EKG showing polymorphic ventricular tachycardia.",
+      "Source: PMC11955219 (CC BY)"
+    ]
+  },
+  {
+    "id": "pmvt-033",
+    "image": "images/pmvt-033.jpg",
+    "answer": "pmvt",
+    "explanationBullets": [
+      "Electrocardiographic (ECG) recordings captured recurrent episodes of torsades de pointes (TdP) approximately 3 hours after administration of a 25 mg maintenance dose of clomipramine upon hospital admi",
+      "Source: PMC12303986 (CC BY)"
+    ]
+  },
+  {
+    "id": "mmvt-312",
+    "image": "images/mmvt-312.jpg",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "As shown in the figure, the patient frequently experienced ventricular tachycardia during the ICU stay.",
+      "Source: PMC12604621 (CC BY)"
+    ]
+  },
+  {
+    "id": "mmvt-313",
+    "image": "images/mmvt-313.jpg",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "A 12-lead electrocardiogram showing the clinical ventricular tachycardia.",
+      "Source: PMC12772931 (CC BY)"
+    ]
+  },
+  {
+    "id": "pmvt-034",
+    "image": "images/pmvt-034.jpg",
+    "answer": "pmvt",
+    "explanationBullets": [
+      "Torsades de pointes.Telemetry strip demonstrating polymorphic ventricular tachycardia consistent with torsades de pointes, characterized by cyclical variations in QRS amplitude (\u201ctwisting of the point",
+      "Source: PMC12871441 (CC BY)"
+    ]
+  },
+  {
+    "id": "mmvt-314",
+    "image": "images/mmvt-314.jpg",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Patient\u2019s electrocardiogram with ventricular tachycardia.",
+      "Source: PMC12908879 (CC BY-NC)"
+    ]
+  },
+  {
+    "id": "mmvt-315",
+    "image": "images/mmvt-315.jpg",
+    "answer": "mmvt",
+    "explanationBullets": [
+      "Polymorphic ventricular tachycardia at admission.",
+      "Source: PMC12959495 (CC BY)"
+    ]
+  }
+]
