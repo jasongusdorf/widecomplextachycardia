@@ -3,7 +3,24 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>EKG Drill: Wide Complex Tachycardia</title>
+  <title>Wide Complex Tachycardia - EKG Drill</title>
+  <meta name="description" content="Practice identifying ventricular tachycardia on real 12-lead EKGs. 470+ cards with MMVT, PMVT, and SVT mimics. Free, open-source, spaced repetition.">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Wide Complex Tachycardia">
+  <meta property="og:description" content="Practice identifying VT on real 12-lead EKGs. 470+ cards covering MMVT, PMVT, and SVT with aberrancy.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://widecomplextachycardia.com">
+  <meta property="og:image" content="https://widecomplextachycardia.com/images/mmvt-001.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Wide Complex Tachycardia">
+  <meta name="twitter:description" content="Practice identifying VT on real 12-lead EKGs. 470+ cards covering MMVT, PMVT, and SVT with aberrancy.">
+  <meta name="twitter:image" content="https://widecomplextachycardia.com/images/mmvt-001.png">
+
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
 
@@ -17,7 +34,7 @@
       align-items: center;
     }
 
-    .screen { display: none; width: 100%; max-width: 1100px; padding: 32px; }
+    .screen { display: none; width: 100%; max-width: 1400px; padding: 20px; }
     .screen.active { display: flex; flex-direction: column; align-items: center; }
 
     h1 { font-size: 2.4rem; font-weight: 600; margin-bottom: 10px; text-align: center; }
@@ -108,16 +125,17 @@
 
     .ekg-image {
       width: 100%;
-      max-height: 600px;
+      max-height: 80vh;
       object-fit: contain;
       border: 1px solid #e0d5b8;
       border-radius: 8px;
       background: #fff;
+      padding: 4px;
     }
 
     .ekg-image-small {
       width: 100%;
-      max-height: 360px;
+      max-height: 55vh;
       object-fit: contain;
       border: 1px solid #e0d5b8;
       border-radius: 8px;
@@ -348,6 +366,33 @@
       background: #f5edda;
     }
 
+    .home-link {
+      align-self: flex-start;
+      color: #1f6feb;
+      text-decoration: none;
+      font-size: 1rem;
+      margin-bottom: 8px;
+    }
+    .home-link:hover { text-decoration: underline; }
+
+    #reg-username:focus, #reg-institution:focus {
+      outline: none;
+      border-color: #1f6feb;
+    }
+
+    #leaderboard-table tbody tr {
+      border-bottom: 1px solid #efe6d0;
+    }
+
+    #leaderboard-table tbody td {
+      padding: 10px 12px;
+    }
+
+    .leaderboard-highlight {
+      background: rgba(31, 111, 235, 0.06);
+      font-weight: 600;
+    }
+
     @media (max-width: 480px) {
       .answer-buttons { flex-direction: column; }
       .stats { flex-direction: column; align-items: center; }
@@ -360,18 +405,43 @@
   <!-- Home Screen -->
   <div id="screen-home" class="screen active">
     <h1>Wide Complex Tachycardia</h1>
+    <p style="text-align: center; color: #8a7e65; font-size: 1rem; margin-bottom: 0;">Created by Jason Gusdorf, MD and Peter Brodeur, MD</p>
     <div class="answer-buttons" style="margin-bottom: 12px; margin-top: 24px;">
       <button class="btn btn-primary" id="btn-start-new">Shuffle New</button>
       <button class="btn btn-mmvt" id="btn-start-old">Shuffle Old</button>
       <button class="btn btn-pmvt" id="btn-start-all">Shuffle All</button>
     </div>
     <button class="btn btn-next" id="btn-reset" style="font-size: 0.85rem;">Reset Progress</button>
+    <button class="btn btn-primary" id="btn-join-leaderboard" style="margin-top: 16px; background: #1f6feb;">Join Leaderboard</button>
+
+    <div id="user-stats" style="display: none; width: 100%; max-width: 600px; margin-top: 24px;">
+      <div class="reference-card" style="margin-top: 0; text-align: center;">
+        <p id="user-title" style="font-size: 1.6rem; font-weight: 700; margin-bottom: 4px;"></p>
+        <p id="user-name" style="color: #8a7e65; font-size: 0.95rem; margin-bottom: 16px;"></p>
+        <div class="stats">
+          <div class="stat">
+            <span class="stat-value" id="user-unique"></span>
+            <span class="stat-label">Cards Correct</span>
+          </div>
+          <div class="stat">
+            <span class="stat-value" id="user-accuracy"></span>
+            <span class="stat-label">Accuracy</span>
+          </div>
+          <div class="stat">
+            <span class="stat-value" id="user-rank"></span>
+            <span class="stat-label">Rank</span>
+          </div>
+        </div>
+        <button class="btn btn-primary" id="btn-view-leaderboard" style="margin-top: 16px; background: #1f6feb;">View Leaderboard</button>
+      </div>
+    </div>
 
     <div class="nav-links">
       <a href="criteria.html">Full EKG Criteria</a>
       <a href="mechanism.html">Mechanism of VT</a>
       <a href="treatment.html">Treatment &amp; Trials</a>
       <a href="pictures.html">Pictures &amp; Pathology</a>
+      <a href="subtypes.html">VT Subtypes &amp; Syndromes</a>
     </div>
 
     <div class="reference-card">
@@ -389,17 +459,43 @@
       <p style="margin-top: 16px; text-align: center;"><a href="criteria.html" style="color: #1f6feb; font-size: 1rem;">View full EKG criteria reference</a></p>
     </div>
 
+    <div class="reference-card" style="margin-top: 24px;">
+      <h3 style="font-size: 1.3rem; margin-bottom: 16px;">ELI5: Ventricular Tachycardia</h3>
+
+      <p style="font-size: 1.05rem; margin-bottom: 14px;">Your heart has its own electrical wiring. A normal heartbeat starts at the top (the SA node), travels through a relay station (the AV node), then zips down a highway of fast wires (the His-Purkinje system) that activate both pumping chambers at the same time. The whole trip takes less than a tenth of a second, and the EKG shows a narrow, clean spike.</p>
+
+      <p style="font-size: 1.05rem; margin-bottom: 14px;">Ventricular tachycardia skips the highway. The electrical signal starts in the pumping chamber itself, usually in damaged muscle from a prior heart attack. Instead of using the fast wires, it crawls through muscle tissue cell by cell. Slow travel means a wide, ugly spike on the EKG. And because the signal is stuck in a loop (circling around the scar like a car on a roundabout), it fires over and over, driving the heart rate to 150, 200, sometimes 250 beats per minute.</p>
+
+      <p style="font-size: 1.05rem; margin-bottom: 14px;">At those speeds, the heart can't fill properly between beats. Blood pressure drops. The brain loses its supply. The patient passes out. If the rhythm isn't stopped, it can degrade into ventricular fibrillation, where the heart quivers instead of pumping, and the patient dies within minutes.</p>
+
+      <p style="font-size: 1.05rem; margin-bottom: 14px;">The treatment depends on how sick the patient looks. If they're unconscious or crashing: an electrical shock resets the heart immediately. If they're awake and stable: IV medications (procainamide or amiodarone) can slow or stop the circuit. Long-term, patients get an implantable defibrillator, a small device under the skin that monitors the heart 24/7 and shocks it back to normal if VT returns.</p>
+
+      <p style="font-size: 1.05rem; margin-bottom: 0;">The challenge on the EKG: not every wide, fast rhythm is VT. Some are harmless rhythms that just look like VT because of a pre-existing wiring detour (a bundle branch block). This drill teaches you to tell the difference.</p>
+    </div>
+
     <div class="reference-card" style="margin-top: 24px; text-align: center;">
       <h3 style="font-size: 1.1rem; margin-bottom: 12px;">Acknowledgements</h3>
-      <p style="font-size: 0.9rem; line-height: 1.7; color: #5c5340; margin-bottom: 12px;">EKG images sourced from <a href="https://commons.wikimedia.org/" style="color:#1f6feb;">Wikimedia Commons</a>, <a href="https://en.ecgpedia.org/" style="color:#1f6feb;">ECGpedia</a> (CC BY-SA 3.0), <a href="https://litfl.com/ecg-library/" style="color:#1f6feb;">LITFL</a>, <a href="https://ecg.bidmc.harvard.edu/" style="color:#1f6feb;">ECG Wave-Maven</a> (Harvard/BIDMC), <a href="https://ecg.utah.edu/" style="color:#1f6feb;">ECG Learning Center</a> (Utah), <a href="https://www.thesimtech.org/" style="color:#1f6feb;">theSimTech</a>, and open-access publications via <a href="https://www.ncbi.nlm.nih.gov/pmc/" style="color:#1f6feb;">PubMed Central</a>.</p>
+      <p style="font-size: 0.9rem; line-height: 1.7; color: #5c5340; margin-bottom: 12px;">EKG images sourced from <a href="https://physionet.org/content/mimic-iv-ecg/1.0/" style="color:#1f6feb;">MIMIC-IV-ECG</a> (PhysioNet, ODC-By 1.0), <a href="https://commons.wikimedia.org/" style="color:#1f6feb;">Wikimedia Commons</a>, <a href="https://en.ecgpedia.org/" style="color:#1f6feb;">ECGpedia</a> (CC BY-SA 3.0), <a href="https://litfl.com/ecg-library/" style="color:#1f6feb;">LITFL</a>, <a href="https://ecg.bidmc.harvard.edu/" style="color:#1f6feb;">ECG Wave-Maven</a> (Harvard/BIDMC), <a href="https://ecg.utah.edu/" style="color:#1f6feb;">ECG Learning Center</a> (Utah), <a href="https://www.thesimtech.org/" style="color:#1f6feb;">theSimTech</a>, and open-access publications via <a href="https://www.ncbi.nlm.nih.gov/pmc/" style="color:#1f6feb;">PubMed Central</a>.</p>
       <p style="font-size: 0.85rem; color: #8a7e65;">For educational use only. Not a substitute for clinical judgment.</p>
     </div>
   </div>
 
   <!-- Card Front -->
   <div id="screen-front" class="screen">
+    <a href="#" class="home-link" id="btn-home-front">Home</a>
     <p class="progress" id="card-progress">Card 1 of 10</p>
     <img class="ekg-image" id="ekg-front" src="" alt="EKG Strip">
+    <details style="width: 100%; max-width: 700px; margin: 12px 0;">
+      <summary style="cursor: pointer; color: #1f6feb; font-size: 0.95rem; font-weight: 600;">VT ACED Mnemonic</summary>
+      <ul style="margin: 10px 0 0 20px; font-size: 0.95rem; line-height: 1.8; color: #4a4234;">
+        <li><strong>V</strong>ery wide QRS (&gt;160ms)</li>
+        <li><strong>T</strong>otal concordance (V1-V6 all deflect the same direction)</li>
+        <li><strong>A</strong>V dissociation (P waves marching independently of QRS)</li>
+        <li><strong>C</strong>apture and fusion beats (narrow or hybrid beats during the run)</li>
+        <li><strong>E</strong>xtreme axis (northwest axis, between -90&deg; and +180&deg;)</li>
+        <li><strong>D</strong>oesn't fit typical BBB (bizarre morphology, no classic rsR' or rS)</li>
+      </ul>
+    </details>
     <div class="answer-buttons">
       <button class="btn btn-mmvt" id="btn-mmvt">MMVT</button>
       <button class="btn btn-pmvt" id="btn-pmvt">PMVT</button>
@@ -409,6 +505,7 @@
 
   <!-- Card Back -->
   <div id="screen-back" class="screen">
+    <a href="#" class="home-link" id="btn-home-back">Home</a>
     <div class="banner" id="result-banner"></div>
     <img class="ekg-image-small" id="ekg-back" src="" alt="EKG Strip">
     <p class="answer-label" id="correct-answer"></p>
@@ -434,668 +531,50 @@
     <button class="btn btn-primary" id="btn-done">Done</button>
   </div>
 
-  <script>
-    // ========== Card Data ==========
+  <!-- Registration -->
+  <div id="screen-register" class="screen">
+    <a href="#" class="home-link" id="btn-home-register">Home</a>
+    <h1>Join the Leaderboard</h1>
+    <p style="text-align: center; color: #8a7e65; margin-bottom: 24px;">Pick a username and tell us where you train.</p>
+    <div style="width: 100%; max-width: 400px;">
+      <label style="display: block; font-weight: 600; margin-bottom: 6px;">Username</label>
+      <input type="text" id="reg-username" placeholder="3-20 characters, letters/numbers/underscores"
+        style="width: 100%; padding: 12px 16px; font-size: 1.05rem; border: 1px solid #e0d5b8; border-radius: 8px; background: #fff8e8; font-family: inherit; margin-bottom: 16px;" maxlength="20">
+      <label style="display: block; font-weight: 600; margin-bottom: 6px;">Institution</label>
+      <input type="text" id="reg-institution" placeholder="e.g., Johns Hopkins"
+        style="width: 100%; padding: 12px 16px; font-size: 1.05rem; border: 1px solid #e0d5b8; border-radius: 8px; background: #fff8e8; font-family: inherit; margin-bottom: 8px;">
+      <p id="reg-error" style="color: #cf222e; font-size: 0.9rem; min-height: 1.4em; margin-bottom: 16px;"></p>
+      <button class="btn btn-primary" id="btn-register-submit" style="width: 100%;">Create Account</button>
+    </div>
+  </div>
 
-    const CARDS = [
-      // ===== MMVT (Monomorphic VT) =====
-      {
-        id: 'mmvt-001',
-        image: 'images/mmvt-001.png',
-        answer: 'mmvt',
-        explanationBullets: [
-          '12-lead ECG with uniform wide QRS complexes across all leads',
-          'Every QRS complex shares the same morphology and axis',
-          'Regular R-R intervals throughout the tracing',
-          'Positive concordance visible in precordial leads (all QRS deflections in the same direction)'
-        ]
-      },
-      {
-        id: 'mmvt-002',
-        image: 'images/mmvt-002.jpg',
-        answer: 'mmvt',
-        explanationBullets: [
-          'Wide complex tachycardia with fusion beats visible (narrower complexes mixed in)',
-          'Fusion beats occur when a sinus impulse partially captures the ventricle during VT',
-          'The predominant QRS morphology is uniform: identical shape beat to beat',
-          'Fusion and capture beats confirm ventricular origin (not SVT with aberrancy)'
-        ]
-      },
-      {
-        id: 'mmvt-003',
-        image: 'images/mmvt-003.jpg',
-        answer: 'mmvt',
-        explanationBullets: [
-          'Precordial leads (V1 through V6) showing monomorphic VT',
-          'Each lead shows a consistent, repeating QRS morphology',
-          'Wide QRS complexes with no beat-to-beat variation in shape or axis',
-          'AV dissociation may be present but QRS shape remains uniform'
-        ]
-      },
-      {
-        id: 'mmvt-005',
-        image: 'images/mmvt-005.jpg',
-        answer: 'mmvt',
-        explanationBullets: [
-          'Lead II rhythm strip showing monomorphic VT at a rate of 192 bpm',
-          'Uniform QRS morphology: every complex is identical',
-          'Regular R-R intervals with no variation in amplitude',
-          'Wide QRS complexes with a single consistent waveform pattern'
-        ]
-      },
-      {
-        id: 'mmvt-006',
-        image: 'images/mmvt-006.png',
-        answer: 'mmvt',
-        explanationBullets: [
-          '12-lead ECG showing monomorphic VT during hemodynamic compromise',
-          'All QRS complexes share the same morphology across every lead',
-          'Regular rate with uniform, wide QRS complexes',
-          'Consistent axis and amplitude throughout the tracing'
-        ]
-      },
-      {
-        id: 'mmvt-009',
-        image: 'images/mmvt-009.png',
-        answer: 'mmvt',
-        explanationBullets: [
-          'Lead II showing wide complex tachycardia with uniform QRS morphology',
-          'Each beat has the same shape: tall upright deflection with consistent width',
-          'Regular R-R intervals throughout',
-          'No variation in QRS axis or amplitude from beat to beat'
-        ]
-      },
-      // ===== PMVT (Polymorphic VT) =====
-      {
-        id: 'pmvt-001',
-        image: 'images/pmvt-001.png',
-        answer: 'pmvt',
-        explanationBullets: [
-          'Shows the classic "short-long-short" initiating sequence for Torsades de Pointes',
-          'After initiation, QRS morphology varies continuously from beat to beat',
-          'Progressively changing QRS axis and amplitude as the arrhythmia develops',
-          'No two consecutive complexes share the same morphology'
-        ]
-      },
-      {
-        id: 'pmvt-002',
-        image: 'images/pmvt-002.png',
-        answer: 'pmvt',
-        explanationBullets: [
-          'Torsades de Pointes with prolonged QT interval visible before onset',
-          'QRS complexes continuously change in morphology, axis, and amplitude',
-          'Classic "twisting of the points" pattern around the isoelectric line',
-          'Wide, chaotic complexes with no consistent bundle branch block pattern'
-        ]
-      },
-      {
-        id: 'pmvt-003',
-        image: 'images/pmvt-003.jpg',
-        answer: 'pmvt',
-        explanationBullets: [
-          'Lead II strip showing polymorphic VT with beat-to-beat QRS variation',
-          'QRS axis and morphology change continuously across the tracing',
-          'Irregular R-R intervals with no repeating pattern',
-          'Complexes vary in both direction and amplitude, unlike monomorphic VT'
-        ]
-      },
-      {
-        id: 'pmvt-004',
-        image: 'images/pmvt-004.jpg',
-        answer: 'pmvt',
-        explanationBullets: [
-          'Torsades de Pointes recorded by an implantable defibrillator (AICD)',
-          'Sinusoidal variation in QRS amplitude: waxing and waning pattern',
-          'QRS morphology changes continuously, no two beats are identical',
-          'Straight line near the end represents the device shock converting the rhythm'
-        ]
-      },
-      {
-        id: 'pmvt-005',
-        image: 'images/pmvt-005.jpg',
-        answer: 'pmvt',
-        explanationBullets: [
-          '12-lead ECG showing Torsades de Pointes with onset from sinus rhythm',
-          'Precordial leads show continuously varying QRS morphology and axis',
-          'Sinusoidal amplitude modulation visible across multiple leads',
-          'Rhythm strip at bottom confirms the polymorphic, twisting pattern'
-        ]
-      },
-      {
-        id: 'pmvt-006',
-        image: 'images/pmvt-006.png',
-        answer: 'pmvt',
-        explanationBullets: [
-          'Classic Torsades de Pointes with sinusoidal waxing and waning of QRS amplitude',
-          'QRS complexes appear to rotate around the baseline',
-          'Amplitude increases then decreases in a smooth envelope pattern',
-          'No consistent QRS morphology from beat to beat'
-        ]
-      },
-      {
-        id: 'pmvt-007',
-        image: 'images/pmvt-007.jpg',
-        answer: 'pmvt',
-        explanationBullets: [
-          'Torsades de Pointes with dramatic variation in QRS amplitude and axis',
-          'QRS complexes twist above and below the baseline in a spinning pattern',
-          'Amplitude modulation creates the characteristic spindle-shaped envelope',
-          'Completely irregular rhythm with no repeating QRS morphology'
-        ]
-      },
-      {
-        id: 'pmvt-008',
-        image: 'images/pmvt-008.png',
-        answer: 'pmvt',
-        explanationBullets: [
-          'Polymorphic VT with continuously varying QRS morphology',
-          'Each complex differs from its neighbors in shape, width, and amplitude',
-          'No consistent axis: complexes shift between upright and inverted',
-          'Labeled "polymorphic ventricular tachycardia" by ECGpedia'
-        ]
-      },
-      // ===== Additional MMVT =====
-      {
-        id: 'mmvt-010',
-        image: 'images/mmvt-010.jpg',
-        answer: 'mmvt',
-        explanationBullets: [
-          '12-lead ECG with fast, uniform, wide QRS complexes across all leads',
-          'Sinusoidal-appearing waveform with identical morphology beat to beat',
-          'Regular R-R intervals at a very rapid rate',
-          'Consistent QRS axis and amplitude throughout the tracing'
-        ]
-      },
-      {
-        id: 'mmvt-011',
-        image: 'images/mmvt-011.gif',
-        answer: 'mmvt',
-        explanationBullets: [
-          'Rhythm strip showing wide complex tachycardia with uniform QRS morphology',
-          'Every beat is identical in shape: deep downward deflection with consistent width',
-          'Regular R-R intervals with no variation',
-          'No beat-to-beat change in axis or amplitude'
-        ]
-      },
-      {
-        id: 'mmvt-012',
-        image: 'images/mmvt-012.gif',
-        answer: 'mmvt',
-        explanationBullets: [
-          'Lead II showing monomorphic VT with labeled fusion (F) and capture (C) beats',
-          'Fusion beats are narrower complexes where sinus and VT impulses merge',
-          'Capture beats are narrow QRS complexes from a conducted sinus beat during VT',
-          'Fusion and capture beats confirm ventricular origin and AV dissociation'
-        ]
-      },
-      {
-        id: 'mmvt-013',
-        image: 'images/mmvt-013.gif',
-        answer: 'mmvt',
-        explanationBullets: [
-          '12-lead ECG from a 75-year-old showing monomorphic VT',
-          'Wide QRS complexes with uniform morphology across all leads',
-          'LBBB-type morphology suggesting right ventricular origin',
-          'Regular rate with no beat-to-beat variation in QRS shape'
-        ]
-      },
-      {
-        id: 'mmvt-014',
-        image: 'images/mmvt-014.jpg',
-        answer: 'mmvt',
-        explanationBullets: [
-          '12-lead ECG showing left ventricular tachycardia',
-          'RBBB morphology in V1 (tall R wave) indicates LV origin',
-          'Uniform QRS complexes with identical shape in each lead',
-          'Wide QRS with consistent axis throughout the tracing'
-        ]
-      },
-      {
-        id: 'mmvt-015',
-        image: 'images/mmvt-015.jpg',
-        answer: 'mmvt',
-        explanationBullets: [
-          '12-lead ECG showing right ventricular tachycardia',
-          'LBBB morphology in V1 (deep S wave) indicates RV origin',
-          'All QRS complexes share the same monomorphic pattern',
-          'Regular rate with no variation in QRS morphology between beats'
-        ]
-      },
-      {
-        id: 'mmvt-016',
-        image: 'images/mmvt-016.jpg',
-        answer: 'mmvt',
-        explanationBullets: [
-          'V1 lead showing monomorphic VT with annotated fusion (F) and capture (C) beats',
-          'The predominant wide QRS complexes all share the same morphology',
-          'Narrower fusion beats and a capture beat prove AV dissociation',
-          'Uniform QRS shape between the fusion/capture beats confirms monomorphic VT'
-        ]
-      },
-      {
-        id: 'mmvt-017',
-        image: 'images/mmvt-017.gif',
-        answer: 'mmvt',
-        explanationBullets: [
-          'Lead V1 showing VT with retrograde Wenckebach conduction (ladder diagram below)',
-          'Uniform wide QRS complexes with identical morphology throughout',
-          'Red arrows mark retrograde P waves conducted back to the atria',
-          'Despite retrograde conduction, QRS morphology remains monomorphic'
-        ]
-      },
-      {
-        id: 'mmvt-018',
-        image: 'images/mmvt-018.gif',
-        answer: 'mmvt',
-        explanationBullets: [
-          'Rhythm strip showing wide complex tachycardia with uniform QRS morphology',
-          'Each complex has an identical shape and width',
-          'Regular R-R intervals throughout the strip',
-          'Consistent upright-then-downward deflection pattern in every beat'
-        ]
-      },
-      {
-        id: 'mmvt-019',
-        image: 'images/mmvt-019.jpg',
-        answer: 'mmvt',
-        explanationBullets: [
-          'Lead II rhythm strip showing monomorphic VT with sinusoidal-appearing uniform QRS',
-          'Wide, smooth, rounded complexes with identical shape beat to beat',
-          'Regular rate with no variation in amplitude or axis',
-          'No P waves visible: the ventricles drive the rhythm independently'
-        ]
-      },
-      // ===== Additional PMVT =====
-      {
-        id: 'pmvt-009',
-        image: 'images/pmvt-009.jpg',
-        answer: 'pmvt',
-        explanationBullets: [
-          '12-lead ECG showing onset of Torsades de Pointes from sinus rhythm with prolonged QT',
-          'Initial sinus beats show markedly prolonged QT interval',
-          'VT onset shows continuously changing QRS morphology and axis',
-          'Precordial leads demonstrate the polymorphic, twisting pattern of TdP'
-        ]
-      },
-      {
-        id: 'pmvt-010',
-        image: 'images/pmvt-010.gif',
-        answer: 'pmvt',
-        explanationBullets: [
-          'Rhythm strip showing polymorphic VT with continuously varying QRS morphology',
-          'QRS amplitude waxes and wanes across the tracing',
-          'No two consecutive complexes share the same shape or axis',
-          'Irregular R-R intervals with no repeating pattern'
-        ]
-      },
-      {
-        id: 'pmvt-011',
-        image: 'images/pmvt-011.jpg',
-        answer: 'pmvt',
-        explanationBullets: [
-          'Torsades de Pointes with clear transition from sinus rhythm',
-          'Initial beats show a triggering PVC, then polymorphic VT develops',
-          'QRS complexes vary dramatically in amplitude and direction',
-          'Classic waxing-waning spindle pattern characteristic of TdP'
-        ]
-      },
-      // ===== WaveMaven MMVT =====
-      {
-        id: 'mmvt-020',
-        image: 'images/mmvt-020.png',
-        answer: 'mmvt',
-        explanationBullets: [
-          'WaveMaven Case #112: 12-lead ECG showing fast monomorphic VT',
-          'Wide QRS complexes with uniform LBBB-type morphology across all leads',
-          'Very rapid rate with regular R-R intervals',
-          'Identical QRS shape beat to beat with no variation in axis or amplitude'
-        ]
-      },
-      {
-        id: 'mmvt-021',
-        image: 'images/mmvt-021.png',
-        answer: 'mmvt',
-        explanationBullets: [
-          'WaveMaven Case #143: 12-lead ECG showing monomorphic VT',
-          'Wide QRS complexes with consistent morphology in each lead',
-          'Uniform QRS axis and shape throughout the tracing',
-          'No beat-to-beat variation in QRS width, amplitude, or direction'
-        ]
-      },
-      {
-        id: 'mmvt-022',
-        image: 'images/mmvt-022.png',
-        answer: 'mmvt',
-        explanationBullets: [
-          'WaveMaven Case #259: 12-lead showing monomorphic VT',
-          'Wide QRS complexes with a single repeating morphology',
-          'Uniform axis across limb and precordial leads',
-          'Regular rate with identical QRS shape in every beat'
-        ]
-      },
-      {
-        id: 'mmvt-023',
-        image: 'images/mmvt-023.png',
-        answer: 'mmvt',
-        explanationBullets: [
-          'WaveMaven Case #274: 12-lead ECG with classic fast monomorphic VT',
-          'Rapid, wide QRS complexes with identical morphology beat to beat',
-          'Regular R-R intervals at a high rate',
-          'Negative concordance in precordial leads (all QRS deflections downward in V1-V6)'
-        ]
-      },
-      {
-        id: 'mmvt-024',
-        image: 'images/mmvt-024.png',
-        answer: 'mmvt',
-        explanationBullets: [
-          'WaveMaven Case #290: Monomorphic VT in the setting of acute STEMI',
-          'Wide, uniform QRS complexes with consistent morphology',
-          'All beats share the same shape despite underlying ischemia',
-          'Regular rate with no beat-to-beat variation in QRS axis'
-        ]
-      },
-      {
-        id: 'mmvt-025',
-        image: 'images/mmvt-025.png',
-        answer: 'mmvt',
-        explanationBullets: [
-          'WaveMaven Case #343: 12-lead ECG showing ventricular tachycardia',
-          'Wide QRS complexes with uniform morphology across all leads',
-          'Consistent QRS shape and axis throughout the tracing',
-          'AV dissociation likely present with independent atrial activity'
-        ]
-      },
-      {
-        id: 'mmvt-026',
-        image: 'images/mmvt-026.png',
-        answer: 'mmvt',
-        explanationBullets: [
-          'WaveMaven Case #395: 12-lead ECG showing monomorphic VT',
-          'Uniform wide QRS complexes with identical beat-to-beat morphology',
-          'Consistent axis and amplitude in each lead',
-          'Regular rhythm with no variation in QRS shape'
-        ]
-      },
-      {
-        id: 'mmvt-027',
-        image: 'images/mmvt-027.png',
-        answer: 'mmvt',
-        explanationBullets: [
-          'WaveMaven Case #403: 12-lead ECG with fast monomorphic VT',
-          'Sinusoidal-appearing wide QRS complexes at a very rapid rate',
-          'Every complex is identical in morphology across all leads',
-          'Regular R-R intervals with uniform amplitude and axis'
-        ]
-      },
-      {
-        id: 'mmvt-028',
-        image: 'images/mmvt-028.png',
-        answer: 'mmvt',
-        explanationBullets: [
-          'WaveMaven Case #502: 12-lead ECG showing wide complex tachycardia',
-          'Uniform QRS morphology with the same shape in every beat',
-          'Wide QRS complexes consistent with ventricular origin',
-          'No variation in axis or amplitude from beat to beat'
-        ]
-      },
-      // ===== WaveMaven PMVT =====
-      {
-        id: 'pmvt-012',
-        image: 'images/pmvt-012.png',
-        answer: 'pmvt',
-        explanationBullets: [
-          'WaveMaven Case #314: 12-lead ECG showing polymorphic VT',
-          'QRS morphology varies between beats across multiple leads',
-          'Changing QRS axis and amplitude from complex to complex',
-          'No consistent bundle branch block pattern: complexes shift in shape and direction'
-        ]
-      },
-      // ===== NOT VT (Wide Complex Tachycardia Mimics) =====
-      {
-        id: 'notvt-001',
-        image: 'images/notvt-001.png',
-        answer: 'not-vt',
-        explanationBullets: [
-          'Atrial fibrillation with LBBB: wide QRS mimics VT, but the rhythm is irregularly irregular',
-          'Irregular R-R intervals are the key clue: VT is almost always regular',
-          'LBBB morphology is consistent in every beat (rSR\' pattern, not bizarre)',
-          'No AV dissociation, no fusion or capture beats'
-        ]
-      },
-      {
-        id: 'notvt-002',
-        image: 'images/notvt-002.jpg',
-        answer: 'not-vt',
-        explanationBullets: [
-          'SVT with RBBB aberrancy in a 44-year-old male',
-          'Wide QRS with classic rsR\' in V1 consistent with RBBB, not VT',
-          'Regular, narrow-appearing P waves may be visible before each QRS',
-          'Typical RBBB pattern (V1 rsR\', V6 wide S) favors supraventricular origin'
-        ]
-      },
-      {
-        id: 'notvt-003',
-        image: 'images/notvt-003.gif',
-        answer: 'not-vt',
-        explanationBullets: [
-          'Pre-excited atrial fibrillation (WPW + AFib) in a 29-year-old',
-          'Bizarre, wide QRS complexes that look like VT, but the rhythm is irregularly irregular',
-          'Varying QRS morphology from beat to beat due to different degrees of pre-excitation',
-          'Very fast rate with some extremely short R-R intervals (danger of VF if AV node blockers given)'
-        ]
-      },
-      {
-        id: 'notvt-004',
-        image: 'images/notvt-004.jpg',
-        answer: 'not-vt',
-        explanationBullets: [
-          'Sinus tachycardia with wide QRS (bundle branch block)',
-          'P waves visible before each QRS complex, with a consistent PR interval',
-          'Wide QRS due to conduction delay, not ventricular origin',
-          'Rate is appropriate for sinus tachycardia; P-wave axis is normal'
-        ]
-      },
-      {
-        id: 'notvt-005',
-        image: 'images/notvt-005.png',
-        answer: 'not-vt',
-        explanationBullets: [
-          'Atrial fibrillation with RVR and Ashman phenomenon (RBBB aberrancy)',
-          'Irregularly irregular baseline rhythm confirms AFib, not VT',
-          'Wide beats follow short-long-short R-R cycle (Ashman phenomenon)',
-          'Aberrant beats have RBBB morphology, not the bizarre shapes typical of VT'
-        ]
-      },
-      {
-        id: 'notvt-006',
-        image: 'images/notvt-006.jpg',
-        answer: 'not-vt',
-        explanationBullets: [
-          'Supraventricular tachycardia (SVT) with narrow-to-borderline QRS',
-          'Regular rhythm at a very fast rate, but QRS complexes are not truly wide',
-          'No AV dissociation; the atria and ventricles are linked 1:1',
-          'Absence of wide, bizarre QRS morphology argues against VT'
-        ]
-      },
-      {
-        id: 'notvt-007',
-        image: 'images/notvt-007.jpg',
-        answer: 'not-vt',
-        explanationBullets: [
-          'Atrial fibrillation with rapid ventricular response',
-          'Irregularly irregular rhythm is the hallmark of AFib, not VT',
-          'QRS complexes vary in timing but not in fundamental morphology',
-          'No fusion beats, no capture beats, no AV dissociation'
-        ]
-      },
-      {
-        id: 'notvt-008',
-        image: 'images/notvt-008.jpg',
-        answer: 'not-vt',
-        explanationBullets: [
-          'Wolff-Parkinson-White (WPW) pattern with sinus rhythm and delta waves',
-          'Short PR interval (<120ms) with slurred upstroke (delta wave) on QRS',
-          'Wide QRS is due to ventricular pre-excitation via accessory pathway, not VT',
-          'During tachycardia, this pattern produces wide complexes that closely mimic VT'
-        ]
-      },
-      {
-        id: 'notvt-009',
-        image: 'images/notvt-009.jpg',
-        answer: 'not-vt',
-        explanationBullets: [
-          'Atrial flutter with 2:1 conduction',
-          'Regular rhythm that can mimic VT, but flutter waves (sawtooth) visible in inferior leads',
-          'QRS complexes are conducted from the atria, not generated in the ventricles',
-          'Carotid sinus massage or adenosine would unmask the flutter waves'
-        ]
-      },
-      {
-        id: 'notvt-010',
-        image: 'images/notvt-010.jpg',
-        answer: 'not-vt',
-        explanationBullets: [
-          'Antidromic AVRT (WPW) in a 15-year-old: regular broad complex tachycardia at ~200 bpm',
-          'Wide, bizarre QRS with LBBB morphology from anterograde conduction via accessory pathway',
-          'Looks identical to VT, but the patient is young with no structural heart disease',
-          'Previous ECG in sinus rhythm showed delta waves and short PR confirming WPW'
-        ]
-      },
-      {
-        id: 'notvt-011',
-        image: 'images/notvt-011.jpg',
-        answer: 'not-vt',
-        explanationBullets: [
-          'Pre-excited atrial fibrillation (WPW + AFib): wide, irregular, and dangerous',
-          'Irregularly irregular rhythm with bizarre wide QRS complexes at very fast rates',
-          'Varying QRS width reflects different degrees of pre-excitation per beat',
-          'AV node blockers (adenosine, verapamil, digoxin) are contraindicated: may cause VF'
-        ]
-      },
-      {
-        id: 'notvt-012',
-        image: 'images/notvt-012.jpg',
-        answer: 'not-vt',
-        explanationBullets: [
-          'Supraventricular tachycardia (SVT) with narrow QRS complexes',
-          'Regular rhythm at a fast rate, but QRS is narrow (<120ms)',
-          'Narrow QRS confirms supraventricular origin with normal ventricular conduction',
-          'VT produces wide QRS (>120ms); narrow complex rules it out immediately'
-        ]
-      },
-      // ===== WaveMaven NOT VT =====
-      {
-        id: 'notvt-013',
-        image: 'images/notvt-013.png',
-        answer: 'not-vt',
-        explanationBullets: [
-          'WaveMaven #15: Pre-excited AFib (WPW + atrial fibrillation)',
-          'Irregularly irregular rhythm with wide, bizarre QRS complexes',
-          'Irregular R-R intervals distinguish this from monomorphic VT',
-          'Accessory pathway conducts AF directly to ventricles, bypassing AV node'
-        ]
-      },
-      {
-        id: 'notvt-014',
-        image: 'images/notvt-014.png',
-        answer: 'not-vt',
-        explanationBullets: [
-          'WaveMaven #64: Atrial flutter with LBBB',
-          'Regular wide complex tachycardia that mimics VT',
-          'Sawtooth flutter waves may be visible in inferior leads or V1',
-          'LBBB pattern (rS in V1, broad R in V6) is consistent across all beats'
-        ]
-      },
-      {
-        id: 'notvt-015',
-        image: 'images/notvt-015.png',
-        answer: 'not-vt',
-        explanationBullets: [
-          'WaveMaven #88: AFib with transient RBBB aberrancy',
-          'Irregularly irregular baseline confirms atrial fibrillation, not VT',
-          'Some beats conducted with RBBB aberrancy (wider QRS after longer pauses)',
-          'Ashman phenomenon: aberrant conduction follows a long-short R-R sequence'
-        ]
-      },
-      {
-        id: 'notvt-016',
-        image: 'images/notvt-016.png',
-        answer: 'not-vt',
-        explanationBullets: [
-          'WaveMaven #111: AFib with RVR in a patient on flecainide',
-          'The clinical question asks: "Is this VT?" The answer is no.',
-          'Flecainide widens QRS by slowing sodium channel conduction',
-          'Irregularly irregular rhythm confirms AFib despite the very wide QRS'
-        ]
-      },
-      {
-        id: 'notvt-017',
-        image: 'images/notvt-017.png',
-        answer: 'not-vt',
-        explanationBullets: [
-          'WaveMaven #170: Atrial fibrillation with LBBB',
-          'Wide QRS complexes from LBBB can mimic VT morphology',
-          'Irregular R-R intervals confirm AFib as the underlying rhythm',
-          'Consistent LBBB morphology in every beat (not bizarre, not varying)'
-        ]
-      },
-      {
-        id: 'notvt-018',
-        image: 'images/notvt-018.png',
-        answer: 'not-vt',
-        explanationBullets: [
-          'WaveMaven #177: SVT (PSVT) with RBBB aberrancy',
-          'Regular wide complex tachycardia from supraventricular origin',
-          'Typical RBBB pattern: rsR\' in V1 with wide S wave in lateral leads',
-          'RBBB morphology with normal axis favors SVT over VT'
-        ]
-      },
-      {
-        id: 'notvt-019',
-        image: 'images/notvt-019.png',
-        answer: 'not-vt',
-        explanationBullets: [
-          'WaveMaven #197: Atrial tachycardia with 2:1 block and LBBB',
-          'Wide QRS from LBBB with a rapid atrial rate conducted 2:1',
-          'P waves may be visible at twice the ventricular rate',
-          'LBBB morphology is consistent and typical, not bizarre'
-        ]
-      },
-      {
-        id: 'notvt-020',
-        image: 'images/notvt-020.png',
-        answer: 'not-vt',
-        explanationBullets: [
-          'WaveMaven #258: Atrial flutter with bifascicular block (RBBB + LAFB)',
-          'Wide QRS from bifascicular block, not ventricular origin',
-          'Flutter waves may be visible at 300/min with variable conduction',
-          'RBBB + left axis deviation pattern is consistent with conduction disease'
-        ]
-      },
-      {
-        id: 'notvt-021',
-        image: 'images/notvt-021.jpg',
-        answer: 'not-vt',
-        explanationBullets: [
-          'WaveMaven #512: Pre-excited AFib (WPW), presented as a "stat" wide complex tachycardia',
-          'Irregular wide complexes with varying QRS width from beat to beat',
-          'Irregularity rules out monomorphic VT; varying pre-excitation rules out PMVT',
-          'Extremely rapid rate via accessory pathway; AV node blockers contraindicated'
-        ]
-      },
-      {
-        id: 'notvt-022',
-        image: 'images/notvt-022.jpg',
-        answer: 'not-vt',
-        explanationBullets: [
-          'WaveMaven #523: Atrial flutter with LBBB, asked as "What is this wide complex tachycardia?"',
-          'Regular wide complex tachycardia at ~150 bpm (classic flutter rate with 2:1 block)',
-          'LBBB morphology is typical and consistent, not bizarre',
-          'Rate of ~150 bpm should always prompt a search for atrial flutter'
-        ]
-      }
-    ];
+  <!-- Leaderboard -->
+  <div id="screen-leaderboard" class="screen">
+    <a href="#" class="home-link" id="btn-home-leaderboard">Home</a>
+    <h1>Leaderboard</h1>
+    <p style="text-align: center; color: #8a7e65; margin-bottom: 24px;">Top 100 by unique cards correct</p>
+    <div style="width: 100%; overflow-x: auto;">
+      <table id="leaderboard-table" style="width: 100%; border-collapse: collapse; font-size: 0.95rem;">
+        <thead>
+          <tr style="border-bottom: 2px solid #e0d5b8; text-align: left;">
+            <th style="padding: 10px 12px; color: #8a7e65; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.05em;">#</th>
+            <th style="padding: 10px 12px; color: #8a7e65; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.05em;">User</th>
+            <th style="padding: 10px 12px; color: #8a7e65; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.05em;">Institution</th>
+            <th style="padding: 10px 12px; color: #8a7e65; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.05em;">Title</th>
+            <th style="padding: 10px 12px; color: #8a7e65; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.05em; text-align: right;">Cards</th>
+            <th style="padding: 10px 12px; color: #8a7e65; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.05em; text-align: right;">Accuracy</th>
+          </tr>
+        </thead>
+        <tbody id="leaderboard-body"></tbody>
+      </table>
+    </div>
+    <p id="leaderboard-empty" style="display: none; text-align: center; color: #8a7e65; margin-top: 40px; font-size: 1.1rem;">No one on the board yet. Be the first.</p>
+  </div>
+
+  <script>
+    // ========== Card Data (loaded from cards.json) ==========
+
+    let CARDS = [];
 
     // ========== SM-2 Spaced Repetition Engine ==========
 
@@ -1187,6 +666,26 @@
       }
     }
 
+    // ========== User Account ==========
+
+    var USER_KEY = 'ekg-drill-user';
+
+    function getUser() {
+      var raw = localStorage.getItem(USER_KEY);
+      if (raw) {
+        try { return JSON.parse(raw); } catch (e) { return null; }
+      }
+      return null;
+    }
+
+    function saveUser(user) {
+      localStorage.setItem(USER_KEY, JSON.stringify(user));
+    }
+
+    function isLoggedIn() {
+      return getUser() !== null;
+    }
+
     // ========== App State ==========
 
     let app = {
@@ -1226,6 +725,17 @@
       oldBtn.style.opacity = seen === 0 ? '0.5' : '1';
 
       document.getElementById('btn-start-all').textContent = 'Shuffle All (' + CARDS.length + ')';
+
+      var joinBtn = document.getElementById('btn-join-leaderboard');
+      var statsDiv = document.getElementById('user-stats');
+      if (isLoggedIn()) {
+        joinBtn.style.display = 'none';
+        statsDiv.style.display = '';
+        fetchUserStats();
+      } else {
+        joinBtn.style.display = '';
+        statsDiv.style.display = 'none';
+      }
     }
 
     // ========== Card Screens ==========
@@ -1253,7 +763,23 @@
       }
       card.explanationBullets.forEach(function(bullet) {
         var li = document.createElement('li');
-        li.textContent = bullet;
+        var pmcMatch = bullet.match(/Source:\s*(PMC\d+)/);
+        if (pmcMatch) {
+          var pmcid = pmcMatch[1];
+          var beforeText = bullet.substring(0, bullet.indexOf(pmcid));
+          var afterText = bullet.substring(bullet.indexOf(pmcid) + pmcid.length);
+          li.appendChild(document.createTextNode(beforeText));
+          var link = document.createElement('a');
+          link.href = 'https://pmc.ncbi.nlm.nih.gov/articles/' + pmcid + '/';
+          link.target = '_blank';
+          link.rel = 'noopener noreferrer';
+          link.textContent = pmcid;
+          link.style.color = '#1f6feb';
+          li.appendChild(link);
+          li.appendChild(document.createTextNode(afterText));
+        } else {
+          li.textContent = bullet;
+        }
         list.appendChild(li);
       });
 
@@ -1310,6 +836,7 @@
       var card = app.sessionQueue[app.currentIndex];
       var correct = answer === card.answer;
       gradeCard(card.id, correct);
+      submitAnswer(card.id, correct);
       app.sessionTotal++;
       if (correct) {
         app.sessionCorrect++;
@@ -1343,6 +870,134 @@
       }
     }
 
+    async function handleRegister() {
+      var username = document.getElementById('reg-username').value.trim();
+      var institution = document.getElementById('reg-institution').value.trim();
+      var errorEl = document.getElementById('reg-error');
+      errorEl.textContent = '';
+
+      if (username.length < 3 || username.length > 20) {
+        errorEl.textContent = 'Username must be 3-20 characters.';
+        return;
+      }
+      if (!/^[a-zA-Z0-9_]+$/.test(username)) {
+        errorEl.textContent = 'Letters, numbers, and underscores only.';
+        return;
+      }
+      if (institution.length === 0) {
+        errorEl.textContent = 'Institution is required.';
+        return;
+      }
+
+      var btn = document.getElementById('btn-register-submit');
+      btn.disabled = true;
+      btn.textContent = 'Creating...';
+
+      try {
+        var res = await fetch('/api/register', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ username: username, institution: institution })
+        });
+        var data = await res.json();
+        if (!res.ok) {
+          errorEl.textContent = data.error || 'Registration failed.';
+          return;
+        }
+        saveUser(data);
+        renderHome();
+        showScreen('home');
+      } catch (e) {
+        errorEl.textContent = 'Network error. Try again.';
+      } finally {
+        btn.disabled = false;
+        btn.textContent = 'Create Account';
+      }
+    }
+
+    function submitAnswer(cardId, correct) {
+      var user = getUser();
+      if (!user) return;
+      fetch('/api/answer', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          userId: user.id,
+          cardId: cardId,
+          correct: correct
+        })
+      }).catch(function() {
+        // Fire and forget. Don't interrupt drilling.
+      });
+    }
+
+    async function fetchUserStats() {
+      var user = getUser();
+      if (!user) return;
+      try {
+        var res = await fetch('/api/user/' + user.id);
+        if (!res.ok) return;
+        var data = await res.json();
+        document.getElementById('user-title').textContent = data.title;
+        document.getElementById('user-name').textContent = data.username + ' \u2022 ' + user.institution;
+        document.getElementById('user-unique').textContent = data.uniqueCorrect + ' / 486';
+        document.getElementById('user-accuracy').textContent = data.accuracy + '%';
+        document.getElementById('user-rank').textContent = '#' + data.rank;
+      } catch (e) {
+        // Silently fail. Stats are not critical.
+      }
+    }
+
+    async function showLeaderboard() {
+      showScreen('leaderboard');
+      var tbody = document.getElementById('leaderboard-body');
+      var emptyMsg = document.getElementById('leaderboard-empty');
+      while (tbody.firstChild) { tbody.removeChild(tbody.firstChild); }
+      emptyMsg.style.display = 'none';
+
+      try {
+        var res = await fetch('/api/leaderboard');
+        var data = await res.json();
+
+        if (data.length === 0) {
+          emptyMsg.style.display = '';
+          return;
+        }
+
+        var user = getUser();
+
+        data.forEach(function(entry) {
+          var tr = document.createElement('tr');
+          if (user && entry.username === user.username) {
+            tr.className = 'leaderboard-highlight';
+          }
+
+          var cells = [
+            { text: entry.rank, align: 'left' },
+            { text: entry.username, align: 'left' },
+            { text: entry.institution, align: 'left' },
+            { text: entry.title, align: 'left' },
+            { text: entry.uniqueCorrect, align: 'right' },
+            { text: entry.accuracy + '%', align: 'right' }
+          ];
+
+          cells.forEach(function(cell) {
+            var td = document.createElement('td');
+            td.textContent = cell.text;
+            if (cell.align === 'right') {
+              td.style.textAlign = 'right';
+            }
+            tr.appendChild(td);
+          });
+
+          tbody.appendChild(tr);
+        });
+      } catch (e) {
+        emptyMsg.textContent = 'Could not load leaderboard.';
+        emptyMsg.style.display = '';
+      }
+    }
+
     // ========== Init ==========
 
     function init() {
@@ -1357,6 +1012,30 @@
       document.getElementById('btn-next').addEventListener('click', handleNext);
       document.getElementById('btn-done').addEventListener('click', handleDone);
       document.getElementById('btn-reset').addEventListener('click', handleReset);
+      document.getElementById('btn-home-front').addEventListener('click', function(e) { e.preventDefault(); renderHome(); showScreen('home'); });
+      document.getElementById('btn-home-back').addEventListener('click', function(e) { e.preventDefault(); renderHome(); showScreen('home'); });
+
+      document.getElementById('btn-join-leaderboard').addEventListener('click', function() {
+        showScreen('register');
+      });
+      document.getElementById('btn-home-register').addEventListener('click', function(e) {
+        e.preventDefault();
+        renderHome();
+        showScreen('home');
+      });
+      document.getElementById('btn-register-submit').addEventListener('click', handleRegister);
+      document.getElementById('reg-username').addEventListener('keydown', function(e) {
+        if (e.key === 'Enter') handleRegister();
+      });
+      document.getElementById('reg-institution').addEventListener('keydown', function(e) {
+        if (e.key === 'Enter') handleRegister();
+      });
+      document.getElementById('btn-view-leaderboard').addEventListener('click', showLeaderboard);
+      document.getElementById('btn-home-leaderboard').addEventListener('click', function(e) {
+        e.preventDefault();
+        renderHome();
+        showScreen('home');
+      });
 
       document.addEventListener('keydown', function(e) {
         if (app.screen === 'front') {
@@ -1376,7 +1055,14 @@
       showScreen('home');
     }
 
-    document.addEventListener('DOMContentLoaded', init);
+    document.addEventListener('DOMContentLoaded', function() {
+      fetch('cards.json')
+        .then(function(res) { return res.json(); })
+        .then(function(data) {
+          CARDS = data;
+          init();
+        });
+    });
   </script>
 </body>
 </html>
