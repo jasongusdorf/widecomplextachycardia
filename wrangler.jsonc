@@ -14,5 +14,12 @@
   "routes": [
     { "pattern": "widecomplextachycardia.com", "custom_domain": true },
     { "pattern": "www.widecomplextachycardia.com", "custom_domain": true }
+  ],
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "wct-leaderboard",
+      "database_id": "PLACEHOLDER_REPLACE_AFTER_CREATE"
+    }
   ]
 }
