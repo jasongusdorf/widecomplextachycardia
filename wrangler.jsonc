@@ -5,21 +5,15 @@
   "observability": {
     "enabled": true
   },
-  "assets": {
-    "directory": "./public"
-  },
+  "pages_build_output_dir": "./public",
   "compatibility_flags": [
     "nodejs_compat"
   ],
-  "routes": [
-    { "pattern": "widecomplextachycardia.com", "custom_domain": true },
-    { "pattern": "www.widecomplextachycardia.com", "custom_domain": true }
-  ],
-  "d1_databases": [
+"d1_databases": [
     {
       "binding": "DB",
       "database_name": "wct-leaderboard",
-      "database_id": "PLACEHOLDER_REPLACE_AFTER_CREATE"
+      "database_id": "8d77ea16-45fb-4e08-adc4-14f680d42ba2"
     }
   ]
 }
